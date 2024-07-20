@@ -1,0 +1,45 @@
+@use './variables';
+
+/// Container
+@mixin container {
+  .std-container {
+    width: 100%;
+    background: variables.$light_body_bg_color;
+    font-family: "Outfit", sans-serif;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+
+    @content;
+  }
+}
+
+
+/// RESPONSIVES
+@mixin x-small {
+  @media (max-width: variables.$x_small) { @content; }
+}
+
+@mixin small {
+  @media (min-width: variables.$small) and (max-width: variables.$medium) { @content; }
+}
+
+@mixin medium {
+  @media (min-width: variables.$medium) and (max-width: variables.$large){ @content; }
+}
+
+@mixin large {
+  @media (min-width: variables.$large) and (max-width: variables.$x_large){ @content; }
+}
+
+@mixin x-large {
+  @media (min-width: variables.$x_large) and (max-width: variables.$xx_large){ @content; }
+}
+
+@mixin xx-large {
+  @media (min-width: variables.$xx_large) and (max-width: variables.$xxx_large) { @content; }
+}
+
+@mixin xxx-large {
+  @media (min-width: variables.$xxx_large) { @content; }
+}

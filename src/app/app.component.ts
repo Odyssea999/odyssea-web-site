@@ -1,13 +1,17 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import {TranslateService} from "@ngx-translate/core";
+import {LanguageService} from "./shared/services/Language/Language.service";
 
 @Component({
-  selector: 'app-root',
+  selector: 'std-root',
   standalone: true,
   imports: [RouterOutlet],
+  providers: [LanguageService],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'StudentCheck_web_site_angular';
+
+  constructor(private readonly languageService: LanguageService) {}
 }

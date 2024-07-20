@@ -1,0 +1,49 @@
+@use '../../styles/variables';
+@use '../../styles/mixins';
+
+.std-banner-container {
+  width: 100%;
+  padding-left: variables.$container_padding_left;
+  padding-right: variables.$container_padding_right;
+  padding-top: 8rem;
+  padding-bottom: 12rem;
+
+  .std-banner {
+    background-image: url("/images/home/Breadcrumb.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 440px;
+    max-height: 440px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+
+    .std-banner-content {
+      width: 70%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding-left: variables.$container_padding_left;
+      padding-right: variables.$container_padding_right;
+
+      h3 {
+        font-size: 3rem;
+        text-align: center;
+      }
+
+      std-button {
+        margin-top: 1.8rem;
+      }
+    }
+
+  }
+}
+
+@import "styles/responsive/x_small";
+@import "styles/responsive/small";
+@import "styles/responsive/medium";
+@import "styles/responsive/large";

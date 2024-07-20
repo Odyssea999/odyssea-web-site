@@ -1,0 +1,179 @@
+{
+  "HOME": {
+    "navbar": {
+      "pricing": "Nos offres",
+      "solution": "Notre solution",
+      "faq": "FAQ",
+      "whyUs": "Pourquoi StudentCheck?",
+      "login": "Se connecter",
+      "trial": "Demander une démo"
+    },
+    "mainSection": {
+      "title": "Transformez l'administration scolaire avec notre solution.",
+      "offers": "Nos offres",
+      "subtitle": "Centralisez la gestion de votre établissement. Depuis StudentCheck, vous pouvez gérer vos différentes promotions, notes des élèves, planning. Tout cela avec  une messagerie instantanée intégrée, cours vidéo, suivi des activités de l’établissement, la possibilité de signaler sa présence par QR Code et bien plus encore."
+    },
+    "mainSection2": {
+      "title": "Plus besoin d’utiliser plusieurs solutions de gestion",
+      "subtitle": "Plus qu’une simple solution. StudentCheck est le couteau suisse de la gestion de votre établissement.",
+      "cards": {
+        "item1": {
+          "title": "Signaler sa présence",
+          "content": "Les élèves peuvent signaler leur présence en quelques secondes en scannant un QR code, réduisant ainsi le temps nécessaire pour prendre les présences manuellement."
+        },
+        "item2": {
+          "title": "Simplifiez la gestion du planning",
+          "content": "Réduction significative du temps consacré à la création et à la modification des plannings. Moins d'erreurs humaines grâce à l'automatisation et à la validation des données."
+        },
+        "item3": {
+          "title": "Suivi de l’activité en temps réel",
+          "content": "Suivez chaque activité en temps réel. De la gestion des présences, du planning à la communication instantanée, tout est centralisé."
+        }
+      }
+    },
+    "mainSection3": {
+      "title": "Centralisez la gestion de votre établissement",
+      "cards": {
+        "item1": {
+          "title": "Une migration simplifiée et rapide",
+          "content": "Gagnez du temps en important vos listes d'élèves exportées d'une autre solution pour créer des classes rapidement."
+        },
+        "item2": {
+          "title": "Suivi de l'activité en temps réel",
+          "content": "Suivez en temps réel l'activité de votre établissement."
+        },
+        "item3": {
+          "title": "Gérez efficacement vos plannings",
+          "content": ""
+        }
+      }
+    },
+    "mainSection4": {
+      "title": "Nos engagements à vos côtés",
+      "cards": {
+        "item1": {
+          "title": "Transparence",
+          "content": "Pas de mauvaises surprises ! Tarifs, conditions... Tout est convenu d'avance avec vous"
+        },
+        "item2": {
+          "title": "Disponibilité",
+          "content": "Nous prenons en compte toutes vos demandes et revenons vers vous en moins d’une demi-journée."
+        },
+        "item3": {
+          "title": "Maintenabilité",
+          "content": "Vous bénéficiez automatiquement des nouvelles évolutions pour rester à la pointe de l’innovation."
+        }
+      }
+    },
+    "mainSection5": {
+      "title": "Rejoignez la révolution de la gestion scolaire."
+    }
+  },
+  "FOOTER": {
+    "company": {
+      "title": "Société",
+      "link1": "Pourquoi StudentCheck"
+    },
+    "navigation": {
+      "title": "Navigation",
+      "pricing": "Nos offres",
+      "solution": "Notre solution",
+      "faq": "FAQ",
+      "whyUs": "Pourquoi StudentCheck?"
+    },
+    "customer": {
+      "title": "Client",
+      "login": "Connexion",
+      "report": "Remonter un problème"
+    },
+    "legals": {
+      "copyright": "© 2024 StudentCheck. Tous droits réservés.",
+      "politics": "Politique de confidentialité",
+      "termOfUse": "Conditions d’utilisation"
+    }
+  },
+  "PRICING": {
+    "title1": "Une tarification transparente et",
+    "title2": "adaptée à vos besoins",
+    "subtitle": "Pas de frais cachés. Sans engagement.",
+    "question": "Combien d’élèves / apprenants avez vous ?",
+    "cards": {
+      "title": "Selon vos besoins",
+      "popular": "Le plus populaire",
+      "price": "5€",
+      "priceRight": "/ par élève",
+      "monthlyPrice": "+99 € d'abonnement mensuel *",
+      "total": "Total de ",
+      "totalEnd": " par mois *",
+      "engagement": "Sans engagement et pas de frais de mise en place",
+      "establishment": "Type d'établissement",
+      "customPrice": "Prix à la demande",
+      "features": {
+        "1": {
+          "title": "Scanner sa présence par QR Code",
+          "description": "Toto est mort"
+        },
+        "2": {
+          "title": "Gestion des emplois du temps",
+          "description": "toto est mort"
+        },
+        "3": {
+          "title": "Gestion du planning",
+          "description": "toto"
+        },
+        "4": {
+          "title": "Import et export de la liste des élèves / classes",
+          "description": "toto"
+        },
+        "5": {
+          "title": "Suivi des activités",
+          "description": "toto"
+        },
+        "6": {
+          "title": "Gestion des présences / retards / absences",
+          "description": "toto"
+        },
+        "7": {
+          "title": "Stockage documents des cours",
+          "description": "toto"
+        },
+        "8": {
+          "title": "Gestion des actualités",
+          "description": "toto"
+        },
+        "9": {
+          "title": "Messagerie instantanée",
+          "description": "toto"
+        },
+        "10": {
+          "title": "Suivi élèves",
+          "description": "toto"
+        },
+        "11": {
+          "title": "Gestion des tâches",
+          "description": "toto"
+        },
+        "12": {
+          "title": "Gestion heures de colle",
+          "description": "toto"
+        },
+        "13": {
+          "title": "Stockage vidéos cours",
+          "description": "toto"
+        },
+        "14": {
+          "title": "Gestion de la facturation",
+          "description": "toto"
+        },
+        "15": {
+          "title": "Gestion des candidatures",
+          "description": "toto"
+        },
+        "16": {
+          "title": "Congés et absences ( collaborateur )",
+          "description": "toto"
+        }
+      }
+    }
+  }
+}

@@ -4,6 +4,12 @@
   "newProjectRoot": "projects",
   "projects": {
     "StudentCheck_web_site_angular": {
+      "i18n": {
+        "sourceLocale": "fr",
+        "locales": {
+          "en": "public/i18n/en.json"
+        }
+      },
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -12,7 +18,7 @@
       },
       "root": "",
       "sourceRoot": "src",
-      "prefix": "app",
+      "prefix": "std",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:application",
@@ -29,7 +35,8 @@
               {
                 "glob": "**/*",
                 "input": "public"
-              }
+              },
+              "src/assets"
             ],
             "styles": [
               "src/styles.scss"

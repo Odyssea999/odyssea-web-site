@@ -1,0 +1,47 @@
+
+@use "../../../../styles/mixins";
+@use "../../../../styles/variables";
+
+@include mixins.medium {
+  .std-banner-container {
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+
+    .std-banner {
+      background-image: url("/images/home/Breadcrumb.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center right;
+      height: 440px;
+      max-height: 440px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 15px;
+
+      .std-banner-content {
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-left: 1rem;
+        padding-right: 1rem;
+
+        h3 {
+          font-size: 2rem;
+          text-align: center;
+        }
+
+        std-button {
+          margin-top: 1.8rem;
+        }
+      }
+
+    }
+  }
+}

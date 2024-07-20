@@ -1,0 +1,44 @@
+<div class="std-container">
+  <std-navbar></std-navbar>
+  <section class="std-pricing">
+    <section class="std-pricing-top">
+      <div class="std-pricing-top-content">
+        <div class="std-pricing-section-title">
+          <h2>
+            <span>{{ 'PRICING.title1' | translate }}</span>
+            <span>{{ 'PRICING.title2' | translate }}</span>
+          </h2>
+          <p>{{ 'PRICING.subtitle' | translate }}</p>
+        </div>
+        <div class="std-pricing-slider-card">
+          <p class="std-pricing-card-title">{{ 'PRICING.question' | translate }}</p>
+          <div class="std-pricing-slider-bloc">
+            <div class="std-pricing-slider">
+              @for (slider of pricingSlider; track slider; let index = $index) {
+                <span class="std-pricing-slider-range"
+                      style="--slider-value: '{{ slider.between}}' "
+                      (click)="sliderSelected(index, slider)" [ngClass]="{'selected': slider.isSelected}"></span>
+              }
+            </div>
+            <div class="std-pricing-number">
+              <p>10</p>
+              <p>550+</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="std-pricing-cards">
+      <div class="std-pricing-cards-content">
+        <div class="std-card-item">
+          <std-pricing-card [bestSeller]="false"></std-pricing-card>
+        </div>
+        <div class="std-card-item">
+          <std-pricing-card [bestSeller]="true"></std-pricing-card>
+        </div>
+      </div>
+    </section>
+  </section>
+  <std-banner></std-banner>
+  <std-footer></std-footer>
+</div>

@@ -1,0 +1,133 @@
+<div class="std-container">
+  <std-navbar></std-navbar>
+  <div class="std-landing">
+    <section class="std-landing-main-top">
+      <div class="std-landing-section-left">
+        <div class="std-landing-main-section-text">
+          <h1>{{ "HOME.mainSection.title" | translate }}</h1>
+          <p>{{ "HOME.mainSection.subtitle" | translate }}</p>
+        </div>
+        <div class="std-landing-main-section-btn">
+          <std-button [navigateTo]="'/become-customer'" [outlined]="false" content="{{ 'HOME.navbar.trial' | translate }}"></std-button>
+          <std-button [navigateTo]="'/pricing'" [outlined]="true" content="{{ 'HOME.navbar.pricing' | translate }}"></std-button>
+        </div>
+      </div>
+      <div class="std-landing-section-right">
+        <div class="std-landing-main-section-app-img">
+          <std-svg path="/home_landing_main_img.svg"></std-svg>
+        </div>
+      </div>
+    </section>
+    <section class="std-landing-2-section">
+      <div class="std-landing-2-section-text">
+        <h2>{{ 'HOME.mainSection2.title' | translate }}</h2>
+        <p>{{ 'HOME.mainSection2.subtitle' | translate }}</p>
+      </div>
+      <section class="std-landing-2-section-cards">
+        <div class="std-landing-card">
+          <div class="std-landing-card-icon">
+            <std-svg path="/images/home/qr_code_landing.svg"></std-svg>
+          </div>
+          <div class="std-landing-card-title">
+            <h3>{{ 'HOME.mainSection2.cards.item1.title' | translate}}</h3>
+          </div>
+          <div class="std-landing-card-content">
+            <p>{{ 'HOME.mainSection2.cards.item1.content' | translate}}</p>
+          </div>
+        </div>
+        <div class="std-landing-card">
+          <div class="std-landing-card-icon">
+            <std-svg path="/images/home/schedule_landing.svg"></std-svg>
+          </div>
+          <div class="std-landing-card-title">
+            <h3>{{ 'HOME.mainSection2.cards.item2.title' | translate}}</h3>
+          </div>
+          <div class="std-landing-card-content">
+            <p>{{ 'HOME.mainSection2.cards.item2.content' | translate}}</p>
+          </div>
+        </div>
+        <div class="std-landing-card">
+          <div class="std-landing-card-icon">
+            <std-svg path="/images/home/tracing_landing.svg"></std-svg>
+          </div>
+          <div class="std-landing-card-title">
+            <h3>{{ 'HOME.mainSection2.cards.item3.title' | translate}}</h3>
+          </div>
+          <div class="std-landing-card-content">
+            <p>{{ 'HOME.mainSection2.cards.item3.content' | translate}}</p>
+          </div>
+        </div>
+      </section>
+    </section>
+    <section class="std-landing-3-section">
+      <div class="std-landing-3-section-content">
+        <div class="std-landing-3-section-title">
+          <h3>{{ 'HOME.mainSection3.title' | translate }}</h3>
+        </div>
+        <div class="std-landing-3-section-body">
+          <div class="std-landing-3-section-left">
+            @for (card of landingCardData; track card) {
+              <std-landing-card
+                title="{{ card.title | translate }}"
+                content="{{ card.content | translate }}"
+                [svg]="card.svgIcon"
+                (click)="updateImgOnLandingCardSelected(card.imgSrc)">
+              </std-landing-card>
+            }
+          </div>
+          <div class="std-landing-3-section-right">
+            <img [src]="imgSrc" alt=""/>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="std-landing-4-section">
+      <div class="std-landing-4-section-content">
+        <h2>{{ 'HOME.mainSection4.title' | translate }}</h2>
+        <div class="std-landing-4-section-cards">
+          <div class="std-landing-4-section-card">
+            <div class="std-landing-4-section-card-header">
+              <div class="std-landing-4-section-icon">
+                <std-svg path="/icons/paper.svg"></std-svg>
+              </div>
+              <div class="std-landing-4-section-card-title">
+                <h4>{{ 'HOME.mainSection4.cards.item1.title' | translate }}</h4>
+              </div>
+            </div>
+            <div class="std-landing-4-section-card-boy">
+              <p>{{ 'HOME.mainSection4.cards.item1.content' | translate }}</p>
+            </div>
+          </div>
+          <div class="std-landing-4-section-card">
+            <div class="std-landing-4-section-card-header">
+              <div class="std-landing-4-section-icon">
+                <std-svg path="/icons/speedometer.svg"></std-svg>
+              </div>
+              <div class="std-landing-4-section-card-title">
+                <h4>{{ 'HOME.mainSection4.cards.item2.title' | translate }}</h4>
+              </div>
+            </div>
+            <div class="std-landing-4-section-card-boy">
+              <p>{{ 'HOME.mainSection4.cards.item2.content' | translate }}</p>
+            </div>
+          </div>
+          <div class="std-landing-4-section-card">
+            <div class="std-landing-4-section-card-header">
+              <div class="std-landing-4-section-icon">
+                <std-svg path="/icons/update-svg.svg"></std-svg>
+              </div>
+              <div class="std-landing-4-section-card-title">
+                <h4>{{ 'HOME.mainSection4.cards.item3.title' | translate }}</h4>
+              </div>
+            </div>
+            <div class="std-landing-4-section-card-boy">
+              <p>{{ 'HOME.mainSection4.cards.item3.content' | translate }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <std-banner></std-banner>
+  <std-footer></std-footer>
+</div>

@@ -1,0 +1,40 @@
+<div class="std-navbar" [ngClass]="{'show-nav': isNavbarOpened}">
+  <div class="std-navbar-top-logo">
+    <div class="std-logo">
+      <std-svg width="100%" routerLink="/" path="/images/logo.svg"></std-svg>
+    </div>
+    <div class="std-navbar-logo-open">
+      @if (isNavbarOpened) {
+        <std-svg width="100%" [path]="closeIcon" (click)="toggleShowNavbar()"></std-svg>
+      } @else {
+        <std-svg width="100%" [path]="openIcon" (click)="toggleShowNavbar()"></std-svg>
+      }
+    </div>
+  </div>
+  <div class="std-nav-bar-bottom">
+    <div class="std-nav-links">
+      <ul class="std-nav-links-content">
+        <li class="std-nav-links-item">
+          <a href="" class="std-nav-link">{{ "HOME.navbar.whyUs" | translate }}</a>
+        </li>
+        <li class="std-nav-links-item">
+          <a href="" class="std-nav-link">{{ "HOME.navbar.solution" | translate }}</a>
+        </li>
+        <li class="std-nav-links-item">
+          <a routerLink="/pricing" class="std-nav-link">{{ "HOME.navbar.pricing" | translate }}</a>
+        </li>
+        <li class="std-nav-links-item">
+          <a href="" class="std-nav-link">{{ "HOME.navbar.faq" | translate }}</a>
+        </li>
+      </ul>
+    </div>
+    <div class="std-nav-btn">
+      <div class="std-navbar-btn-item">
+        <std-button navigateTo="/" content="{{ 'HOME.navbar.login' | translate }}" [outlined]="true"></std-button>
+      </div>
+      <div class="std-navbar-btn-item">
+        <std-button [navigateTo]="'/become-customer'" content="{{ 'HOME.navbar.trial' | translate }}" [outlined]="false"></std-button>
+      </div>
+    </div>
+  </div>
+</div>

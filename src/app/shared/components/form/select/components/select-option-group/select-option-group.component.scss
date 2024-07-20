@@ -1,0 +1,16 @@
+@use "../../../../../../shared/styles/variables";
+@use "../../../../../../shared/styles/mixins";
+
+.std-select-option-group {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  background: variables.$white;
+  width: 100%;
+  top: 7rem;
+  border-radius: 7px;
+  border: 1px solid rgba(84, 104, 125, 26%);
+  box-shadow: 0 8px 12px -8px rgba(84, 104, 125, 26%);
+  padding: 0.5rem 0;
+  z-index: 1000;
+}

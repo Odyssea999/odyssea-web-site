@@ -1,0 +1,27 @@
+/// RESPONSIVE SCREENS SIZES
+$x_small: 576px; // <
+$small: 576px; // >=
+$medium: 768px; // >=
+$large: 992px; // >=
+$x_large: 1200px; // >=
+$xx_large: 1400px; // >=
+$xxx_large: 1700px; // >=
+
+$white: #fff;
+$black: #000;
+
+$container_padding_left: 6rem;
+$container_padding_right: 6rem;
+
+/// LIGHT THEME
+$light_body_bg_color: #efedf2;
+$light_text_color: #55687D;
+$light_text_primary_color: $black;
+$light_text_secondary_color: #5B5B5B;
+$light_violet_color: #5846A3;
+$light_landing_main_section_bg: rgba(84, 104, 125, 15%);
+
+
+/// LIGHT THEME
+$dark_icon_color: #BDB7DA;
+

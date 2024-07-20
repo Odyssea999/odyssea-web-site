@@ -1,0 +1,17 @@
+<div class="std-form-input-container" stdInputDirective>
+  <div class="std-form-input-label" [ngClass]="{'std-input-error': showError()}">
+    <p>{{ label() }}</p>
+  </div>
+  <div class="std-form-control-input" [ngClass]="{'std-form-input-error': showError()}">
+      <input class="std-form-input" type="text" placeholder="{{ placeHolder() }}">
+  </div>
+  @if (showError()) {
+    <div class="std-form-input-error-message">
+      @if (errorMessage() === undefined) {
+        <p>Mon erreur ici non définie</p>
+      } @else {
+        <p>{{ errorMessage() }}</p>
+      }
+    </div>
+  }
+</div>

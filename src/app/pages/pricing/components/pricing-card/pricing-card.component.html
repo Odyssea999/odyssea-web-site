@@ -1,0 +1,85 @@
+
+<div class="std-pricing-card">
+  @if (bestSeller()) {
+    <div class="std-card-best">
+      <p>{{ 'PRICING.cards.popular' | translate }}</p>
+      <std-svg path="/icons/yes_cloud1.svg"></std-svg>
+    </div>
+  }
+  <div class="std-pricing-card-content">
+      <div class="std-pricing-title-section">
+        <h3>{{ 'PRICING.cards.title' | translate }}</h3>
+        @if (studentNumber <= 500) {
+
+          <p class="std-pricing-price">
+            <span>5€</span>
+            <span>{{ 'PRICING.cards.priceRight' | translate }}</span>
+          </p>
+          <p class="std-pricing-monthly-subscription">{{ 'PRICING.cards.monthlyPrice' | translate }}</p>
+          <p class="std-pricing-total">{{ 'PRICING.cards.total' | translate }} {{ bestSeller() ? bestSellerPrice : totalPrice }} € {{ 'PRICING.cards.totalEnd' | translate }}</p>
+          <p class="std-pricing-engagement">{{ 'PRICING.cards.engagement' | translate }}</p>
+        } @else {
+          <p class="std-custom-pricing">{{ "PRICING.cards.customPrice" | translate }}</p>
+        }
+      </div>
+    <div class="std-pricing-demo-btn">
+      <std-button [navigateTo]="'/become-customer'" content="{{ 'HOME.navbar.trial' | translate }}" [outlined]="true"></std-button>
+    </div>
+    <div class="std-pricing-type-establishment" (click)="toggleEstablishmentList()">
+      <div class="std-pricing-establishment-title">
+        @if (selectedEstablishment !== undefined) {
+          <p>{{ selectedEstablishment | translate }}</p>
+
+        } @else {
+          <p>{{ 'PRICING.cards.establishment' | translate }}</p>
+        }
+        <std-svg path="/icons/arrow-down.svg"></std-svg>
+      </div>
+      <div class="std-pricing-establishment-list">
+        <div class="std-pricing-establishment-item" (click)="selectEstablishment(undefined)">
+          <p>{{ 'PRICING.cards.establishment' | translate }}</p>
+        </div>
+        <div class="std-pricing-establishment-item" (click)="selectEstablishment('middleSchool')">
+          <p>{{ establishment.middleSchool.title }}</p>
+        </div>
+        <div class="std-pricing-establishment-item" (click)="selectEstablishment('highSchool')">
+          <p>{{ establishment.highSchool.title }}</p>
+        </div>
+        <div class="std-pricing-establishment-item" (click)="selectEstablishment('highSchoolApprenticeship')">
+          <p>{{ establishment.highSchoolApprenticeship.title }}</p>
+        </div>
+        <div class="std-pricing-establishment-item" (click)="selectEstablishment('university')">
+          <p>{{ establishment.university.title }}</p>
+        </div>
+        <div class="std-pricing-establishment-item" (click)="selectEstablishment('universityApprenticeship')">
+          <p>{{ establishment.universityApprenticeship.title }}</p>
+        </div>
+      </div>
+    </div>
+    <div class="std-pricing-features">
+      <ul class="std-pricing-features-list">
+        @for (item of features; track item) {
+          <li class="std-pricing-feature-item">
+            <std-svg path="/icons/check.svg"></std-svg>
+            <p>{{ item.title | translate }}</p>
+            <std-svg path="/icons/info.svg"></std-svg>
+          </li>
+        }
+      </ul>
+      <div class="std-pricing-options">
+        <div class="std-pricing-option-item">
+          <div class="std-pricing-option-title-bloc">
+            <div class="std-pricing-option-title-left">
+              <p>Cours en visio</p>
+              <std-svg path="/icons/info.svg"></std-svg>
+            </div>
+            <div class="std-pricing-option-right">
+              <div class="std-pricing-option-check" (click)="handleCheck()"></div>
+            </div>
+          </div>
+          <p class="std-pricing-option-price">99 € par mois*</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

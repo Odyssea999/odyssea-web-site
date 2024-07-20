@@ -1,0 +1,5 @@
+@if (navigateTo() !== undefined) {
+  <a routerLink="{{ navigateTo() }}" [ngClass]="setClassesStyle()">{{ content() }}</a>
+} @else {
+  <button [ngClass]="setClassesStyle()">{{ content() }}</button>
+}

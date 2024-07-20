@@ -1,0 +1,60 @@
+<div class="std-container">
+  <div class="std-customer-container">
+    <section class="std-customer-top">
+      <div class="std-customer-top-content">
+        <div class="std-customer-top-logo-content">
+          <div class="std-customer-top-logo">
+            <std-svg routerLink="/" path="/images/logo.svg"></std-svg>
+          </div>
+        </div>
+        <div class="std-customer-information">
+          <p class="std-customer-step-title">
+            Quelques informations
+          </p>
+          <std-stepper-count-tracker [initialValue]="1" [totalSteps]="7"></std-stepper-count-tracker>
+        </div>
+      </div>
+      <div class="std-customer-top-stepper">
+        <std-stepper [initialStep]="1" [totalSteps]="7"></std-stepper>
+      </div>
+    </section>
+    <section class="std-customer-bottom">
+      <div class="std-customer-bottom-content">
+        <div class="std-customer-bottom-question-title">
+          <h2>Combien d’étudiants et collaborateurs avez-vous ?</h2>
+        </div>
+        <div class="std-customer-bottom-question">
+          <form class="std-form-group">
+            <div class="std-form-control-wrapper">
+              <std-select label="Nombre d'étudiants" defaultOption="10-49 étudiants">
+                <std-select-option-group>
+                  <std-select-option label="1-10 étudiants"></std-select-option>
+                  <std-select-option label="11-30 étudiants"></std-select-option>
+                </std-select-option-group>
+              </std-select>
+            </div>
+            <div class="std-form-control-wrapper">
+              <std-select
+                label="Nombre de collaborateurs"
+                defaultOption="1-10 collaborateurs">
+                <std-select-option-group>
+                  <std-select-option label="1-10 collaborateurs"></std-select-option>
+                  <std-select-option label="11-30 collaborateurs"></std-select-option>
+                </std-select-option-group>
+              </std-select>
+            </div>
+          </form>
+          <div class="std-customer-bottom-btn">
+            <std-button content="Continuer" [outlined]="false"></std-button>
+          </div>
+          <div class="std-customer-help">
+            <a href="">Un problème ?</a>
+          </div>
+          <div class="std-customer-information-need">
+            <p>Quelles informations sont requises pour l'inscription ?</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>

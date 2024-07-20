@@ -1,0 +1,73 @@
+{
+  "HOME": {
+    "navbar": {
+      "pricing": "Become customer",
+      "solution": "Our solution",
+      "faq": "Q&A",
+      "whyUs": "Why StudentCheck?",
+      "login": "Log in",
+      "trial": "Request a demo"
+    },
+    "mainSection": {
+      "title": "Transform school administration with our solution.",
+      "offers": "See offers",
+      "subtitle": "Centralize your institution's management. With StudentCheck, you can manage your different cohorts, student grades, and schedules. All this with integrated instant messaging, video courses, activity tracking, QR code attendance, and much more."
+    },
+    "mainSection2": {
+      "title": "No need to use multiple management solutions",
+      "subtitle": "More than just a solution. StudentCheck is the Swiss army knife for managing your institution.",
+      "cards": {
+        "item1": {
+          "title": "Report your presence",
+          "content": "Students can report their presence in seconds by scanning a QR code, significantly reducing the time required for manual attendance tracking."
+        },
+        "item2": {
+          "title": "Simplify schedule management",
+          "content": "Significantly reduce the time spent on creating and modifying schedules. Fewer human errors thanks to automation and data validation."
+        },
+        "item3": {
+          "title": "Real-Time activity tracking",
+          "content": "Track every activity in real-time. From attendance management and scheduling to instant communication, everything is centralized."
+        }
+      }
+    },
+    "mainSection3": {
+      "title": "Centralisez la gestion de votre établissement",
+      "cards": {
+        "item1": {
+          "title": "Une migration simplifiée et rapide",
+          "content": "Gagnez du temps en important vos listes d'élèves exportées d'une autre solution pour créer des classes rapidement."
+        },
+        "item2": {
+          "title": "Une migration simplifiée et rapide"
+        }
+      }
+    },
+    "mainSection5": {
+      "title": "Rejoignez la révolution de la gestion scolaire."
+    }
+  },
+  "FOOTER": {
+    "company": {
+      "title": "Société",
+      "link1": "Pourquoi StudentCheck"
+    },
+    "navigation": {
+      "title": "Navigation",
+      "pricing": "Nos offres",
+      "solution": "Notre solution",
+      "faq": "FAQ",
+      "whyUs": "Pourquoi StudentCheck?"
+    },
+    "customer": {
+      "title": "Client",
+      "login": "Connexion",
+      "report": "Remonter un problème"
+    },
+    "legals": {
+      "copyright": "© 2024 StudentCheck. Tous droits réservés.",
+      "politics": "Politique de confidentialité",
+      "termOfUse": "Conditions d’utilisation"
+    }
+  }
+}

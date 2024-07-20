@@ -1,0 +1,25 @@
+@use '../form';
+@use '../../../../shared/styles/variables';
+
+.std-form-input-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .std-form-input-label {
+
+    p {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .std-form-input-error-message {
+    padding-top: 0.5rem;
+
+    p {
+      font-size: 1rem;
+      color: #e05151;
+    }
+  }
+}
