@@ -15,6 +15,8 @@ import {StepperComponent} from "../../shared/components/stepper/stepper.componen
 import {
   StepperCountTracker
 } from "../../shared/components/stepper/components/stepper-count-tracker/stepper-count-tracker.component";
+import {StaffInformationComponent} from "./components/forms/staff-information/staff-information.component";
+import {SchoolInformationComponent} from "./components/forms/school-information/school-information.component";
 
 @Component({
   selector: 'std-customer',
@@ -29,7 +31,9 @@ import {
     SelectOptionComponent,
     InputComponent,
     StepperComponent,
-    StepperCountTracker
+    StepperCountTracker,
+    StaffInformationComponent,
+    SchoolInformationComponent
   ],
   templateUrl: './customer.component.html',
   styleUrl: './customer.component.scss',

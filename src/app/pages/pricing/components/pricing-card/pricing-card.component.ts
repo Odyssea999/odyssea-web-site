@@ -114,7 +114,7 @@ export class PricingCardComponent implements OnInit, OnDestroy {
 
   pricing(): void {
     this.onPriceChange = this.pricingService.$totalPrice.subscribe((prices) => {
-      this.totalPrice = prices.normalPrice;
+      this.totalPrice = Math.round(prices.normalPrice);
       this.bestSellerPrice = prices.bestSellerPrice;
     });
   }

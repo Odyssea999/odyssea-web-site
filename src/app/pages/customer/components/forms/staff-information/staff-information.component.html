@@ -1,0 +1,35 @@
+
+<div class="std-customer-bottom-question-title">
+  <h2>Combien d’étudiants et collaborateurs avez-vous ?</h2>
+</div>
+<div class="std-customer-bottom-question">
+  <form class="std-form-group">
+    <div class="std-form-control-wrapper">
+      <std-select label="Nombre d'étudiants" defaultOption="10-49 étudiants">
+        <std-select-option-group>
+          <std-select-option label="1-10 étudiants"></std-select-option>
+          <std-select-option label="11-30 étudiants"></std-select-option>
+        </std-select-option-group>
+      </std-select>
+    </div>
+    <div class="std-form-control-wrapper">
+      <std-select
+        label="Nombre de collaborateurs"
+        defaultOption="1-10 collaborateurs">
+        <std-select-option-group>
+          <std-select-option label="1-10 collaborateurs"></std-select-option>
+          <std-select-option label="11-30 collaborateurs"></std-select-option>
+        </std-select-option-group>
+      </std-select>
+    </div>
+  </form>
+  <div class="std-customer-bottom-btn">
+    <std-button content="Continuer" [outlined]="false"></std-button>
+  </div>
+  <div class="std-customer-help">
+    <a href="">Un problème ?</a>
+  </div>
+  <div class="std-customer-information-need">
+    <p>Quelles informations sont requises pour l'inscription ?</p>
+  </div>
+</div>

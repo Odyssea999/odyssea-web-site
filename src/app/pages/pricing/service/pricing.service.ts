@@ -13,7 +13,7 @@ export class PricingService implements IPricingInterface, OnDestroy {
   /// Thus we can adapt price on client needs
   defaultMaximumStudentNumber: number = 500;
   /// Each student cost 5 bucks
-  defaultStudentPricing: number = 5;
+  defaultStudentPricing: number = 15.99;
 
   /// Percentage of discount to apply for yearly payment
   /// TODO : TO IMPLEMENT
