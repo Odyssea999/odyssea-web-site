@@ -30,7 +30,7 @@ npm run serve:ssr:odyssea-web-site
 
 ## Vercel deployment
 
-If you deploy on Vercel with a standard frontend build, the email endpoint is handled by the Vercel Function at [api/become-customer.ts](/Users/jeuneb/Documents/workspace/odyssea/odyssea-web-site/api/become-customer.ts).
+If you deploy on Vercel with a standard frontend build, the email endpoint is handled by the Vercel Function at [api/become-customer.js](/Users/jeuneb/Documents/workspace/odyssea/odyssea-web-site/api/become-customer.js).
 
 The project also includes a minimal [vercel.json](/Users/jeuneb/Documents/workspace/odyssea/odyssea-web-site/vercel.json) that:
 
