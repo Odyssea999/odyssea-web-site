@@ -1,4 +1,4 @@
-const nodemailer = require('nodemailer');
+import nodemailer from 'nodemailer';
 
 function getEmailConfigFromEnv() {
   const host = process.env.EMAIL_HOST;
@@ -108,7 +108,7 @@ async function sendBecomeCustomerEmail(payload, config) {
   });
 }
 
-module.exports = async (req, res) => {
+export default async function handler(req, res) {
   if (req.method !== 'POST') {
     return res.status(405).json({ message: 'Method not allowed.' });
   }
@@ -132,4 +132,4 @@ module.exports = async (req, res) => {
     console.error('Failed to send become-customer email', error);
     return res.status(500).json({ message: 'Failed to send email.' });
   }
-};
+}
