@@ -44,7 +44,7 @@ export class AboutComponent implements OnInit {
   constructor(
     private readonly seoService: SeoService,
     private readonly translate: TranslateService
-  ) {}
+  ) { }
 
   ngOnInit(): void {
     this.initSeoWithTranslations();
@@ -70,7 +70,7 @@ export class AboutComponent implements OnInit {
       creator: 'Odyssea'
     });
     this.seoService.setFacebookMetaTags({
-      url: 'https://odyssea-web-site.vercel.app/about',
+      url: 'https://odyssea-web-site-jiik.vercel.app/about',
       type: 'website',
       image: '/images/og-image.png',
       title

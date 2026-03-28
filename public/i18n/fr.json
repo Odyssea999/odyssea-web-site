@@ -370,6 +370,136 @@
       "seo": {
         "title": "Demander une démo Odyssea | Démarrer votre accompagnement",
         "description": "Partagez quelques informations sur votre établissement pour démarrer l’échange et découvrir l’accompagnement Odyssea."
+      },
+      "steps": {
+        "1": {
+          "title": "Vos coordonnées",
+          "subtitle": "Commençons par la personne de contact qui portera l’échange avec Odyssea."
+        },
+        "2": {
+          "title": "Votre établissement",
+          "subtitle": "Nous avons besoin de quelques repères sur votre structure pour cadrer l’accompagnement."
+        },
+        "3": {
+          "title": "Votre volumétrie",
+          "subtitle": "Cela nous aide à projeter une mise en place réaliste et adaptée à votre organisation."
+        },
+        "4": {
+          "title": "Vos besoins prioritaires",
+          "subtitle": "Sélectionnez les sujets sur lesquels vous souhaitez avancer en premier."
+        },
+        "5": {
+          "title": "Votre timing",
+          "subtitle": "Dites-nous quand vous souhaitez avancer et quel objectif compte le plus pour vous."
+        },
+        "6": {
+          "title": "Format de l’échange",
+          "subtitle": "Choisissez la manière la plus pratique pour organiser la démo ou le premier échange."
+        },
+        "7": {
+          "title": "Validation finale",
+          "subtitle": "Ajoutez un dernier contexte utile puis confirmez votre demande."
+        }
+      },
+      "fields": {
+        "firstName": "Prénom",
+        "lastName": "Nom",
+        "workEmail": "Email professionnel",
+        "phone": "Téléphone",
+        "institutionName": "Nom de l’établissement",
+        "institutionType": "Type d’établissement",
+        "country": "Pays",
+        "city": "Ville",
+        "studentsRange": "Nombre d’élèves / apprenants",
+        "staffRange": "Nombre de collaborateurs",
+        "needs": "Quels sujets souhaitez-vous centraliser ?",
+        "timeline": "Quand souhaitez-vous démarrer ?",
+        "priority": "Quelle est votre priorité principale ?",
+        "demoFormat": "Format souhaité pour la démo",
+        "preferredContact": "Canal de contact préféré",
+        "comments": "Contexte complémentaire",
+        "acceptTerms": "Je confirme vouloir être recontacté par l’équipe Odyssea pour organiser la suite."
+      },
+      "placeholders": {
+        "firstName": "Votre prénom",
+        "lastName": "Votre nom",
+        "workEmail": "vous@etablissement.fr",
+        "phone": "+33 6 00 00 00 00",
+        "institutionName": "Nom de votre établissement",
+        "country": "France",
+        "city": "Paris",
+        "comments": "Décrivez votre contexte, vos outils actuels ou ce que vous souhaitez améliorer.",
+        "chooseOption": "Choisir une option"
+      },
+      "options": {
+        "institutionTypes": {
+          "middleSchool": "Collège",
+          "highSchool": "Lycée",
+          "cfa": "CFA",
+          "university": "Université",
+          "trainingCenter": "Centre de formation"
+        },
+        "sizeRanges": {
+          "1": "1 à 49",
+          "2": "50 à 149",
+          "3": "150 à 299",
+          "4": "300 à 549",
+          "5": "550 et plus"
+        },
+        "needs": {
+          "ged": "GED et documents",
+          "planning": "Planning et organisation",
+          "tracking": "Suivi de l’activité",
+          "communication": "Communication interne",
+          "billing": "Facturation ou gestion annexe"
+        },
+        "timeline": {
+          "immediate": "Dès que possible",
+          "oneMonth": "Dans le mois",
+          "quarter": "Dans le trimestre",
+          "exploratory": "Je suis en phase d’exploration"
+        },
+        "priority": {
+          "centralize": "Centraliser nos outils",
+          "saveTime": "Gagner du temps au quotidien",
+          "improveTracking": "Mieux suivre l’activité",
+          "improveCommunication": "Fluidifier la communication"
+        },
+        "demoFormat": {
+          "video": "Visioconférence",
+          "phone": "Appel téléphonique",
+          "onsite": "À discuter sur site"
+        },
+        "contact": {
+          "email": "Par email",
+          "phone": "Par téléphone",
+          "either": "Les deux me conviennent"
+        }
+      },
+      "help": {
+        "needs": "Vous pouvez sélectionner plusieurs besoins si nécessaire.",
+        "support": "Un problème ou une question ? Nous reviendrons vers vous pour vous guider."
+      },
+      "errors": {
+        "required": "Ce champ est requis.",
+        "email": "Veuillez saisir une adresse email valide.",
+        "chooseNeed": "Sélectionnez au moins un besoin.",
+        "acceptTerms": "Vous devez confirmer votre demande pour continuer."
+      },
+      "actions": {
+        "previous": "Retour",
+        "next": "Continuer",
+        "submit": "Envoyer ma demande"
+      },
+      "summary": {
+        "title": "Récapitulatif rapide"
+      },
+      "success": {
+        "badge": "Demande envoyée",
+        "title": "Votre parcours d’inscription est prêt.",
+        "subtitle": "Nous avons bien reçu vos informations. L’équipe Odyssea pourra désormais préparer un échange plus pertinent et revenir vers vous rapidement.",
+        "summaryTitle": "Informations transmises",
+        "backHome": "Retour à l’accueil"
       }
     }
   }

@@ -101,7 +101,7 @@ export class FeaturesComponent implements OnInit {
       creator: 'Odyssea'
     });
     this.seoService.setFacebookMetaTags({
-      url: 'https://odyssea-web-site.vercel.app/features',
+      url: 'https://odyssea-web-site-jiik.vercel.app/features',
       type: 'website',
       image: '/images/og-image.png',
       title

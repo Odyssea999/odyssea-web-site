@@ -5,124 +5,343 @@
 @include mixins.container {
   .od-customer-container {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
+  }
 
-    .od-customer-top {
+  .od-customer-top {
+    width: 100%;
+    padding: 1rem 2rem;
+    background: variables.$white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid rgba(84, 104, 125, 0.12);
+  }
+
+  .od-customer-top-content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .od-customer-top-content > div:first-child {
+    width: 40%;
+  }
+
+  .od-customer-top-logo > od-svg {
+    cursor: pointer;
+  }
+
+  .od-customer-information {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 1.5rem;
+    gap: 1rem;
+
+    p {
+      font-size: 1rem;
+      font-weight: 600;
+      color: variables.$light_text_primary_color;
+    }
+  }
+
+  .od-customer-top-stepper {
+    width: 60%;
+    padding-top: 1rem;
+  }
+
+  .od-customer-bottom {
+    background:
+      radial-gradient(circle at top left, rgba(88, 70, 163, 0.08), transparent 30%),
+      variables.$light_landing_main_section_bg;
+    width: 100%;
+    padding: 4rem 1.5rem;
+    flex: 1 1 auto;
+  }
+
+  .od-customer-bottom-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 3rem;
+  }
+
+  .od-customer-bottom-question-title {
+    width: min(100%, 52rem);
+    padding-bottom: 2rem;
+
+    h2 {
+      font-size: 2.25rem;
+      color: #10083c;
+      margin-bottom: 0.65rem;
+    }
+
+    p {
+      font-size: 1.08rem;
+      line-height: 1.7;
+      color: variables.$light_text_secondary_color;
+      max-width: 46rem;
+    }
+  }
+
+  .od-customer-bottom-question {
+    background: variables.$white;
+    width: min(100%, 52rem);
+    border-radius: 22px;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    box-shadow: 0 24px 60px rgba(16, 8, 60, 0.08);
+    border: 1px solid rgba(88, 70, 163, 0.1);
+  }
+
+  .od-customer-form {
+    width: 100%;
+  }
+
+  .od-form-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem 1.25rem;
+  }
+
+  .od-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+
+    span {
+      font-weight: 600;
+      color: variables.$light_text_primary_color;
+    }
+
+    input,
+    select,
+    textarea {
       width: 100%;
-      padding-left: 2rem;
-      padding-right: 2rem;
-      padding-top: 1rem;
-      padding-bottom: 1rem;
-      background: variables.$white;
+      border: 1px solid rgba(84, 104, 125, 0.2);
+      background: #fbfbfd;
+      border-radius: 12px;
+      padding: 0.95rem 1rem;
+      font-family: "Outfit", sans-serif;
+      font-size: 1rem;
+      color: variables.$light_text_primary_color;
+      outline: none;
+      transition: border-color .2s ease, box-shadow .2s ease;
+
+      &:focus {
+        border-color: variables.$light_violet_color;
+        box-shadow: 0 0 0 4px rgba(88, 70, 163, 0.08);
+      }
+    }
+
+    small {
+      color: #d74848;
+      font-size: 0.9rem;
+    }
+  }
+
+  .od-field-full {
+    grid-column: 1 / -1;
+  }
+
+  .od-choice-group {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .od-choice-group-header {
+    h3 {
+      font-size: 1.2rem;
+      margin-bottom: 0.45rem;
+    }
+
+    p {
+      color: variables.$light_text_secondary_color;
+      line-height: 1.7;
+    }
+  }
+
+  .od-chip-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.9rem;
+  }
+
+  .od-choice-chip {
+    border: 1px solid rgba(84, 104, 125, 0.2);
+    background: #fbfbfd;
+    color: variables.$light_text_primary_color;
+    border-radius: 999px;
+    padding: 0.85rem 1.1rem;
+    font: inherit;
+    cursor: pointer;
+    transition: all .2s ease;
+
+    &.is-selected {
+      border-color: variables.$light_violet_color;
+      background: rgba(88, 70, 163, 0.1);
+      color: variables.$light_violet_color;
+    }
+  }
+
+  .od-checkbox-field {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 0.75rem;
+
+    input {
+      width: auto;
+      margin-top: 0.25rem;
+    }
+
+    span {
+      font-weight: 500;
+      line-height: 1.6;
+    }
+  }
+
+  .od-summary-card {
+    background: rgba(88, 70, 163, 0.06);
+    border: 1px solid rgba(88, 70, 163, 0.1);
+    border-radius: 16px;
+    padding: 1.2rem 1.25rem;
+
+    h3 {
+      font-size: 1.1rem;
+      margin-bottom: 0.65rem;
+    }
+
+    ul {
+      list-style: none;
       display: flex;
       flex-direction: column;
-      align-items: center;
+      gap: 0.4rem;
+      color: variables.$light_text_secondary_color;
+    }
+  }
 
-      .od-customer-top-content {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
+  .od-customer-actions {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding-top: 2rem;
 
-        > div:first-child {
-          width: 40%;
-        }
+    button,
+    a {
+      width: 100%;
+    }
+  }
 
-        .od-customer-top-logo {
-          > od-svg {
-            cursor: pointer;
-          }
-        }
+  .od-btn-disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
 
-        .od-customer-information {
-          width: 60%;
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          padding-right: 1.5rem;
+  .od-customer-help {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 1.35rem;
 
-          p {
-            font-size: 1rem;
-          }
-        }
-      }
+    p {
+      text-decoration: none;
+      font-size: 0.95rem;
+      color: variables.$light_text_color;
+    }
+  }
+
+  .od-block-error {
+    color: #d74848;
+    font-size: 0.9rem;
+  }
+
+  .od-customer-success {
+    align-items: flex-start;
+    gap: 1.2rem;
+
+    h2 {
+      font-size: 2.1rem;
+      color: #10083c;
+    }
+
+    p {
+      color: variables.$light_text_secondary_color;
+      line-height: 1.7;
+      max-width: 38rem;
+    }
+  }
+
+  .od-customer-success-badge {
+    background: rgba(88, 70, 163, 0.12);
+    color: variables.$light_violet_color;
+    border-radius: 999px;
+    padding: 0.45rem 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 0.78rem;
+  }
+
+  @include mixins.medium {
+    .od-customer-top-content,
+    .od-customer-information {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .od-customer-top-content > div:first-child,
+    .od-customer-information,
+    .od-customer-top-stepper {
+      width: 100%;
+      padding-right: 0;
+    }
+  }
+
+  @include mixins.small {
+    .od-customer-top,
+    .od-customer-bottom {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+
+    .od-customer-bottom-question {
+      padding: 1.4rem;
+    }
+
+    .od-customer-bottom-question-title h2 {
+      font-size: 1.85rem;
+    }
+
+    .od-form-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .od-customer-actions {
+      flex-direction: column;
+    }
+  }
+
+  @include mixins.x-small {
+    .od-customer-top {
+      padding: 1rem;
     }
 
     .od-customer-bottom {
-      background: variables.$light_landing_main_section_bg;
-      width: 100%;
-      padding-top: 5rem;
-      height: 100%;
+      padding: 2rem 0.75rem;
+    }
 
-      .od-customer-bottom-content {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-bottom: 4rem;
-
-        .od-customer-bottom-question-title {
-          width: 60%;
-          padding-bottom: 3rem;
-
-          h2 {
-            font-size: 2rem;
-          }
-        }
-
-        .od-customer-bottom-question {
-          background: variables.$white;
-          width: 60%;
-          border-radius: 7px;
-          overflow: hidden;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          padding-top: 2rem;
-          padding-right: 2rem;
-          padding-left: 2rem;
-          padding-bottom: 3rem;
-
-          .od-customer-bottom-btn {
-            width: 40%;
-          }
-
-          .od-customer-help {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding-top: 2rem;
-
-            a {
-              text-decoration: none;
-              font-size: 1rem;
-              color: variables.$light_text_color;
-            }
-          }
-
-          .od-customer-information-need {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding-top: 2rem;
-
-            p {
-              text-decoration: none;
-              font-size: 0.8rem;
-              color: variables.$light_text_color;
-              cursor: pointer;
-            }
-          }
-        }
-      }
+    .od-customer-bottom-question-title h2 {
+      font-size: 1.6rem;
     }
   }
-}
-
-.od-customer-top-stepper {
-  width: 60%;
 }

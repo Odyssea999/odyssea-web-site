@@ -74,7 +74,7 @@ export class HowItWorksComponent implements OnInit {
       creator: 'Odyssea'
     });
     this.seoService.setFacebookMetaTags({
-      url: 'https://odyssea-web-site.vercel.app/how-it-works',
+      url: 'https://odyssea-web-site-jiik.vercel.app/how-it-works',
       type: 'website',
       image: '/images/og-image.png',
       title

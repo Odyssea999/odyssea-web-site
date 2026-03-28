@@ -78,7 +78,7 @@ export class FaqComponent implements OnInit {
       creator: 'Odyssea'
     });
     this.seoService.setFacebookMetaTags({
-      url: 'https://odyssea-web-site.vercel.app/faq',
+      url: 'https://odyssea-web-site-jiik.vercel.app/faq',
       type: 'website',
       image: '/images/og-image.png',
       title

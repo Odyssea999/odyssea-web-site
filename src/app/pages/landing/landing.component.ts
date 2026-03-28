@@ -97,7 +97,7 @@ export class LandingComponent implements OnInit, OnDestroy {
     });
 
     this.seoService.setFacebookMetaTags({
-      url: 'https://odyssea-web-site.vercel.app',
+      url: 'https://odyssea-web-site-jiik.vercel.app',
       type: 'website',
       image: '/images/og-image.png',
       title: title

@@ -129,7 +129,7 @@ export class PricingComponent implements OnInit {
       creator: 'Odyssea'
     });
     this.seoService.setFacebookMetaTags({
-      url: 'https://odyssea-web-site.vercel.app/pricing',
+      url: 'https://odyssea-web-site-jiik.vercel.app/pricing',
       type: 'website',
       image: '/images/og-image.png',
       title
