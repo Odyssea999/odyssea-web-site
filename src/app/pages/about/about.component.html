@@ -1,0 +1,49 @@
+<div class="od-container">
+  <od-navbar></od-navbar>
+  <main class="od-page">
+    <section class="od-page-hero">
+      <p class="od-page-eyebrow">{{ 'PAGES.about.eyebrow' | translate }}</p>
+      <h1>{{ 'PAGES.about.hero.title' | translate }}</h1>
+      <p class="od-page-subtitle">{{ 'PAGES.about.hero.subtitle' | translate }}</p>
+    </section>
+
+    <section class="od-page-section od-split">
+      <article class="od-panel">
+        <h2>{{ 'PAGES.about.story.title' | translate }}</h2>
+        <p>{{ 'PAGES.about.story.paragraph1' | translate }}</p>
+        <p>{{ 'PAGES.about.story.paragraph2' | translate }}</p>
+      </article>
+      <article class="od-panel od-panel-accent">
+        <h2>{{ 'PAGES.about.vision.title' | translate }}</h2>
+        <p>{{ 'PAGES.about.vision.content' | translate }}</p>
+      </article>
+    </section>
+
+    <section class="od-page-section">
+      <div class="od-page-section-heading">
+        <h2>{{ 'PAGES.about.valuesSection.title' | translate }}</h2>
+        <p>{{ 'PAGES.about.valuesSection.subtitle' | translate }}</p>
+      </div>
+      <div class="od-value-grid">
+        @for (value of values; track value.title) {
+          <article class="od-panel">
+            <h3>{{ value.title | translate }}</h3>
+            <p>{{ value.content | translate }}</p>
+          </article>
+        }
+      </div>
+    </section>
+
+    <section class="od-page-section od-page-cta">
+      <div>
+        <h2>{{ 'PAGES.about.cta.title' | translate }}</h2>
+        <p>{{ 'PAGES.about.cta.subtitle' | translate }}</p>
+      </div>
+      <div class="od-page-cta-action">
+        <od-button [navigateTo]="'/how-it-works'" [outlined]="false" content="{{ 'PAGES.about.cta.button' | translate }}"></od-button>
+      </div>
+    </section>
+  </main>
+  <od-banner></od-banner>
+  <od-footer></od-footer>
+</div>

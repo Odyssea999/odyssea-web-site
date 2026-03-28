@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { SeoService } from "../../shared/services/seo/seo.service";
-import { TranslateModule } from "@ngx-translate/core";
+import { TranslateModule, TranslateService } from "@ngx-translate/core";
 import { NavbarComponent } from "../../shared/components/navbar/navbar.component";
 import { ButtonComponent } from "../../shared/components/button/button.component";
 import { FooterComponent } from "../../shared/components/footer/footer.component";
@@ -8,11 +8,14 @@ import { LandingCardComponent } from "./components/landing-card/landing-card.com
 import { LandingCard } from "./type/type";
 import { SvgComponent } from "../../shared/components/svg/svg.component";
 import { BannerComponent } from "../../shared/components/banner/banner.component";
+import { CommonModule } from '@angular/common';
+import { forkJoin, Subject, takeUntil } from 'rxjs';
 
 @Component({
   selector: 'od-landing',
   standalone: true,
   imports: [
+    CommonModule,
     TranslateModule,
     NavbarComponent,
     ButtonComponent,
@@ -25,10 +28,13 @@ import { BannerComponent } from "../../shared/components/banner/banner.component
   templateUrl: './landing.component.html',
   styleUrl: './landing.component.scss'
 })
-export class LandingComponent implements OnInit {
+export class LandingComponent implements OnInit, OnDestroy {
+  private destroy$ = new Subject<void>();
 
-  private readonly title: string = "{{ 'HOME.mainSection3.cards.item1.title' | translate }}";
-  private readonly description: string = "ma description"
+  private readonly SEO_KEYS = {
+    title: 'HOME.mainSection3.cards.item1.title',
+    description: 'HOME.mainSection3.cards.item1.content'
+  };
 
   landingCardData: Array<LandingCard> = [
     {
@@ -43,41 +49,58 @@ export class LandingComponent implements OnInit {
       imgSrc: '/images/landing_activity.png',
       svgIcon: "/icons/tracking_activity.svg"
     }
-  ]
+  ];
 
   imgSrc: string;
 
-  constructor(private readonly seoService: SeoService) {
-    this.handleSeoMetaTags();
+  constructor(
+    private readonly seoService: SeoService,
+    private readonly translate: TranslateService
+  ) {
     this.imgSrc = this.landingCardData[0].imgSrc;
   }
 
   ngOnInit(): void {
+    this.initSeoWithTranslations();
+  }
 
+  ngOnDestroy(): void {
+    this.destroy$.next();
+    this.destroy$.complete();
   }
 
   updateImgOnLandingCardSelected(imgPath: string): void {
     this.imgSrc = imgPath;
   }
 
-  private handleSeoMetaTags(): void {
-    this.seoService.setMetaTitle(this.title);
-    this.seoService.setMetaDescription(this.description);
+  private initSeoWithTranslations(): void {
+    forkJoin({
+      title: this.translate.get(this.SEO_KEYS.title),
+      description: this.translate.get(this.SEO_KEYS.description)
+    })
+      .pipe(takeUntil(this.destroy$))
+      .subscribe(({ title, description }) => {
+        this.applySeo(title, description);
+      });
+  }
+
+  private applySeo(title: string, description: string): void {
+    this.seoService.setMetaTitle(title);
+    this.seoService.setMetaDescription(description);
 
     this.seoService.setTwitterMetaTags({
-      image: 'nada',
-      title: this.title,
-      description: this.description,
+      image: '/images/og-image.png',
+      title: title,
+      description: description,
       card: 'summary_large_image',
-      creator: 'Student check'
+      creator: 'Odyssea'
     });
 
     this.seoService.setFacebookMetaTags({
-      url: 'https://localhost:62841',
+      url: 'https://odyssea-web-site-jiik.vercel.app',
       type: 'website',
-      image: 'path or url image here',
-      title: this.title
-    })
+      image: '/images/og-image.png',
+      title: title
+    });
   }
-
 }

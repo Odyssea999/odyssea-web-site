@@ -1,0 +1,160 @@
+@use "../../shared/styles/variables";
+@use "../../shared/styles/mixins";
+
+@include mixins.container {
+  .od-page {
+    padding: 2rem variables.$container_padding_right 4rem variables.$container_padding_left;
+  }
+
+  .od-page-eyebrow {
+    color: variables.$light_violet_color;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  .od-page-hero {
+    max-width: 58rem;
+
+    h1 {
+      font-size: 3.3rem;
+      line-height: 1.08;
+      color: variables.$light_text_primary_color;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .od-page-subtitle,
+  .od-panel p,
+  .od-page-section-heading p,
+  .od-page-cta p {
+    color: variables.$light_text_secondary_color;
+    font-size: 1.08rem;
+    line-height: 1.75;
+  }
+
+  .od-page-section {
+    padding-top: 2.4rem;
+  }
+
+  .od-split,
+  .od-value-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+  }
+
+  .od-value-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .od-panel,
+  .od-page-cta {
+    background: rgba(255, 255, 255, 0.78);
+    border: 1px solid rgba(88, 70, 163, 0.1);
+    border-radius: 24px;
+    padding: 2rem;
+    box-shadow: 0 20px 45px rgba(16, 8, 60, 0.04);
+  }
+
+  .od-panel-accent {
+    background: linear-gradient(145deg, rgba(88, 70, 163, 0.94), rgba(16, 8, 60, 0.94));
+
+    h2,
+    p {
+      color: variables.$white;
+    }
+  }
+
+  .od-page-section-heading {
+    max-width: 38rem;
+    margin-bottom: 1.4rem;
+
+    h2 {
+      font-size: 2.15rem;
+      margin-bottom: 0.6rem;
+    }
+  }
+
+  .od-panel h2,
+  .od-panel h3,
+  .od-page-cta h2 {
+    color: variables.$light_text_primary_color;
+    margin-bottom: 0.8rem;
+  }
+
+  .od-page-cta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+
+    h2 {
+      font-size: 1.9rem;
+    }
+  }
+
+  .od-page-cta-action {
+    width: 17rem;
+    flex-shrink: 0;
+  }
+
+  @include mixins.medium {
+    .od-page {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+
+    .od-value-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @include mixins.small {
+    .od-page {
+      padding-left: 1.25rem;
+      padding-right: 1.25rem;
+    }
+
+    .od-page-hero h1 {
+      font-size: 2.7rem;
+    }
+
+    .od-split,
+    .od-value-grid,
+    .od-page-cta {
+      grid-template-columns: 1fr;
+      display: grid;
+    }
+
+    .od-page-cta-action {
+      width: 100%;
+    }
+  }
+
+  @include mixins.x-small {
+    .od-page {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+
+    .od-page-hero h1 {
+      font-size: 2.25rem;
+    }
+
+    .od-split,
+    .od-value-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .od-page-cta {
+      flex-direction: column;
+      padding: 1.4rem;
+    }
+
+    .od-page-cta-action {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,56 @@
+<div class="od-container">
+  <od-navbar></od-navbar>
+  <main class="od-page">
+    <section class="od-page-hero">
+      <div class="od-page-hero-copy">
+        <p class="od-page-eyebrow">{{ 'PAGES.features.eyebrow' | translate }}</p>
+        <h1>{{ 'PAGES.features.hero.title' | translate }}</h1>
+        <p class="od-page-subtitle">{{ 'PAGES.features.hero.subtitle' | translate }}</p>
+        <div class="od-page-actions">
+          <od-button [navigateTo]="'/become-customer'" [outlined]="false" content="{{ 'HOME.navbar.trial' | translate }}"></od-button>
+          <od-button [navigateTo]="'/how-it-works'" [outlined]="true" content="{{ 'PAGES.features.hero.secondaryCta' | translate }}"></od-button>
+        </div>
+      </div>
+      <div class="od-page-hero-panel">
+        <h2>{{ 'PAGES.features.panel.title' | translate }}</h2>
+        <ul>
+          @for (highlight of highlights; track highlight) {
+            <li>{{ highlight | translate }}</li>
+          }
+        </ul>
+      </div>
+    </section>
+
+    <section class="od-page-section">
+      <div class="od-page-section-heading">
+        <h2>{{ 'PAGES.features.section.title' | translate }}</h2>
+        <p>{{ 'PAGES.features.section.subtitle' | translate }}</p>
+      </div>
+      <div class="od-feature-grid">
+        @for (group of featureGroups; track group.title) {
+          <article class="od-feature-card">
+            <h3>{{ group.title | translate }}</h3>
+            <p>{{ group.description | translate }}</p>
+            <ul>
+              @for (item of group.items; track item) {
+                <li>{{ item | translate }}</li>
+              }
+            </ul>
+          </article>
+        }
+      </div>
+    </section>
+
+    <section class="od-page-section od-page-cta">
+      <div>
+        <h2>{{ 'PAGES.features.cta.title' | translate }}</h2>
+        <p>{{ 'PAGES.features.cta.subtitle' | translate }}</p>
+      </div>
+      <div class="od-page-cta-action">
+        <od-button [navigateTo]="'/how-it-works'" [outlined]="false" content="{{ 'PAGES.features.cta.button' | translate }}"></od-button>
+      </div>
+    </section>
+  </main>
+  <od-banner></od-banner>
+  <od-footer></od-footer>
+</div>

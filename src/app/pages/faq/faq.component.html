@@ -1,0 +1,32 @@
+<div class="od-container">
+  <od-navbar></od-navbar>
+  <main class="od-page">
+    <section class="od-page-hero">
+      <p class="od-page-eyebrow">{{ 'PAGES.faq.eyebrow' | translate }}</p>
+      <h1>{{ 'PAGES.faq.hero.title' | translate }}</h1>
+      <p class="od-page-subtitle">{{ 'PAGES.faq.hero.subtitle' | translate }}</p>
+    </section>
+
+    <section class="od-faq-list">
+      @for (item of faqItems; track item.question) {
+        <article class="od-faq-item">
+          <h2>{{ item.question | translate }}</h2>
+          <p>{{ item.answer | translate }}</p>
+        </article>
+      }
+    </section>
+
+    <section class="od-page-cta">
+      <div>
+        <h2>{{ 'PAGES.faq.cta.title' | translate }}</h2>
+        <p>{{ 'PAGES.faq.cta.subtitle' | translate }}</p>
+      </div>
+      <div class="od-page-cta-actions">
+        <od-button [navigateTo]="'/how-it-works'" [outlined]="true" content="{{ 'PAGES.faq.cta.secondaryButton' | translate }}"></od-button>
+        <od-button [navigateTo]="'/become-customer'" [outlined]="false" content="{{ 'HOME.navbar.trial' | translate }}"></od-button>
+      </div>
+    </section>
+  </main>
+  <od-banner></od-banner>
+  <od-footer></od-footer>
+</div>

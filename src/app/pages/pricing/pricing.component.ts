@@ -1,7 +1,7 @@
-import { Component, effect } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { NavbarComponent } from "../../shared/components/navbar/navbar.component";
 import { FooterComponent } from "../../shared/components/footer/footer.component";
-import { TranslateModule } from "@ngx-translate/core";
+import { TranslateModule, TranslateService } from "@ngx-translate/core";
 import { ButtonComponent } from "../../shared/components/button/button.component";
 import { BannerComponent } from "../../shared/components/banner/banner.component";
 import { SvgComponent } from "../../shared/components/svg/svg.component";
@@ -9,6 +9,8 @@ import { PricingCardComponent } from "./components/pricing-card/pricing-card.com
 import { PricingSlider } from "./type/pricing.type";
 import { NgClass } from "@angular/common";
 import { PricingService } from "./service/pricing.service";
+import { SeoService } from "../../shared/services/seo/seo.service";
+import { forkJoin } from "rxjs";
 
 @Component({
   selector: 'od-pricing',
@@ -23,11 +25,15 @@ import { PricingService } from "./service/pricing.service";
     PricingCardComponent,
     NgClass
   ],
-  providers: [PricingService],
+  providers: [PricingService, SeoService],
   templateUrl: './pricing.component.html',
   styleUrl: './pricing.component.scss'
 })
-export class PricingComponent {
+export class PricingComponent implements OnInit {
+  private readonly seoKeys = {
+    title: 'PAGES.pricing.seo.title',
+    description: 'PAGES.pricing.seo.description'
+  };
 
   pricingSlider: Array<PricingSlider> = [
     {
@@ -72,7 +78,15 @@ export class PricingComponent {
     },
   ]
 
-  constructor(private readonly priceService: PricingService) { }
+  constructor(
+    private readonly priceService: PricingService,
+    private readonly seoService: SeoService,
+    private readonly translate: TranslateService
+  ) { }
+
+  ngOnInit(): void {
+    this.initSeoWithTranslations();
+  }
 
   sliderSelected(index: number, slider: PricingSlider): void {
     this.priceService.setStudentNumber(slider.value);
@@ -92,6 +106,33 @@ export class PricingComponent {
       if (index > 0) {
         obj.isSelected = isSelected;
       }
+    });
+  }
+
+  private initSeoWithTranslations(): void {
+    forkJoin({
+      title: this.translate.get(this.seoKeys.title),
+      description: this.translate.get(this.seoKeys.description)
+    }).subscribe(({ title, description }) => {
+      this.applySeo(title, description);
+    });
+  }
+
+  private applySeo(title: string, description: string): void {
+    this.seoService.setMetaTitle(title);
+    this.seoService.setMetaDescription(description);
+    this.seoService.setTwitterMetaTags({
+      image: '/images/og-image.png',
+      title,
+      description,
+      card: 'summary_large_image',
+      creator: 'Odyssea'
+    });
+    this.seoService.setFacebookMetaTags({
+      url: 'https://odyssea-web-site-jiik.vercel.app/pricing',
+      type: 'website',
+      image: '/images/og-image.png',
+      title
     });
   }
 

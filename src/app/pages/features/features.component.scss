@@ -1,0 +1,213 @@
+@use "../../shared/styles/variables";
+@use "../../shared/styles/mixins";
+
+@include mixins.container {
+  .od-page {
+    padding: 2rem variables.$container_padding_right 4rem variables.$container_padding_left;
+    color: variables.$light_text_primary_color;
+  }
+
+  .od-page-hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1.7fr) minmax(280px, 0.9fr);
+    gap: 2rem;
+    align-items: stretch;
+  }
+
+  .od-page-hero-copy,
+  .od-page-hero-panel,
+  .od-feature-card,
+  .od-page-cta {
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(88, 70, 163, 0.12);
+    border-radius: 24px;
+    box-shadow: 0 20px 45px rgba(16, 8, 60, 0.05);
+  }
+
+  .od-page-hero-copy {
+    padding: 3.5rem;
+
+    h1 {
+      font-size: 3.5rem;
+      line-height: 1.05;
+      max-width: 12ch;
+    }
+  }
+
+  .od-page-eyebrow {
+    color: variables.$light_violet_color;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  .od-page-subtitle,
+  .od-page-section-heading p,
+  .od-feature-card p,
+  .od-page-cta p,
+  li {
+    color: variables.$light_text_secondary_color;
+    font-size: 1.08rem;
+    line-height: 1.7;
+  }
+
+  .od-page-actions {
+    display: flex;
+    gap: 1rem;
+    max-width: 29rem;
+    margin-top: 2rem;
+  }
+
+  .od-page-hero-panel {
+    background: linear-gradient(180deg, rgba(88, 70, 163, 0.95), rgba(63, 45, 135, 0.95));
+    color: variables.$white;
+    padding: 2.2rem;
+
+    h2 {
+      font-size: 1.6rem;
+      margin-bottom: 1.2rem;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    li {
+      color: rgba(255, 255, 255, 0.9);
+      padding: 0.95rem 0;
+      border-top: 1px solid rgba(255, 255, 255, 0.16);
+    }
+  }
+
+  .od-page-section {
+    padding-top: 2.5rem;
+  }
+
+  .od-page-section-heading {
+    max-width: 44rem;
+    margin-bottom: 1.75rem;
+
+    h2 {
+      font-size: 2.2rem;
+      margin-bottom: 0.8rem;
+    }
+  }
+
+  .od-feature-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+  }
+
+  .od-feature-card {
+    padding: 2rem;
+
+    h3 {
+      font-size: 1.45rem;
+      margin-bottom: 0.75rem;
+    }
+
+    ul {
+      padding-left: 1.25rem;
+      margin-top: 1rem;
+    }
+  }
+
+  .od-page-cta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 2rem 2.4rem;
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 0.6rem;
+    }
+  }
+
+  .od-page-cta-action {
+    width: 19rem;
+    flex-shrink: 0;
+  }
+
+  @include mixins.medium {
+    .od-page {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+
+    .od-page-hero,
+    .od-feature-grid,
+    .od-page-cta {
+      grid-template-columns: 1fr;
+      display: grid;
+    }
+
+    .od-page-cta-action {
+      width: 100%;
+    }
+  }
+
+  @include mixins.small {
+    .od-page {
+      padding-left: 1.25rem;
+      padding-right: 1.25rem;
+    }
+
+    .od-page-hero,
+    .od-feature-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .od-page-hero-copy {
+      padding: 2rem;
+
+      h1 {
+        font-size: 2.6rem;
+      }
+    }
+
+    .od-page-actions,
+    .od-page-cta {
+      flex-direction: column;
+    }
+
+    .od-page-cta-action {
+      width: 100%;
+    }
+  }
+
+  @include mixins.x-small {
+    .od-page {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+
+    .od-page-hero,
+    .od-feature-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .od-page-hero-copy,
+    .od-page-hero-panel,
+    .od-feature-card,
+    .od-page-cta {
+      padding: 1.4rem;
+    }
+
+    .od-page-hero-copy h1 {
+      font-size: 2.2rem;
+    }
+
+    .od-page-actions,
+    .od-page-cta {
+      flex-direction: column;
+    }
+
+    .od-page-cta-action {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+<div class="od-container">
+  <od-navbar></od-navbar>
+  <main class="od-page">
+    <section class="od-page-hero">
+      <div class="od-page-hero-copy">
+        <p class="od-page-eyebrow">{{ 'PAGES.howItWorks.eyebrow' | translate }}</p>
+        <h1>{{ 'PAGES.howItWorks.hero.title' | translate }}</h1>
+        <p class="od-page-subtitle">{{ 'PAGES.howItWorks.hero.subtitle' | translate }}</p>
+      </div>
+    </section>
+
+    <section class="od-steps">
+      @for (step of steps; track step.title; let index = $index) {
+        <article class="od-step-card">
+          <div class="od-step-index">0{{ index + 1 }}</div>
+          <div class="od-step-body">
+            <h2>{{ step.title | translate }}</h2>
+            <p>{{ step.content | translate }}</p>
+          </div>
+        </article>
+      }
+    </section>
+
+    <section class="od-support-panel">
+      <div>
+        <h2>{{ 'PAGES.howItWorks.support.title' | translate }}</h2>
+        <p>{{ 'PAGES.howItWorks.support.subtitle' | translate }}</p>
+      </div>
+      <div class="od-support-actions">
+        <od-button [navigateTo]="'/features'" [outlined]="true" content="{{ 'PAGES.howItWorks.support.secondaryButton' | translate }}"></od-button>
+        <od-button [navigateTo]="'/become-customer'" [outlined]="false" content="{{ 'PAGES.howItWorks.support.primaryButton' | translate }}"></od-button>
+      </div>
+    </section>
+  </main>
+  <od-banner></od-banner>
+  <od-footer></od-footer>
+</div>

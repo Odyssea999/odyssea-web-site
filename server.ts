@@ -4,6 +4,12 @@ import express from 'express';
 import { fileURLToPath } from 'node:url';
 import { dirname, join, resolve } from 'node:path';
 import bootstrap from './src/main.server';
+import {
+  BecomeCustomerPayload,
+  getEmailConfigFromEnv,
+  hasMissingRequiredField,
+  sendBecomeCustomerEmail
+} from './src/server/become-customer-mail';
 
 // The Express app is exported so that it can be used by serverless Functions.
 export function app(): express.Express {
@@ -16,9 +22,38 @@ export function app(): express.Express {
 
   server.set('view engine', 'html');
   server.set('views', browserDistFolder);
+  server.use(express.json());
 
   // Example Express Rest API endpoints
-  // server.get('/api/**', (req, res) => { });
+  server.post('/api/become-customer', async (req, res) => {
+    const config = getEmailConfigFromEnv();
+
+    if (!config) {
+      return res.status(500).json({
+        message: 'Email configuration is missing.'
+      });
+    }
+
+    const payload = req.body as Partial<BecomeCustomerPayload>;
+
+    if (hasMissingRequiredField(payload)) {
+      return res.status(400).json({
+        message: 'Missing required fields.'
+      });
+    }
+
+    try {
+      await sendBecomeCustomerEmail(payload as BecomeCustomerPayload, config);
+
+      return res.status(200).json({ ok: true });
+    } catch (error) {
+      console.error('Failed to send become-customer email', error);
+      return res.status(500).json({
+        message: 'Failed to send email.'
+      });
+    }
+  });
+
   // Serve static files from /browser
   server.get('**', express.static(browserDistFolder, {
     maxAge: '1y',

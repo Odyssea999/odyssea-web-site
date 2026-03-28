@@ -10,7 +10,7 @@
     "mainSection": {
       "title": "Transformez l'administration scolaire avec notre solution.",
       "offers": "Nos offres",
-      "subtitle": "Centralisez la gestion de votre établissement. Depuis Odyssea, vous pouvez gérer vos différentes promotions, notes des élèves, planning. Tout cela avec  une messagerie instantanée intégrée, cours vidéo, suivi des activités de l’établissement, la possibilité de signaler sa présence par QR Code et bien plus encore."
+      "subtitle": "Centralisez la gestion de votre établissement. Depuis Odyssea, vous pouvez gérer vos différentes promotions, notes des élèves, planning. Tout cela avec une messagerie instantanée intégrée, des cours vidéo, le suivi des activités de l’établissement, la possibilité de signaler sa présence par QR Code et bien plus encore."
     },
     "mainSection2": {
       "title": "Plus besoin d’utiliser plusieurs solutions de gestion",
@@ -39,11 +39,11 @@
         },
         "item2": {
           "title": "Suivi de l'activité en temps réel",
-          "content": "Suivez en temps réel l'activité de votre établissement."
+          "content": "Visualisez les activités importantes de votre établissement et gardez une vue claire sur ce qui se passe au quotidien."
         },
         "item3": {
           "title": "Gérez efficacement vos plannings",
-          "content": ""
+          "content": "Ajustez vos emplois du temps plus rapidement et réduisez les frictions liées aux changements de dernière minute."
         }
       }
     },
@@ -52,15 +52,15 @@
       "cards": {
         "item1": {
           "title": "Transparence",
-          "content": "Pas de mauvaises surprises ! Tarifs, conditions... Tout est convenu d'avance avec vous"
+          "content": "Pas de mauvaises surprises. Tarifs, conditions et cadre d'accompagnement sont définis clairement dès le départ."
         },
         "item2": {
           "title": "Disponibilité",
-          "content": "Nous prenons en compte toutes vos demandes et revenons vers vous en moins d’une demi-journée."
+          "content": "Nous prenons en compte vos demandes avec réactivité pour vous aider à avancer sans laisser les sujets bloqués."
         },
         "item3": {
           "title": "Maintenabilité",
-          "content": "Vous bénéficiez automatiquement des nouvelles évolutions pour rester à la pointe de l’innovation."
+          "content": "Vous bénéficiez automatiquement des évolutions du produit pour garder une solution durable et à jour."
         }
       }
     },
@@ -78,7 +78,8 @@
       "pricing": "Nos offres",
       "solution": "Notre solution",
       "faq": "FAQ",
-      "whyUs": "Pourquoi Odyssea?"
+      "whyUs": "Pourquoi Odyssea?",
+      "howItWorks": "Comment ça marche"
     },
     "customer": {
       "title": "Client",
@@ -86,7 +87,7 @@
       "report": "Remonter un problème"
     },
     "legals": {
-      "copyright": "© 2024 Odyssea. Tous droits réservés.",
+      "copyright": "© 2026 Odyssea. Tous droits réservés.",
       "politics": "Politique de confidentialité",
       "termOfUse": "Conditions d’utilisation"
     }
@@ -110,68 +111,397 @@
       "features": {
         "1": {
           "title": "Scanner sa présence par QR Code",
-          "description": "Toto est mort"
+          "description": "Permettez aux élèves ou apprenants de signaler leur présence rapidement via un QR code."
         },
         "2": {
           "title": "Gestion des emplois du temps",
-          "description": "toto est mort"
+          "description": "Créez, modifiez et diffusez les emplois du temps plus facilement."
         },
         "3": {
           "title": "Gestion du planning",
-          "description": "toto"
+          "description": "Gardez une vue claire sur l'organisation quotidienne de votre établissement."
         },
         "4": {
           "title": "Import et export de la liste des élèves / classes",
-          "description": "toto"
+          "description": "Accélérez la reprise de données et les mises à jour de vos effectifs."
         },
         "5": {
           "title": "Suivi des activités",
-          "description": "toto"
+          "description": "Suivez les actions et événements importants au sein de l'établissement."
         },
         "6": {
           "title": "Gestion des présences / retards / absences",
-          "description": "toto"
+          "description": "Centralisez le suivi de l’assiduité dans un espace unique."
         },
         "7": {
           "title": "Stockage documents des cours",
-          "description": "toto"
+          "description": "Conservez les supports pédagogiques et documents utiles au même endroit."
         },
         "8": {
           "title": "Gestion des actualités",
-          "description": "toto"
+          "description": "Diffusez les informations importantes auprès de votre communauté."
         },
         "9": {
           "title": "Messagerie instantanée",
-          "description": "toto"
+          "description": "Facilitez les échanges du quotidien entre les différents acteurs."
         },
         "10": {
           "title": "Suivi élèves",
-          "description": "toto"
+          "description": "Gardez un meilleur suivi des parcours et situations des élèves."
         },
         "11": {
           "title": "Gestion des tâches",
-          "description": "toto"
+          "description": "Organisez les actions à mener pour l’équipe administrative et pédagogique."
         },
         "12": {
           "title": "Gestion heures de colle",
-          "description": "toto"
+          "description": "Cadrez et tracez les heures de retenue plus simplement."
         },
         "13": {
           "title": "Stockage vidéos cours",
-          "description": "toto"
+          "description": "Mettez à disposition des contenus vidéo dans un espace dédié."
         },
         "14": {
           "title": "Gestion de la facturation",
-          "description": "toto"
+          "description": "Structurez le suivi des éléments liés à la facturation."
         },
         "15": {
           "title": "Gestion des candidatures",
-          "description": "toto"
+          "description": "Suivez plus facilement les demandes et dossiers de candidature."
         },
         "16": {
-          "title": "Congés et absences ( collaborateur )",
-          "description": "toto"
+          "title": "Congés et absences (collaborateur)",
+          "description": "Gardez une meilleure visibilité sur les indisponibilités des collaborateurs."
         }
+      }
+    }
+  },
+  "PAGES": {
+    "features": {
+      "seo": {
+        "title": "Fonctionnalités Odyssea | GED, suivi, organisation et communication",
+        "description": "Découvrez tout ce qu’Odyssea permet de centraliser: GED, organisation quotidienne, suivi d’activité, communication et coordination de votre établissement."
+      },
+      "eyebrow": "Fonctionnalités",
+      "hero": {
+        "title": "La page centrale pour comprendre tout ce qu’Odyssea sait faire.",
+        "subtitle": "GED, organisation quotidienne, suivi de l’activité, communication et coordination: Odyssea rassemble les briques essentielles pour piloter votre établissement avec plus de clarté.",
+        "secondaryCta": "Voir le parcours client"
+      },
+      "panel": {
+        "title": "Ce que vous gagnez"
+      },
+      "highlights": {
+        "1": "Une solution pensée pour centraliser les usages essentiels d’un établissement",
+        "2": "Un accompagnement orienté terrain, pas une simple livraison logicielle",
+        "3": "Une structure flexible qui s’adapte à vos méthodes plutôt que l’inverse"
+      },
+      "section": {
+        "title": "Un outil transverse, pensé pour le quotidien",
+        "subtitle": "Chaque bloc fonctionnel répond à un besoin concret: mieux classer, mieux organiser, mieux suivre et mieux communiquer."
+      },
+      "groups": {
+        "ged": {
+          "title": "Gestion documentaire (GED)",
+          "description": "Centralisez vos documents administratifs et pédagogiques dans un seul espace accessible aux bonnes personnes au bon moment.",
+          "items": {
+            "1": "Classement des documents par promotion, classe ou service",
+            "2": "Partage encadré des supports de cours et pièces administratives",
+            "3": "Historique des mises à jour pour garder une trace des changements"
+          }
+        },
+        "organization": {
+          "title": "Organisation quotidienne",
+          "description": "Évitez les allers-retours entre plusieurs outils et gardez une vision claire des opérations de l'établissement.",
+          "items": {
+            "1": "Gestion des emplois du temps et des modifications de planning",
+            "2": "Suivi des présences, retards et absences",
+            "3": "Pilotage des tâches internes pour l'équipe pédagogique et administrative"
+          }
+        },
+        "tracking": {
+          "title": "Outils de suivi",
+          "description": "Suivez l'activité de l'établissement en temps réel pour prendre les bonnes décisions plus vite.",
+          "items": {
+            "1": "Vue d’ensemble sur les événements clés de la journée",
+            "2": "Suivi des élèves, des promotions et des interactions importantes",
+            "3": "Indicateurs utiles pour repérer les points de blocage rapidement"
+          }
+        },
+        "communication": {
+          "title": "Communication intégrée",
+          "description": "Fluidifiez les échanges sans multiplier les canaux ni perdre d'informations en route.",
+          "items": {
+            "1": "Messagerie instantanée pour les communications du quotidien",
+            "2": "Diffusion d’actualités importantes à toute la communauté",
+            "3": "Coordination plus simple entre direction, équipes et apprenants"
+          }
+        }
+      },
+      "cta": {
+        "title": "Besoin d’une vision plus concrète?",
+        "subtitle": "Le parcours d’accompagnement Odyssea explique comment nous passons du diagnostic initial à une mise en place adaptée à votre structure.",
+        "button": "Découvrir comment ça marche"
+      }
+    },
+    "about": {
+      "seo": {
+        "title": "À propos d’Odyssea | Vision, accompagnement et valeurs",
+        "description": "Découvrez qui est derrière Odyssea, la vision portée par le projet et les valeurs qui structurent notre accompagnement."
+      },
+      "eyebrow": "À propos",
+      "hero": {
+        "title": "Odyssea, une vision simple: remettre de l’ordre là où les outils se dispersent.",
+        "subtitle": "Derrière Odyssea, il y a la volonté de proposer un cadre plus humain, plus lisible et plus utile pour les établissements qui veulent mieux piloter leur quotidien sans s’enfermer dans une complexité inutile."
+      },
+      "story": {
+        "title": "Qui est derrière Odyssea ?",
+        "paragraph1": "Odyssea est porté par une démarche de proximité avec les structures qui ont besoin d’un outil central, mais aussi d’un partenaire capable de comprendre leurs contraintes réelles.",
+        "paragraph2": "L’ambition n’est pas seulement de digitaliser des actions isolées. Elle est de créer une expérience de gestion plus sereine, plus cohérente et plus facile à faire vivre au quotidien."
+      },
+      "vision": {
+        "title": "Notre vision",
+        "content": "Construire une solution qui accompagne la réalité du terrain: les documents à retrouver, les informations à suivre, les équipes à coordonner et les décisions à prendre sans perte de temps."
+      },
+      "valuesSection": {
+        "title": "Nos valeurs",
+        "subtitle": "Ce que nous voulons défendre dans chaque relation client et dans chaque évolution du produit."
+      },
+      "values": {
+        "clarity": {
+          "title": "Clarté",
+          "content": "Nous voulons rendre les opérations quotidiennes plus lisibles, plus fluides et moins dispersées."
+        },
+        "proximity": {
+          "title": "Proximité",
+          "content": "Odyssea se construit au contact des besoins du terrain, avec une logique d’accompagnement concret."
+        },
+        "sustainability": {
+          "title": "Durabilité",
+          "content": "Notre vision est d’apporter un cadre robuste qui reste utile dans le temps, même quand l’organisation évolue."
+        }
+      },
+      "cta": {
+        "title": "La méthode compte autant que l’outil.",
+        "subtitle": "Si vous voulez comprendre comment l’accompagnement se déroule concrètement, la page dédiée présente le parcours client étape par étape.",
+        "button": "Voir notre méthode"
+      }
+    },
+    "faq": {
+      "seo": {
+        "title": "FAQ Odyssea | Services, accompagnement et fonctionnement",
+        "description": "Consultez les réponses aux questions fréquentes sur les services Odyssea, le parcours client et le fonctionnement global de la solution."
+      },
+      "eyebrow": "FAQ",
+      "hero": {
+        "title": "Les réponses aux questions les plus fréquentes sur les services et le fonctionnement global.",
+        "subtitle": "Cette page rassemble les points essentiels pour comprendre à qui s’adresse Odyssea, comment l’accompagnement se déroule et ce que la solution permet d’améliorer au quotidien."
+      },
+      "items": {
+        "1": {
+          "question": "À qui s’adresse Odyssea ?",
+          "answer": "Odyssea s’adresse aux établissements qui veulent centraliser leur organisation, leurs documents et leur suivi opérationnel dans un seul environnement."
+        },
+        "2": {
+          "question": "Est-ce qu’Odyssea remplace plusieurs outils ?",
+          "answer": "Oui. L’objectif est justement de limiter la multiplication des solutions en regroupant les usages clés dans un cadre plus cohérent."
+        },
+        "3": {
+          "question": "Proposez-vous un accompagnement au démarrage ?",
+          "answer": "Oui. La démarche inclut un diagnostic, un cadrage des besoins et un accompagnement progressif pour faciliter la prise en main."
+        },
+        "4": {
+          "question": "Peut-on adapter la solution à notre fonctionnement ?",
+          "answer": "La méthode Odyssea cherche à s’aligner sur vos priorités réelles pour déployer une organisation utile, compréhensible et durable."
+        },
+        "5": {
+          "question": "Comment découvrir la solution plus concrètement ?",
+          "answer": "Vous pouvez demander une démo ou consulter la page \"Comment ça marche\" pour voir le parcours client du premier échange à l’accompagnement."
+        }
+      },
+      "cta": {
+        "title": "Une question plus spécifique ?",
+        "subtitle": "Nous pouvons partir de votre contexte et vous montrer le parcours d’accompagnement le plus adapté.",
+        "secondaryButton": "Voir le parcours"
+      }
+    },
+    "howItWorks": {
+      "seo": {
+        "title": "Comment ça marche | Le parcours client Odyssea",
+        "description": "Comprenez la méthode Odyssea: inscription, diagnostic, cadrage du déploiement et accompagnement dans la durée."
+      },
+      "eyebrow": "Comment ça marche",
+      "hero": {
+        "title": "Le parcours client Odyssea, du premier contact à l’accompagnement.",
+        "subtitle": "Ici, on ne parle pas de technique. On parle de méthode, de relation et de progression. L’objectif est de rendre votre transition lisible, rassurante et adaptée à votre réalité."
+      },
+      "steps": {
+        "1": {
+          "title": "1. Inscription et premier échange",
+          "content": "Nous partons de votre contexte, de vos priorités et de vos points de friction pour cadrer le bon niveau d’accompagnement."
+        },
+        "2": {
+          "title": "2. Diagnostic",
+          "content": "Nous analysons votre organisation actuelle, les outils déjà utilisés et les besoins à centraliser en priorité."
+        },
+        "3": {
+          "title": "3. Cadrage du déploiement",
+          "content": "Nous définissons un plan de mise en place simple, progressif et réaliste, aligné sur vos contraintes opérationnelles."
+        },
+        "4": {
+          "title": "4. Accompagnement",
+          "content": "Nous avançons avec vous dans la prise en main, les ajustements et l’installation de nouveaux repères durables."
+        }
+      },
+      "support": {
+        "title": "Une démarche pensée pour réduire les frictions",
+        "subtitle": "Chaque étape vise à clarifier la suite, éviter les zones floues et vous faire avancer avec une trajectoire compréhensible dès le départ.",
+        "secondaryButton": "Voir les fonctionnalités",
+        "primaryButton": "Lancer l’échange"
+      }
+    },
+    "pricing": {
+      "seo": {
+        "title": "Tarifs Odyssea | Une offre claire adaptée à votre établissement",
+        "description": "Consultez les tarifs Odyssea et explorez les fonctionnalités incluses pour centraliser la gestion de votre établissement."
+      }
+    },
+    "customer": {
+      "seo": {
+        "title": "Demander une démo Odyssea | Démarrer votre accompagnement",
+        "description": "Partagez quelques informations sur votre établissement pour démarrer l’échange et découvrir l’accompagnement Odyssea."
+      },
+      "steps": {
+        "1": {
+          "title": "Vos coordonnées",
+          "subtitle": "Commençons par la personne de contact qui portera l’échange avec Odyssea."
+        },
+        "2": {
+          "title": "Votre établissement",
+          "subtitle": "Nous avons besoin de quelques repères sur votre structure pour cadrer l’accompagnement."
+        },
+        "3": {
+          "title": "Votre volumétrie",
+          "subtitle": "Cela nous aide à projeter une mise en place réaliste et adaptée à votre organisation."
+        },
+        "4": {
+          "title": "Vos besoins prioritaires",
+          "subtitle": "Sélectionnez les sujets sur lesquels vous souhaitez avancer en premier."
+        },
+        "5": {
+          "title": "Votre timing",
+          "subtitle": "Dites-nous quand vous souhaitez avancer et quel objectif compte le plus pour vous."
+        },
+        "6": {
+          "title": "Format de l’échange",
+          "subtitle": "Choisissez la manière la plus pratique pour organiser la démo ou le premier échange."
+        },
+        "7": {
+          "title": "Validation finale",
+          "subtitle": "Ajoutez un dernier contexte utile puis confirmez votre demande."
+        }
+      },
+      "fields": {
+        "firstName": "Prénom",
+        "lastName": "Nom",
+        "workEmail": "Email professionnel",
+        "phone": "Téléphone",
+        "institutionName": "Nom de l’établissement",
+        "institutionType": "Type d’établissement",
+        "country": "Pays",
+        "city": "Ville",
+        "studentsRange": "Nombre d’élèves / apprenants",
+        "staffRange": "Nombre de collaborateurs",
+        "needs": "Quels sujets souhaitez-vous centraliser ?",
+        "timeline": "Quand souhaitez-vous démarrer ?",
+        "priority": "Quelle est votre priorité principale ?",
+        "demoFormat": "Format souhaité pour la démo",
+        "preferredContact": "Canal de contact préféré",
+        "comments": "Contexte complémentaire",
+        "acceptTerms": "Je confirme vouloir être recontacté par l’équipe Odyssea pour organiser la suite."
+      },
+      "placeholders": {
+        "firstName": "Votre prénom",
+        "lastName": "Votre nom",
+        "workEmail": "vous@etablissement.fr",
+        "phone": "+33 6 00 00 00 00",
+        "institutionName": "Nom de votre établissement",
+        "country": "France",
+        "city": "Paris",
+        "comments": "Décrivez votre contexte, vos outils actuels ou ce que vous souhaitez améliorer.",
+        "chooseOption": "Choisir une option"
+      },
+      "options": {
+        "institutionTypes": {
+          "middleSchool": "Collège",
+          "highSchool": "Lycée",
+          "cfa": "CFA",
+          "university": "Université",
+          "trainingCenter": "Centre de formation"
+        },
+        "sizeRanges": {
+          "1": "1 à 49",
+          "2": "50 à 149",
+          "3": "150 à 299",
+          "4": "300 à 549",
+          "5": "550 et plus"
+        },
+        "needs": {
+          "ged": "GED et documents",
+          "planning": "Planning et organisation",
+          "tracking": "Suivi de l’activité",
+          "communication": "Communication interne",
+          "billing": "Facturation ou gestion annexe"
+        },
+        "timeline": {
+          "immediate": "Dès que possible",
+          "oneMonth": "Dans le mois",
+          "quarter": "Dans le trimestre",
+          "exploratory": "Je suis en phase d’exploration"
+        },
+        "priority": {
+          "centralize": "Centraliser nos outils",
+          "saveTime": "Gagner du temps au quotidien",
+          "improveTracking": "Mieux suivre l’activité",
+          "improveCommunication": "Fluidifier la communication"
+        },
+        "demoFormat": {
+          "video": "Visioconférence",
+          "phone": "Appel téléphonique",
+          "onsite": "À discuter sur site"
+        },
+        "contact": {
+          "email": "Par email",
+          "phone": "Par téléphone",
+          "either": "Les deux me conviennent"
+        }
+      },
+      "help": {
+        "needs": "Vous pouvez sélectionner plusieurs besoins si nécessaire.",
+        "support": "Un problème ou une question ? Nous reviendrons vers vous pour vous guider."
+      },
+      "errors": {
+        "required": "Ce champ est requis.",
+        "email": "Veuillez saisir une adresse email valide.",
+        "chooseNeed": "Sélectionnez au moins un besoin.",
+        "acceptTerms": "Vous devez confirmer votre demande pour continuer.",
+        "submit": "L’envoi a échoué. Vérifiez la configuration email du serveur puis réessayez."
+      },
+      "actions": {
+        "previous": "Retour",
+        "next": "Continuer",
+        "submit": "Envoyer ma demande",
+        "sending": "Envoi en cours..."
+      },
+      "summary": {
+        "title": "Récapitulatif rapide"
+      },
+      "success": {
+        "badge": "Demande envoyée",
+        "title": "Votre parcours d’inscription est prêt.",
+        "subtitle": "Nous avons bien reçu vos informations. L’équipe Odyssea pourra désormais préparer un échange plus pertinent et revenir vers vous rapidement.",
+        "summaryTitle": "Informations transmises",
+        "backHome": "Retour à l’accueil"
       }
     }
   }

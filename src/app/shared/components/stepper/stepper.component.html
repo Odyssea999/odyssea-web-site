@@ -1,10 +1,21 @@
 @if (orientation() === 'horizontal') {
   <div class="od-stepper stepper-horizontal">
-    <section class="od-stepper-header">
-
-    </section>
-    <section></section>
+    @for (step of steps(); track step) {
+      <div class="od-stepper-item">
+        <div
+          class="od-stepper-node"
+          [ngClass]="{
+            'is-active': isActive(step),
+            'is-completed': isCompleted(step)
+          }">
+          <span>{{ step }}</span>
+        </div>
+        @if (!$last) {
+          <div
+            class="od-stepper-line"
+            [ngClass]="{'is-completed': isCompleted(step + 1)}"></div>
+        }
+      </div>
+    }
   </div>
-} @else {
-
 }

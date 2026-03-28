@@ -8,19 +8,297 @@
           </div>
         </div>
         <div class="od-customer-information">
-          <p class="od-customer-step-title">
-            Quelques informations
-          </p>
-          <od-stepper-count-tracker [initialValue]="1" [totalSteps]="7"></od-stepper-count-tracker>
+          <p class="od-customer-step-title">{{ currentStepConfig.titleKey | translate }}</p>
+          <od-stepper-count-tracker [initialValue]="currentStep" [totalSteps]="totalSteps"></od-stepper-count-tracker>
         </div>
       </div>
       <div class="od-customer-top-stepper">
-        <od-stepper [initialStep]="1" [totalSteps]="7"></od-stepper>
+        <od-stepper [initialStep]="currentStep" [totalSteps]="totalSteps"></od-stepper>
       </div>
     </section>
+
     <section class="od-customer-bottom">
       <div class="od-customer-bottom-content">
-        <od-school-information></od-school-information>
+        @if (!isSubmitted) {
+          <div class="od-customer-bottom-question-title">
+            <h2>{{ currentStepConfig.titleKey | translate }}</h2>
+            <p>{{ currentStepConfig.subtitleKey | translate }}</p>
+          </div>
+
+          <div class="od-customer-bottom-question">
+            <form class="od-customer-form" [formGroup]="customerForm">
+              @switch (currentStep) {
+                @case (1) {
+                  <div class="od-form-grid">
+                    <label class="od-field">
+                      <span>{{ 'PAGES.customer.fields.firstName' | translate }}</span>
+                      <input type="text" formControlName="firstName" [placeholder]="'PAGES.customer.placeholders.firstName' | translate">
+                      @if (controlHasError('firstName')) {
+                        <small>{{ 'PAGES.customer.errors.required' | translate }}</small>
+                      }
+                    </label>
+
+                    <label class="od-field">
+                      <span>{{ 'PAGES.customer.fields.lastName' | translate }}</span>
+                      <input type="text" formControlName="lastName" [placeholder]="'PAGES.customer.placeholders.lastName' | translate">
+                      @if (controlHasError('lastName')) {
+                        <small>{{ 'PAGES.customer.errors.required' | translate }}</small>
+                      }
+                    </label>
+
+                    <label class="od-field">
+                      <span>{{ 'PAGES.customer.fields.workEmail' | translate }}</span>
+                      <input type="email" formControlName="workEmail" [placeholder]="'PAGES.customer.placeholders.workEmail' | translate">
+                      @if (controlHasError('workEmail')) {
+                        <small>{{ 'PAGES.customer.errors.email' | translate }}</small>
+                      }
+                    </label>
+
+                    <label class="od-field">
+                      <span>{{ 'PAGES.customer.fields.phone' | translate }}</span>
+                      <input type="tel" formControlName="phone" [placeholder]="'PAGES.customer.placeholders.phone' | translate">
+                      @if (controlHasError('phone')) {
+                        <small>{{ 'PAGES.customer.errors.required' | translate }}</small>
+                      }
+                    </label>
+                  </div>
+                }
+
+                @case (2) {
+                  <div class="od-form-grid">
+                    <label class="od-field od-field-full">
+                      <span>{{ 'PAGES.customer.fields.institutionName' | translate }}</span>
+                      <input type="text" formControlName="institutionName" [placeholder]="'PAGES.customer.placeholders.institutionName' | translate">
+                      @if (controlHasError('institutionName')) {
+                        <small>{{ 'PAGES.customer.errors.required' | translate }}</small>
+                      }
+                    </label>
+
+                    <label class="od-field">
+                      <span>{{ 'PAGES.customer.fields.institutionType' | translate }}</span>
+                      <select formControlName="institutionType">
+                        <option value="">{{ 'PAGES.customer.placeholders.chooseOption' | translate }}</option>
+                        @for (option of institutionTypes; track option.value) {
+                          <option [value]="option.value">{{ option.labelKey | translate }}</option>
+                        }
+                      </select>
+                      @if (controlHasError('institutionType')) {
+                        <small>{{ 'PAGES.customer.errors.required' | translate }}</small>
+                      }
+                    </label>
+
+                    <label class="od-field">
+                      <span>{{ 'PAGES.customer.fields.country' | translate }}</span>
+                      <input type="text" formControlName="country" [placeholder]="'PAGES.customer.placeholders.country' | translate">
+                      @if (controlHasError('country')) {
+                        <small>{{ 'PAGES.customer.errors.required' | translate }}</small>
+                      }
+                    </label>
+
+                    <label class="od-field">
+                      <span>{{ 'PAGES.customer.fields.city' | translate }}</span>
+                      <input type="text" formControlName="city" [placeholder]="'PAGES.customer.placeholders.city' | translate">
+                      @if (controlHasError('city')) {
+                        <small>{{ 'PAGES.customer.errors.required' | translate }}</small>
+                      }
+                    </label>
+                  </div>
+                }
+
+                @case (3) {
+                  <div class="od-form-grid">
+                    <label class="od-field">
+                      <span>{{ 'PAGES.customer.fields.studentsRange' | translate }}</span>
+                      <select formControlName="studentsRange">
+                        <option value="">{{ 'PAGES.customer.placeholders.chooseOption' | translate }}</option>
+                        @for (option of sizeRanges; track option.value) {
+                          <option [value]="option.value">{{ option.labelKey | translate }}</option>
+                        }
+                      </select>
+                      @if (controlHasError('studentsRange')) {
+                        <small>{{ 'PAGES.customer.errors.required' | translate }}</small>
+                      }
+                    </label>
+
+                    <label class="od-field">
+                      <span>{{ 'PAGES.customer.fields.staffRange' | translate }}</span>
+                      <select formControlName="staffRange">
+                        <option value="">{{ 'PAGES.customer.placeholders.chooseOption' | translate }}</option>
+                        @for (option of sizeRanges; track option.value) {
+                          <option [value]="option.value">{{ option.labelKey | translate }}</option>
+                        }
+                      </select>
+                      @if (controlHasError('staffRange')) {
+                        <small>{{ 'PAGES.customer.errors.required' | translate }}</small>
+                      }
+                    </label>
+                  </div>
+                }
+
+                @case (4) {
+                  <div class="od-choice-group">
+                    <div class="od-choice-group-header">
+                      <h3>{{ 'PAGES.customer.fields.needs' | translate }}</h3>
+                      <p>{{ 'PAGES.customer.help.needs' | translate }}</p>
+                    </div>
+                    <div class="od-chip-grid">
+                      @for (option of needsOptions; track option.value) {
+                        <button
+                          type="button"
+                          class="od-choice-chip"
+                          [ngClass]="{'is-selected': isNeedSelected(option.value)}"
+                          (click)="toggleNeed(option.value)">
+                          {{ option.labelKey | translate }}
+                        </button>
+                      }
+                    </div>
+                    @if (controlHasError('needs')) {
+                      <small class="od-block-error">{{ 'PAGES.customer.errors.chooseNeed' | translate }}</small>
+                    }
+                  </div>
+                }
+
+                @case (5) {
+                  <div class="od-form-grid">
+                    <label class="od-field">
+                      <span>{{ 'PAGES.customer.fields.timeline' | translate }}</span>
+                      <select formControlName="timeline">
+                        <option value="">{{ 'PAGES.customer.placeholders.chooseOption' | translate }}</option>
+                        @for (option of timelineOptions; track option.value) {
+                          <option [value]="option.value">{{ option.labelKey | translate }}</option>
+                        }
+                      </select>
+                      @if (controlHasError('timeline')) {
+                        <small>{{ 'PAGES.customer.errors.required' | translate }}</small>
+                      }
+                    </label>
+
+                    <label class="od-field">
+                      <span>{{ 'PAGES.customer.fields.priority' | translate }}</span>
+                      <select formControlName="priority">
+                        <option value="">{{ 'PAGES.customer.placeholders.chooseOption' | translate }}</option>
+                        @for (option of priorityOptions; track option.value) {
+                          <option [value]="option.value">{{ option.labelKey | translate }}</option>
+                        }
+                      </select>
+                      @if (controlHasError('priority')) {
+                        <small>{{ 'PAGES.customer.errors.required' | translate }}</small>
+                      }
+                    </label>
+                  </div>
+                }
+
+                @case (6) {
+                  <div class="od-form-grid">
+                    <label class="od-field">
+                      <span>{{ 'PAGES.customer.fields.demoFormat' | translate }}</span>
+                      <select formControlName="demoFormat">
+                        <option value="">{{ 'PAGES.customer.placeholders.chooseOption' | translate }}</option>
+                        @for (option of demoFormatOptions; track option.value) {
+                          <option [value]="option.value">{{ option.labelKey | translate }}</option>
+                        }
+                      </select>
+                      @if (controlHasError('demoFormat')) {
+                        <small>{{ 'PAGES.customer.errors.required' | translate }}</small>
+                      }
+                    </label>
+
+                    <label class="od-field">
+                      <span>{{ 'PAGES.customer.fields.preferredContact' | translate }}</span>
+                      <select formControlName="preferredContact">
+                        <option value="">{{ 'PAGES.customer.placeholders.chooseOption' | translate }}</option>
+                        @for (option of contactOptions; track option.value) {
+                          <option [value]="option.value">{{ option.labelKey | translate }}</option>
+                        }
+                      </select>
+                      @if (controlHasError('preferredContact')) {
+                        <small>{{ 'PAGES.customer.errors.required' | translate }}</small>
+                      }
+                    </label>
+                  </div>
+                }
+
+                @case (7) {
+                  <div class="od-form-grid">
+                    <label class="od-field od-field-full">
+                      <span>{{ 'PAGES.customer.fields.comments' | translate }}</span>
+                      <textarea rows="5" formControlName="comments" [placeholder]="'PAGES.customer.placeholders.comments' | translate"></textarea>
+                    </label>
+
+                    <div class="od-summary-card od-field-full">
+                      <h3>{{ 'PAGES.customer.summary.title' | translate }}</h3>
+                      <ul>
+                        <li>{{ customerForm.value.firstName }} {{ customerForm.value.lastName }}</li>
+                        <li>{{ customerForm.value.institutionName }}</li>
+                        <li>{{ customerForm.value.workEmail }}</li>
+                        <li>{{ customerForm.value.phone }}</li>
+                      </ul>
+                    </div>
+
+                    <label class="od-checkbox-field od-field-full">
+                      <input type="checkbox" formControlName="acceptTerms">
+                      <span>{{ 'PAGES.customer.fields.acceptTerms' | translate }}</span>
+                    </label>
+                    @if (controlHasError('acceptTerms')) {
+                      <small class="od-block-error">{{ 'PAGES.customer.errors.acceptTerms' | translate }}</small>
+                    }
+                  </div>
+                }
+              }
+            </form>
+
+            <div class="od-customer-actions">
+              <button
+                type="button"
+                class="btn btn-outlined"
+                [disabled]="currentStep === 1"
+                [ngClass]="{'od-btn-disabled': currentStep === 1}"
+                (click)="previousStep()">
+                {{ 'PAGES.customer.actions.previous' | translate }}
+              </button>
+
+              @if (currentStep < totalSteps) {
+                <button type="button" class="btn btn-filled" (click)="nextStep()">
+                  {{ 'PAGES.customer.actions.next' | translate }}
+                </button>
+              } @else {
+                <button type="button" class="btn btn-filled" [disabled]="isSending" [ngClass]="{'od-btn-disabled': isSending}" (click)="submit()">
+                  @if (isSending) {
+                    {{ 'PAGES.customer.actions.sending' | translate }}
+                  } @else {
+                    {{ 'PAGES.customer.actions.submit' | translate }}
+                  }
+                </button>
+              }
+            </div>
+
+            @if (submissionError) {
+              <div class="od-customer-submit-error">
+                <p>{{ submissionError | translate }}</p>
+              </div>
+            }
+
+            <div class="od-customer-help">
+              <p>{{ 'PAGES.customer.help.support' | translate }}</p>
+            </div>
+          </div>
+        } @else {
+          <div class="od-customer-bottom-question od-customer-success">
+            <div class="od-customer-success-badge">{{ 'PAGES.customer.success.badge' | translate }}</div>
+            <h2>{{ 'PAGES.customer.success.title' | translate }}</h2>
+            <p>{{ 'PAGES.customer.success.subtitle' | translate }}</p>
+            <div class="od-summary-card">
+              <h3>{{ 'PAGES.customer.success.summaryTitle' | translate }}</h3>
+              <ul>
+                <li>{{ customerForm.value.firstName }} {{ customerForm.value.lastName }}</li>
+                <li>{{ customerForm.value.institutionName }}</li>
+                <li>{{ customerForm.value.workEmail }}</li>
+                <li>{{ customerForm.value.demoFormat }}</li>
+              </ul>
+            </div>
+            <a routerLink="/" class="btn btn-filled">{{ 'PAGES.customer.success.backHome' | translate }}</a>
+          </div>
+        }
       </div>
     </section>
   </div>
