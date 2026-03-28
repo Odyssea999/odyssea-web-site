@@ -484,12 +484,14 @@
         "required": "Ce champ est requis.",
         "email": "Veuillez saisir une adresse email valide.",
         "chooseNeed": "Sélectionnez au moins un besoin.",
-        "acceptTerms": "Vous devez confirmer votre demande pour continuer."
+        "acceptTerms": "Vous devez confirmer votre demande pour continuer.",
+        "submit": "L’envoi a échoué. Vérifiez la configuration email du serveur puis réessayez."
       },
       "actions": {
         "previous": "Retour",
         "next": "Continuer",
-        "submit": "Envoyer ma demande"
+        "submit": "Envoyer ma demande",
+        "sending": "Envoi en cours..."
       },
       "summary": {
         "title": "Récapitulatif rapide"

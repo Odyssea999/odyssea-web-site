@@ -260,6 +260,15 @@
     }
   }
 
+  .od-customer-submit-error {
+    padding-top: 1rem;
+
+    p {
+      color: #d74848;
+      text-align: center;
+    }
+  }
+
   .od-block-error {
     color: #d74848;
     font-size: 0.9rem;

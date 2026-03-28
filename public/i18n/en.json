@@ -484,12 +484,14 @@
         "required": "This field is required.",
         "email": "Please enter a valid email address.",
         "chooseNeed": "Select at least one need.",
-        "acceptTerms": "You must confirm your request to continue."
+        "acceptTerms": "You must confirm your request to continue.",
+        "submit": "Sending failed. Check the server email configuration and try again."
       },
       "actions": {
         "previous": "Back",
         "next": "Continue",
-        "submit": "Send my request"
+        "submit": "Send my request",
+        "sending": "Sending..."
       },
       "summary": {
         "title": "Quick summary"

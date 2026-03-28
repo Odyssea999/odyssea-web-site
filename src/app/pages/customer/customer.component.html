@@ -262,11 +262,21 @@
                   {{ 'PAGES.customer.actions.next' | translate }}
                 </button>
               } @else {
-                <button type="button" class="btn btn-filled" (click)="submit()">
-                  {{ 'PAGES.customer.actions.submit' | translate }}
+                <button type="button" class="btn btn-filled" [disabled]="isSending" [ngClass]="{'od-btn-disabled': isSending}" (click)="submit()">
+                  @if (isSending) {
+                    {{ 'PAGES.customer.actions.sending' | translate }}
+                  } @else {
+                    {{ 'PAGES.customer.actions.submit' | translate }}
+                  }
                 </button>
               }
             </div>
+
+            @if (submissionError) {
+              <div class="od-customer-submit-error">
+                <p>{{ submissionError | translate }}</p>
+              </div>
+            }
 
             <div class="od-customer-help">
               <p>{{ 'PAGES.customer.help.support' | translate }}</p>

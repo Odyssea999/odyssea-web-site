@@ -1,9 +1,10 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
+import { HttpClient } from "@angular/common/http";
 import { FormBuilder, ReactiveFormsModule, Validators } from "@angular/forms";
 import { RouterLink } from "@angular/router";
 import { TranslateModule, TranslateService } from "@ngx-translate/core";
-import { forkJoin } from "rxjs";
+import { firstValueFrom, forkJoin } from "rxjs";
 import { SvgComponent } from "../../shared/components/svg/svg.component";
 import { StepperComponent } from "../../shared/components/stepper/stepper.component";
 import { StepperCountTracker } from "../../shared/components/stepper/components/stepper-count-tracker/stepper-count-tracker.component";
@@ -46,6 +47,8 @@ export class CustomerComponent implements OnInit {
   readonly totalSteps = 7;
   currentStep = 1;
   isSubmitted = false;
+  isSending = false;
+  submissionError = '';
 
   readonly steps: CustomerStep[] = [
     {
@@ -164,6 +167,7 @@ export class CustomerComponent implements OnInit {
 
   constructor(
     private readonly formBuilder: FormBuilder,
+    private readonly http: HttpClient,
     private readonly seoService: SeoService,
     private readonly translate: TranslateService
   ) { }
@@ -201,13 +205,27 @@ export class CustomerComponent implements OnInit {
     }
   }
 
-  submit(): void {
+  async submit(): Promise<void> {
     if (!this.isCurrentStepValid() || this.customerForm.invalid) {
       this.customerForm.markAllAsTouched();
       return;
     }
 
-    this.isSubmitted = true;
+    this.isSending = true;
+    this.submissionError = '';
+
+    try {
+      await firstValueFrom(this.http.post('/api/become-customer', {
+        ...this.customerForm.getRawValue(),
+        comments: this.customerForm.value.comments || ''
+      }));
+
+      this.isSubmitted = true;
+    } catch (error) {
+      this.submissionError = 'PAGES.customer.errors.submit';
+    } finally {
+      this.isSending = false;
+    }
   }
 
   isCurrentStepValid(): boolean {
