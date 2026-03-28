@@ -18,7 +18,8 @@
       },
       "root": "",
       "sourceRoot": "src",
-      "prefix": "od,"architect": {
+      "prefix": "od",
+      "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
