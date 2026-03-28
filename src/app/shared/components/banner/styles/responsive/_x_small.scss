@@ -1,16 +1,15 @@
-
 @use "../../../../styles/mixins";
 @use "../../../../styles/variables";
 
 @include mixins.x-small {
-  .std-banner-container {
+  .od-banner-container {
     width: 100%;
     padding-left: 1rem;
     padding-right: 1rem;
     padding-top: 2rem;
     padding-bottom: 4rem;
 
-    .std-banner {
+    .od-banner {
       background-image: url("/images/home/Breadcrumb.png");
       background-size: cover;
       background-repeat: no-repeat;
@@ -23,7 +22,7 @@
       align-items: center;
       border-radius: 15px;
 
-      .std-banner-content {
+      .od-banner-content {
         width: 100%;
         display: flex;
         justify-content: center;
@@ -37,11 +36,10 @@
           text-align: center;
         }
 
-        std-button {
+        od-button {
           margin-top: 1.8rem;
         }
       }
-
     }
   }
 }

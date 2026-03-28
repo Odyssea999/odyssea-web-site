@@ -1,26 +1,26 @@
-<div class="std-container">
-  <std-navbar></std-navbar>
-  <section class="std-pricing">
-    <section class="std-pricing-top">
-      <div class="std-pricing-top-content">
-        <div class="std-pricing-section-title">
+<div class="od-container">
+  <od-navbar></od-navbar>
+  <section class="od-pricing">
+    <section class="od-pricing-top">
+      <div class="od-pricing-top-content">
+        <div class="od-pricing-section-title">
           <h2>
             <span>{{ 'PRICING.title1' | translate }}</span>
             <span>{{ 'PRICING.title2' | translate }}</span>
           </h2>
           <p>{{ 'PRICING.subtitle' | translate }}</p>
         </div>
-        <div class="std-pricing-slider-card">
-          <p class="std-pricing-card-title">{{ 'PRICING.question' | translate }}</p>
-          <div class="std-pricing-slider-bloc">
-            <div class="std-pricing-slider">
+        <div class="od-pricing-slider-card">
+          <p class="od-pricing-card-title">{{ 'PRICING.question' | translate }}</p>
+          <div class="od-pricing-slider-bloc">
+            <div class="od-pricing-slider">
               @for (slider of pricingSlider; track slider; let index = $index) {
-                <span class="std-pricing-slider-range"
+                <span class="od-pricing-slider-range"
                       style="--slider-value: '{{ slider.between}}' "
                       (click)="sliderSelected(index, slider)" [ngClass]="{'selected': slider.isSelected}"></span>
               }
             </div>
-            <div class="std-pricing-number">
+            <div class="od-pricing-number">
               <p>10</p>
               <p>550+</p>
             </div>
@@ -28,17 +28,17 @@
         </div>
       </div>
     </section>
-    <section class="std-pricing-cards">
-      <div class="std-pricing-cards-content">
-        <div class="std-card-item">
-          <std-pricing-card [bestSeller]="false"></std-pricing-card>
+    <section class="od-pricing-cards">
+      <div class="od-pricing-cards-content">
+        <div class="od-card-item">
+          <od-pricing-card [bestSeller]="false"></od-pricing-card>
         </div>
-        <div class="std-card-item">
-          <std-pricing-card [bestSeller]="true"></std-pricing-card>
+        <div class="od-card-item">
+          <od-pricing-card [bestSeller]="true"></od-pricing-card>
         </div>
       </div>
     </section>
   </section>
-  <std-banner></std-banner>
-  <std-footer></std-footer>
+  <od-banner></od-banner>
+  <od-footer></od-footer>
 </div>

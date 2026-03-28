@@ -1,44 +1,43 @@
-
 @use "../../../../styles/mixins";
 @use "../../../../styles/variables";
 
 @include mixins.medium {
-  .std-navbar {
+  .od-navbar {
     background: variables.$white;
     display: flex;
     flex-direction: column;
     padding: 1rem 1rem 1rem;
     height: auto;
-    transition: height .5s ease-in-out;
+    transition: height 0.5s ease-in-out;
 
-    .std-nav-link {
+    .od-nav-link {
       text-decoration: none;
       font-family: "Outfit", sans-serif;
       font-size: 1rem;
       color: variables.$black;
     }
 
-    .std-navbar-top-logo {
+    .od-navbar-top-logo {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       margin-bottom: 0rem;
       width: 100%;
 
-      .std-logo {
+      .od-logo {
         display: flex;
         align-items: center;
         width: 40%;
         cursor: pointer;
       }
 
-      .std-navbar-logo-open {
+      .od-navbar-logo-open {
         display: flex;
         width: 7%;
       }
     }
 
-    .std-nav-bar-bottom {
+    .od-nav-bar-bottom {
       width: 100%;
       display: flex;
       flex-direction: column;
@@ -46,7 +45,7 @@
       height: 0;
     }
 
-    .std-nav-links {
+    .od-nav-links {
       display: flex;
       justify-content: flex-start;
       align-items: center;
@@ -54,14 +53,14 @@
       width: 100%;
     }
 
-    .std-nav-btn {
+    .od-nav-btn {
       display: flex;
       align-items: center;
       justify-content: flex-end;
       width: 100%;
       flex-direction: column;
 
-      .std-navbar-btn-item {
+      .od-navbar-btn-item {
         width: 100%;
 
         &:not(:last-of-type) {
@@ -71,13 +70,13 @@
       }
     }
 
-    .std-nav-links-content {
+    .od-nav-links-content {
       list-style: none;
       display: flex;
       flex-direction: column;
       width: 100%;
 
-      .std-nav-links-item {
+      .od-nav-links-item {
         margin-bottom: 1.3rem;
         border-bottom: 1px solid #e1e8ef;
         padding-bottom: 1rem;
@@ -91,14 +90,13 @@
     &.show-nav {
       height: 100vh;
 
-      .std-navbar-top-logo {
+      .od-navbar-top-logo {
         margin-bottom: 2rem;
       }
 
-      .std-nav-bar-bottom {
+      .od-nav-bar-bottom {
         height: auto;
       }
     }
-
   }
 }

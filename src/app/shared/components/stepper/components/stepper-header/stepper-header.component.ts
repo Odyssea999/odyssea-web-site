@@ -1,8 +1,8 @@
-import {Component, input, InputSignal, TemplateRef} from "@angular/core";
-import {NgTemplateOutlet} from "@angular/common";
+import { Component, input, InputSignal, TemplateRef } from "@angular/core";
+import { NgTemplateOutlet } from "@angular/common";
 
 @Component({
-  selector: "std-stepper-header",
+  selector: "od-stepper-header",
   standalone: true,
   templateUrl: "./stepper-header.component.html",
   imports: [

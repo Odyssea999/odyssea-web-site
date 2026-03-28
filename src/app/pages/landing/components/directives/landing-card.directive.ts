@@ -1,4 +1,4 @@
-import {Directive, ElementRef, HostListener} from "@angular/core";
+import { Directive, ElementRef, HostListener } from "@angular/core";
 
 @Directive({
   standalone: true,
@@ -6,7 +6,7 @@ import {Directive, ElementRef, HostListener} from "@angular/core";
 })
 export class LandingCardDirective {
 
-  private readonly classToTarget: string = ".std-landing-3-section-card-content";
+  private readonly classToTarget: string = ".od-landing-3-section-card-content";
   private elementRef: ElementRef;
 
   constructor(private readonly el: ElementRef) {

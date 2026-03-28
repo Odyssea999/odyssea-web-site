@@ -1,8 +1,8 @@
-import {Component, input, InputSignal} from "@angular/core";
+import { Component, input, InputSignal } from "@angular/core";
 
 
 @Component({
-  selector: 'std-stepper-count-tracker',
+  selector: 'od-stepper-count-tracker',
   templateUrl: './stepper-count-tracker.component.html',
   styleUrl: './stepper-count-tracker.component.scss',
   standalone: true

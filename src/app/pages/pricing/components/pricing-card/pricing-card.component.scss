@@ -1,7 +1,7 @@
 @use "../../../../shared/styles/variables";
 @use "../../../../shared/styles/mixins";
 
-.std-pricing-card {
+.od-pricing-card {
   display: flex;
   flex-direction: column;
   background: variables.$white;
@@ -14,7 +14,7 @@
     margin-right: 1rem;
   }
 
-  .std-card-best {
+  .od-card-best {
     background-color: variables.$light_violet_color;
     padding: 0.8rem;
     display: flex;
@@ -28,27 +28,25 @@
     }
   }
 
-  .std-pricing-card-content {
+  .od-pricing-card-content {
     padding: 1rem;
     display: flex;
     flex-direction: column;
 
-    .std-pricing-title-section {
-
+    .od-pricing-title-section {
       h3 {
         font-size: 1.4rem;
         color: variables.$light_violet_color;
         margin-bottom: 1rem;
       }
 
-      .std-custom-pricing {
+      .od-custom-pricing {
         font-size: 1.4rem;
         font-weight: 600;
         margin-bottom: 1.2rem;
       }
 
-      .std-pricing-price {
-
+      .od-pricing-price {
         span {
           font-size: 1rem;
           color: variables.$light_text_color;
@@ -62,25 +60,25 @@
         }
       }
 
-      .std-pricing-monthly-subscription {
+      .od-pricing-monthly-subscription {
         font-size: 1rem;
         color: variables.$light_text_color;
         margin-bottom: 1.2rem;
       }
 
-      .std-pricing-total {
+      .od-pricing-total {
         font-size: 1.3rem;
         font-weight: 500;
       }
 
-      .std-pricing-engagement {
+      .od-pricing-engagement {
         font-size: 0.8rem;
         color: #454444;
         margin-bottom: 1.2rem;
       }
     }
 
-    .std-pricing-demo-btn {
+    .od-pricing-demo-btn {
       display: flex;
       align-items: center;
       height: 50px;
@@ -88,7 +86,7 @@
       margin-bottom: 1.3rem;
     }
 
-    .std-pricing-type-establishment {
+    .od-pricing-type-establishment {
       display: flex;
       flex-direction: column;
       border: 1px solid variables.$light_text_color;
@@ -96,7 +94,7 @@
       border-radius: 7px;
       overflow: hidden;
 
-      .std-pricing-establishment-title {
+      .od-pricing-establishment-title {
         cursor: pointer;
         width: 100%;
         display: flex;
@@ -110,7 +108,6 @@
         }
 
         &:hover {
-
           p {
             color: variables.$light_text_color;
           }
@@ -121,30 +118,30 @@
         }
       }
 
-      .std-pricing-establishment-list {
+      .od-pricing-establishment-list {
         font-size: 1rem;
-        padding: 0 .3rem;
+        padding: 0 0.3rem;
         height: 0;
 
         &.show {
           animation-name: show-establishment;
-          animation-duration: .2s;
+          animation-duration: 0.2s;
           animation-timing-function: ease-in-out;
           height: auto;
         }
 
-        .std-pricing-establishment-item {
+        .od-pricing-establishment-item {
           background: variables.$light_landing_main_section_bg;
           border-radius: 7px;
           margin-bottom: 0.5rem;
           padding: 0.5rem;
           cursor: pointer;
 
-          &:hover, &.selected-option {
+          &:hover,
+          &.selected-option {
             background: rgba(84, 104, 125, 30%);
           }
         }
-
       }
 
       @keyframes show-establishment {
@@ -155,26 +152,25 @@
           height: auto;
         }
       }
-
     }
 
-    .std-pricing-features {
+    .od-pricing-features {
       padding-top: 2.5rem;
       display: flex;
       flex-direction: column;
 
-      .std-pricing-features-list {
+      .od-pricing-features-list {
         width: 100%;
         list-style: none;
 
-        .std-pricing-feature-item {
+        .od-pricing-feature-item {
           display: flex;
           flex-direction: row;
           font-size: 1rem;
           margin-bottom: 1rem;
           align-items: center;
 
-          std-svg {
+          od-svg {
             width: 20px;
             height: 20px;
             color: variables.$light_violet_color;
@@ -188,22 +184,22 @@
         }
       }
 
-      .std-pricing-options {
+      .od-pricing-options {
         width: 100%;
         padding-top: 2rem;
 
-        .std-pricing-option-item {
+        .od-pricing-option-item {
           display: flex;
           flex-direction: column;
           width: 100%;
 
-          .std-pricing-option-title-bloc {
+          .od-pricing-option-title-bloc {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
           }
 
-          .std-pricing-option-title-left {
+          .od-pricing-option-title-left {
             display: flex;
             flex-direction: row;
             align-items: center;
@@ -212,19 +208,18 @@
               font-size: 1.2rem;
               font-weight: 500;
               margin-right: 1rem;
-
             }
 
-            > std-svg {
+            > od-svg {
               cursor: pointer;
             }
           }
 
-          .std-pricing-option-right {
+          .od-pricing-option-right {
             width: 30%;
 
-            .std-pricing-option-check {
-              background: #BEBEBE;
+            .od-pricing-option-check {
+              background: #bebebe;
               width: 40%;
               height: 90%;
               border-radius: 50px;
@@ -233,10 +228,10 @@
               align-items: center;
               justify-content: flex-start;
               cursor: pointer;
-              transition: all .2s ease-in-out;
+              transition: all 0.2s ease-in-out;
 
               &::before {
-                content: '';
+                content: "";
                 display: flex;
                 width: 50%;
                 height: 100%;
@@ -248,13 +243,10 @@
                 justify-content: flex-end;
                 background: variables.$light_violet_color;
               }
-
             }
           }
 
-
-
-          .std-pricing-option-price {
+          .od-pricing-option-price {
             color: variables.$light_text_color;
             font-size: 0.8rem;
             margin-top: 0.3rem;

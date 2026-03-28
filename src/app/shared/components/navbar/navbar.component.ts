@@ -1,12 +1,12 @@
-import {ChangeDetectionStrategy, Component, ViewEncapsulation} from '@angular/core';
-import {TranslateModule} from "@ngx-translate/core";
-import {ButtonComponent} from "../button/button.component";
-import {RouterLink} from "@angular/router";
-import {SvgComponent} from "../svg/svg.component";
-import {NgClass} from "@angular/common";
+import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/core';
+import { TranslateModule } from "@ngx-translate/core";
+import { ButtonComponent } from "../button/button.component";
+import { RouterLink } from "@angular/router";
+import { SvgComponent } from "../svg/svg.component";
+import { NgClass } from "@angular/common";
 
 @Component({
-  selector: 'std-navbar',
+  selector: 'od-navbar',
   standalone: true,
   imports: [
     TranslateModule,

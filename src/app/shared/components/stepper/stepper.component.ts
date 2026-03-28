@@ -1,12 +1,12 @@
-import {Component, ElementRef, input, InputSignal, TemplateRef} from "@angular/core";
-import {StepperHeaderComponent} from "./components/stepper-header/stepper-header.component";
-import {Nullable, Undefined} from "../../ts-helpers/ts-helpers";
+import { Component, ElementRef, input, InputSignal, TemplateRef } from "@angular/core";
+import { StepperHeaderComponent } from "./components/stepper-header/stepper-header.component";
+import { Nullable, Undefined } from "../../ts-helpers/ts-helpers";
 
 type StepperModel = "normal" | "percentage"
 type StepperOrientation = "horizontal" | "vertical";
 
 @Component({
-  selector: "std-stepper",
+  selector: "od-stepper",
   templateUrl: "./stepper.component.html",
   styleUrl: "./stepper.component.scss",
   standalone: true,
@@ -23,7 +23,7 @@ export class StepperComponent {
 
   headerTemplate: Nullable<TemplateRef<any>>;
 
-  constructor(private readonly el: ElementRef) {}
+  constructor(private readonly el: ElementRef) { }
 
 
 }

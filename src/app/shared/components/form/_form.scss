@@ -1,5 +1,4 @@
-
-.std-form-group {
+.od-form-group {
   width: 100%;
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -13,7 +12,7 @@
   background: white;
 }
 
-.std-form-control-wrapper {
+.od-form-control-wrapper {
   width: 100%;
 
   &:not(:last-child) {
@@ -21,12 +20,12 @@
   }
 }
 
-.std-form-control {
+.od-form-control {
   width: 100%;
   border: 1px solid rgba(84, 104, 125, 26%);
   border-radius: 7px;
   padding: 0.8rem 1rem;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   cursor: pointer;
   height: 100%;
 
@@ -35,16 +34,16 @@
   }
 }
 
-.std-form-control-input {
+.od-form-control-input {
   width: 100%;
   border: 2px solid rgba(84, 104, 125, 26%);
   border-radius: 7px;
   padding: 0.3rem 0.5rem;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   cursor: pointer;
   height: 100%;
 
-  &.std-form-input-focus {
+  &.od-form-input-focus {
     box-shadow: 0 8px 12px -8px rgba(88, 70, 163, 35%);
 
     &:hover {
@@ -52,7 +51,7 @@
     }
   }
 
-  &.std-form-input-error {
+  &.od-form-input-error {
     border-color: #e05151;
     box-shadow: 0 8px 12px -8px rgba(224, 81, 81, 50%);
 
@@ -61,7 +60,7 @@
     }
   }
 
-  .std-form-input {
+  .od-form-input {
     width: 100%;
     min-height: 1.8rem;
     border: none;
@@ -71,9 +70,8 @@
   &:hover {
     box-shadow: 0px 8px 12px -8px rgba(84, 104, 125, 26%);
   }
-
 }
 
-.std-input-error {
+.od-input-error {
   color: #e05151;
 }

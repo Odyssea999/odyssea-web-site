@@ -1,16 +1,16 @@
-import {Component, OnInit} from '@angular/core';
-import {SeoService} from "../../shared/services/seo/seo.service";
-import {TranslateModule} from "@ngx-translate/core";
-import {NavbarComponent} from "../../shared/components/navbar/navbar.component";
-import {ButtonComponent} from "../../shared/components/button/button.component";
-import {FooterComponent} from "../../shared/components/footer/footer.component";
-import {LandingCardComponent} from "./components/landing-card/landing-card.component";
-import {LandingCard} from "./type/type";
-import {SvgComponent} from "../../shared/components/svg/svg.component";
-import {BannerComponent} from "../../shared/components/banner/banner.component";
+import { Component, OnInit } from '@angular/core';
+import { SeoService } from "../../shared/services/seo/seo.service";
+import { TranslateModule } from "@ngx-translate/core";
+import { NavbarComponent } from "../../shared/components/navbar/navbar.component";
+import { ButtonComponent } from "../../shared/components/button/button.component";
+import { FooterComponent } from "../../shared/components/footer/footer.component";
+import { LandingCardComponent } from "./components/landing-card/landing-card.component";
+import { LandingCard } from "./type/type";
+import { SvgComponent } from "../../shared/components/svg/svg.component";
+import { BannerComponent } from "../../shared/components/banner/banner.component";
 
 @Component({
-  selector: 'std-landing',
+  selector: 'od-landing',
   standalone: true,
   imports: [
     TranslateModule,

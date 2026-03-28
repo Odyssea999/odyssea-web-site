@@ -1,30 +1,30 @@
-.std-landing-3-card {
-  border: 1px solid #5846A3;
+.od-landing-3-card {
+  border: 1px solid #5846a3;
   border-radius: 15px;
   padding: 1rem;
   margin-bottom: 1rem;
   cursor: pointer;
 
-  .std-landing-3-card-header {
+  .od-landing-3-card-header {
     display: flex;
     flex-direction: row;
     align-items: center;
     font-size: 1.1rem;
     padding-right: 1rem;
 
-    .std-landing-3-card-icon {
+    .od-landing-3-card-icon {
       margin-right: 1rem;
     }
   }
 
-  .std-landing-3-section-card-content {
+  .od-landing-3-section-card-content {
     padding-top: 1.2rem;
     display: none;
-    animation: hide-landing-card-content .2s ease-in-out;
+    animation: hide-landing-card-content 0.2s ease-in-out;
 
     &.show {
       display: block;
-      animation: show-landing-card-content .2s ease-in-out;
+      animation: show-landing-card-content 0.2s ease-in-out;
     }
     p {
       font-size: 1rem;

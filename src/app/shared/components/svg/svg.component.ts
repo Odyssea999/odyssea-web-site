@@ -7,10 +7,10 @@ import {
   InputSignal,
   ViewEncapsulation
 } from '@angular/core';
-import {SvgService} from "../../services/svg/svg.service";
+import { SvgService } from "../../services/svg/svg.service";
 
 @Component({
-  selector: 'std-svg',
+  selector: 'od-svg',
   standalone: true,
   imports: [],
   providers: [SvgService],
@@ -19,7 +19,7 @@ import {SvgService} from "../../services/svg/svg.service";
   changeDetection: ChangeDetectionStrategy.OnPush,
   encapsulation: ViewEncapsulation.None,
   host: {
-    "class": "std-svg"
+    "class": "od-svg"
   }
 })
 export class SvgComponent {
@@ -31,8 +31,7 @@ export class SvgComponent {
   width: InputSignal<string | undefined> = input<string>();
   height: InputSignal<string | undefined> = input<string>();
 
-  constructor(private readonly el: ElementRef, private readonly svgService: SvgService)
-  {
+  constructor(private readonly el: ElementRef, private readonly svgService: SvgService) {
     effect(() => {
       const svgFilePath: string | undefined = this.path();
       const width: string | undefined = this.width();

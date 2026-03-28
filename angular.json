@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "StudentCheck_web_site_angular": {
+    "odyssea-web-site": {
       "i18n": {
         "sourceLocale": "fr",
         "locales": {
@@ -18,12 +18,11 @@
       },
       "root": "",
       "sourceRoot": "src",
-      "prefix": "std",
-      "architect": {
+      "prefix": "od,"architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/student-check-web-site-angular",
+            "outputPath": "dist/odyssea-web-site",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -76,10 +75,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "StudentCheck_web_site_angular:build:production"
+              "buildTarget": "odyssea-web-site:build:production"
             },
             "development": {
-              "buildTarget": "StudentCheck_web_site_angular:build:development"
+              "buildTarget": "odyssea-web-site:build:development"
             }
           },
           "defaultConfiguration": "development"

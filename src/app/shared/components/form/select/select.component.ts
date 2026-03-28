@@ -1,12 +1,12 @@
-import {Component, effect, input, InputSignal} from '@angular/core';
-import {SvgComponent} from "../../svg/svg.component";
-import {SelectOptionGroupComponent} from "./components/select-option-group/select-option-group.component";
-import {SelectOptionComponent} from "./components/select-option/select-option.component";
-import {NgClass} from "@angular/common";
-import {SelectOptionDirective} from "./directives/select-option.directive";
+import { Component, effect, input, InputSignal } from '@angular/core';
+import { SvgComponent } from "../../svg/svg.component";
+import { SelectOptionGroupComponent } from "./components/select-option-group/select-option-group.component";
+import { SelectOptionComponent } from "./components/select-option/select-option.component";
+import { NgClass } from "@angular/common";
+import { SelectOptionDirective } from "./directives/select-option.directive";
 
 @Component({
-  selector: 'std-select',
+  selector: 'od-select',
   standalone: true,
   imports: [
     SvgComponent,
@@ -25,7 +25,7 @@ export class SelectComponent {
 
   isOpen: boolean = false;
 
-  constructor() {}
+  constructor() { }
 
   openSelect(): void {
     this.isOpen = !this.isOpen;

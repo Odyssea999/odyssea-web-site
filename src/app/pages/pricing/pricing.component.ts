@@ -1,17 +1,17 @@
-import {Component, effect} from '@angular/core';
-import {NavbarComponent} from "../../shared/components/navbar/navbar.component";
-import {FooterComponent} from "../../shared/components/footer/footer.component";
-import {TranslateModule} from "@ngx-translate/core";
-import {ButtonComponent} from "../../shared/components/button/button.component";
-import {BannerComponent} from "../../shared/components/banner/banner.component";
-import {SvgComponent} from "../../shared/components/svg/svg.component";
-import {PricingCardComponent} from "./components/pricing-card/pricing-card.component";
-import {PricingSlider} from "./type/pricing.type";
-import {NgClass} from "@angular/common";
-import {PricingService} from "./service/pricing.service";
+import { Component, effect } from '@angular/core';
+import { NavbarComponent } from "../../shared/components/navbar/navbar.component";
+import { FooterComponent } from "../../shared/components/footer/footer.component";
+import { TranslateModule } from "@ngx-translate/core";
+import { ButtonComponent } from "../../shared/components/button/button.component";
+import { BannerComponent } from "../../shared/components/banner/banner.component";
+import { SvgComponent } from "../../shared/components/svg/svg.component";
+import { PricingCardComponent } from "./components/pricing-card/pricing-card.component";
+import { PricingSlider } from "./type/pricing.type";
+import { NgClass } from "@angular/common";
+import { PricingService } from "./service/pricing.service";
 
 @Component({
-  selector: 'std-pricing',
+  selector: 'od-pricing',
   standalone: true,
   imports: [
     NavbarComponent,
@@ -72,7 +72,7 @@ export class PricingComponent {
     },
   ]
 
-  constructor(private readonly priceService: PricingService) {}
+  constructor(private readonly priceService: PricingService) { }
 
   sliderSelected(index: number, slider: PricingSlider): void {
     this.priceService.setStudentNumber(slider.value);

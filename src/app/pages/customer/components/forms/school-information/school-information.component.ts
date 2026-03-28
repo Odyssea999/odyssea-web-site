@@ -1,6 +1,6 @@
-import {ChangeDetectionStrategy, Component, OnInit, ViewEncapsulation} from "@angular/core";
-import {ButtonComponent} from "../../../../../shared/components/button/button.component";
-import {SelectComponent} from "../../../../../shared/components/form/select/select.component";
+import { ChangeDetectionStrategy, Component, OnInit, ViewEncapsulation } from "@angular/core";
+import { ButtonComponent } from "../../../../../shared/components/button/button.component";
+import { SelectComponent } from "../../../../../shared/components/form/select/select.component";
 import {
   SelectOptionComponent
 } from "../../../../../shared/components/form/select/components/select-option/select-option.component";
@@ -9,7 +9,7 @@ import {
 } from "../../../../../shared/components/form/select/components/select-option-group/select-option-group.component";
 
 @Component({
-  selector: "std-school-information",
+  selector: "od-school-information",
   templateUrl: "./school-information.component.html",
   styleUrls: ["./school-information.component.scss"],
   standalone: true,
@@ -24,7 +24,7 @@ import {
 })
 export class SchoolInformationComponent implements OnInit {
 
-  constructor() {}
+  constructor() { }
 
   ngOnInit(): void {
   }

@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import {TranslateService} from "@ngx-translate/core";
-import {LanguageService} from "./shared/services/Language/Language.service";
+import { TranslateService } from "@ngx-translate/core";
+import { LanguageService } from "./shared/services/Language/Language.service";
 
 @Component({
-  selector: 'std-root',
+  selector: 'od-root',
   standalone: true,
   imports: [RouterOutlet],
   providers: [LanguageService],
@@ -13,5 +13,5 @@ import {LanguageService} from "./shared/services/Language/Language.service";
 })
 export class AppComponent {
 
-  constructor(private readonly languageService: LanguageService) {}
+  constructor(private readonly languageService: LanguageService) { }
 }

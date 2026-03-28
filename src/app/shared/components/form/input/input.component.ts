@@ -1,10 +1,10 @@
-import {Component, input, InputSignal, OnInit, output, OutputEmitterRef} from "@angular/core";
-import {InputDirective} from "./directive/input.directive";
-import {FormControl, ReactiveFormsModule} from "@angular/forms";
-import {NgClass} from "@angular/common";
+import { Component, input, InputSignal, OnInit, output, OutputEmitterRef } from "@angular/core";
+import { InputDirective } from "./directive/input.directive";
+import { FormControl, ReactiveFormsModule } from "@angular/forms";
+import { NgClass } from "@angular/common";
 
 @Component({
-  selector: "std-input",
+  selector: "od-input",
   templateUrl: "./input.component.html",
   styleUrl: "./input.component.scss",
   standalone: true,
@@ -24,7 +24,7 @@ export class InputComponent implements OnInit {
   showError: InputSignal<boolean> = input<boolean>(false);
   errorMessage: InputSignal<string | undefined> = input<string>();
 
-  constructor() {}
+  constructor() { }
 
   ngOnInit(): void {
     this._init();

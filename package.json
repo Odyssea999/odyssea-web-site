@@ -1,5 +1,5 @@
 {
-  "name": "student-check-web-site-angular",
+  "name": "odyssea-web-site",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:StudentCheck_web_site_angular": "node dist/student-check-web-site-angular/server/server.mjs"
+    "serve:ssr:odyssea-web-site": "node dist/odyssea-web-site/server/server.mjs"
   },
   "private": true,
   "dependencies": {

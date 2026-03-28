@@ -1,10 +1,10 @@
-import {ChangeDetectionStrategy, Component, input, ViewEncapsulation} from '@angular/core';
-import {TranslateModule} from "@ngx-translate/core";
-import {NgClass} from "@angular/common";
-import {RouterLink} from "@angular/router";
+import { ChangeDetectionStrategy, Component, input, ViewEncapsulation } from '@angular/core';
+import { TranslateModule } from "@ngx-translate/core";
+import { NgClass } from "@angular/common";
+import { RouterLink } from "@angular/router";
 
 @Component({
-  selector: 'std-button',
+  selector: 'od-button',
   standalone: true,
   imports: [
     TranslateModule,
@@ -39,7 +39,7 @@ export class ButtonComponent {
    */
   bgColor = input<string>();
 
-  constructor() {}
+  constructor() { }
 
   setClassesStyle(): Record<string, string | boolean> {
     return {

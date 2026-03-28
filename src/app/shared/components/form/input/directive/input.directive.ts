@@ -1,4 +1,4 @@
-import {Directive, ElementRef, HostListener} from "@angular/core";
+import { Directive, ElementRef, HostListener } from "@angular/core";
 
 @Directive({
   selector: '[stdInputDirective]',
@@ -6,11 +6,11 @@ import {Directive, ElementRef, HostListener} from "@angular/core";
 })
 export class InputDirective {
 
-  private readonly inputWrapperDefaultClassName: string = "std-form-control-input";
-  private readonly inputDefaultClassName: string = "std-form-input";
-  private readonly focusClassName: string = "std-form-input-focus";
+  private readonly inputWrapperDefaultClassName: string = "od-form-control-input";
+  private readonly inputDefaultClassName: string = "od-form-input";
+  private readonly focusClassName: string = "od-form-input-focus";
 
-  constructor(private readonly el: ElementRef) {}
+  constructor(private readonly el: ElementRef) { }
 
   @HostListener('click', ['$event.target']) onClick(event: HTMLElement): void {
 

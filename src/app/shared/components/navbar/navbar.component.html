@@ -1,39 +1,36 @@
-<div class="std-navbar" [ngClass]="{'show-nav': isNavbarOpened}">
-  <div class="std-navbar-top-logo">
-    <div class="std-logo">
-      <std-svg width="100%" routerLink="/" path="/images/logo.svg"></std-svg>
+<div class="od-navbar" [ngClass]="{'show-nav': isNavbarOpened}">
+  <div class="od-navbar-top-logo">
+    <div class="od-logo">
+      <od-svg width="100%" routerLink="/" path="/images/logo.svg"></od-svg>
     </div>
-    <div class="std-navbar-logo-open">
+    <div class="od-navbar-logo-open">
       @if (isNavbarOpened) {
-        <std-svg width="100%" [path]="closeIcon" (click)="toggleShowNavbar()"></std-svg>
+        <od-svg width="100%" [path]="closeIcon" (click)="toggleShowNavbar()"></od-svg>
       } @else {
-        <std-svg width="100%" [path]="openIcon" (click)="toggleShowNavbar()"></std-svg>
+        <od-svg width="100%" [path]="openIcon" (click)="toggleShowNavbar()"></od-svg>
       }
     </div>
   </div>
-  <div class="std-nav-bar-bottom">
-    <div class="std-nav-links">
-      <ul class="std-nav-links-content">
-        <li class="std-nav-links-item">
-          <a href="" class="std-nav-link">{{ "HOME.navbar.whyUs" | translate }}</a>
+  <div class="od-nav-bar-bottom">
+    <div class="od-nav-links">
+      <ul class="od-nav-links-content">
+        <li class="od-nav-links-item">
+          <a href="" class="od-nav-link">{{ "HOME.navbar.whyUs" | translate }}</a>
         </li>
-        <li class="std-nav-links-item">
-          <a href="" class="std-nav-link">{{ "HOME.navbar.solution" | translate }}</a>
+        <li class="od-nav-links-item">
+          <a href="" class="od-nav-link">{{ "HOME.navbar.solution" | translate }}</a>
         </li>
-        <li class="std-nav-links-item">
-          <a routerLink="/pricing" class="std-nav-link">{{ "HOME.navbar.pricing" | translate }}</a>
+        <li class="od-nav-links-item">
+          <a routerLink="/pricing" class="od-nav-link">{{ "HOME.navbar.pricing" | translate }}</a>
         </li>
-        <li class="std-nav-links-item">
-          <a href="" class="std-nav-link">{{ "HOME.navbar.faq" | translate }}</a>
+        <li class="od-nav-links-item">
+          <a href="" class="od-nav-link">{{ "HOME.navbar.faq" | translate }}</a>
         </li>
       </ul>
     </div>
-    <div class="std-nav-btn">
-      <div class="std-navbar-btn-item">
-        <std-button navigateTo="/" content="{{ 'HOME.navbar.login' | translate }}" [outlined]="true"></std-button>
-      </div>
-      <div class="std-navbar-btn-item">
-        <std-button [navigateTo]="'/become-customer'" content="{{ 'HOME.navbar.trial' | translate }}" [outlined]="false"></std-button>
+    <div class="od-nav-btn">
+      <div class="od-navbar-btn-item">
+        <od-button [navigateTo]="'/become-customer'" content="{{ 'HOME.navbar.trial' | translate }}" [outlined]="false"></od-button>
       </div>
     </div>
   </div>

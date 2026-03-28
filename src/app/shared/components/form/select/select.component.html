@@ -1,14 +1,14 @@
-<div class="std-form-select-container" selectOptionDirective [isOptionGroupClose]="isOpen" (closeOptionGroup)="isOpen = $event">
-  <p class="std-form-select-label">{{ label() }}</p>
-  <div class="std-form-control" (click)="openSelect()">
-    <div class="std-form-select" [ngClass]="{'open': isOpen}">
-      <p class="std-form-select-title">{{ defaultOption() }}</p>
-      <div class="std-form-select-icon">
-        <std-svg path="/icons/up_down.svg"></std-svg>
+<div class="od-form-select-container" selectOptionDirective [isOptionGroupClose]="isOpen" (closeOptionGroup)="isOpen = $event">
+  <p class="od-form-select-label">{{ label() }}</p>
+  <div class="od-form-control" (click)="openSelect()">
+    <div class="od-form-select" [ngClass]="{'open': isOpen}">
+      <p class="od-form-select-title">{{ defaultOption() }}</p>
+      <div class="od-form-select-icon">
+        <od-svg path="/icons/up_down.svg"></od-svg>
       </div>
     </div>
   </div>
   @if (isOpen) {
-    <ng-content select="std-select-option-group, stdSelectOptionGroup, [std-select-option-group]"></ng-content>
+    <ng-content select="od-select-option-group, stdSelectOptionGroup, [od-select-option-group]"></ng-content>
   }
 </div>

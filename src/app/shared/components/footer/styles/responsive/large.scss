@@ -1,10 +1,8 @@
-
 @use "../../../../styles/mixins";
 @use "../../../../styles/variables";
 
 @include mixins.large {
-
-  .std-footer {
+  .od-footer {
     width: 100%;
     background: variables.$light_landing_main_section_bg;
     display: flex;
@@ -14,14 +12,14 @@
     padding-bottom: 3rem;
 
     /// BANNER
-    .std-footer-banner {
+    .od-footer-banner {
       width: 100%;
       display: flex;
       justify-content: center;
       padding-left: variables.$container_padding_left;
       padding-right: variables.$container_padding_right;
 
-      .std-footer-banner-content {
+      .od-footer-banner-content {
         width: 100%;
         border-radius: 15px;
         background: rgba(255, 255, 255, 25%);
@@ -35,12 +33,12 @@
     }
 
     /// LINKS
-    .std-footer-links {
+    .od-footer-links {
       width: 100%;
       padding-left: variables.$container_padding_left;
       padding-right: variables.$container_padding_right;
 
-      .std-footer-links-content {
+      .od-footer-links-content {
         width: 100%;
         display: flex;
         flex-direction: row;
@@ -49,7 +47,7 @@
         height: 100%;
         padding-top: 2rem;
 
-        .std-footer-link {
+        .od-footer-link {
           width: 25%;
           padding-left: 1.3rem;
 
@@ -58,15 +56,15 @@
             padding-bottom: 0.8rem;
           }
 
-          .std-footer-link-list {
+          .od-footer-link-list {
             list-style: none;
             text-decoration: none;
 
-            .std-footer-link-list-item {
+            .od-footer-link-list-item {
               padding-bottom: 0.9rem;
             }
 
-            .std-footer-link-list-item a.std-footer-link-item {
+            .od-footer-link-list-item a.od-footer-link-item {
               text-decoration: none;
               color: variables.$light_text_color;
               font-size: 1rem;
@@ -77,7 +75,7 @@
     }
 
     /// LEGALS
-    .std-footer-legals {
+    .od-footer-legals {
       width: 100%;
       padding-left: variables.$container_padding_left;
       padding-right: variables.$container_padding_right;
@@ -85,7 +83,7 @@
       justify-content: center;
       align-items: center;
 
-      .std-footer-legals-content {
+      .od-footer-legals-content {
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -93,7 +91,7 @@
         flex-wrap: wrap;
         justify-content: space-between;
         font-size: 1rem;
-        color: #55687D;
+        color: #55687d;
         padding-left: 1.3rem;
         padding-top: 2rem;
         gap: 1rem;
@@ -107,18 +105,18 @@
           color: variables.$light_text_color;
         }
 
-        .std-footer-legals-politics {
+        .od-footer-legals-politics {
           display: flex;
           flex-direction: row;
           justify-content: flex-start;
           gap: 1rem;
         }
 
-        .std-footer-languages {
+        .od-footer-languages {
           display: flex;
           justify-content: flex-end;
 
-          .std-footer-languages-card {
+          .od-footer-languages-card {
             display: flex;
             flex-direction: row;
             align-items: center;
@@ -131,16 +129,14 @@
             padding: 0 1rem;
             cursor: pointer;
 
-            .std-footer-language-icon {
+            .od-footer-language-icon {
               width: 100%;
               // WHEN ANIMATE ROTATE 180
               //transform: rotate(180deg);
             }
           }
         }
-
       }
     }
   }
-
 }

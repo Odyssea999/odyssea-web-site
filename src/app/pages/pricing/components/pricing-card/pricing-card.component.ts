@@ -8,18 +8,18 @@ import {
   OnInit,
   ViewEncapsulation
 } from '@angular/core';
-import {ButtonComponent} from "../../../../shared/components/button/button.component";
-import {SvgComponent} from "../../../../shared/components/svg/svg.component";
-import {TranslateModule} from "@ngx-translate/core";
-import {NgClass} from "@angular/common";
-import {Establishment, Languages, PricingEstablishment, PricingFeatureOption} from "../../type/pricing.type";
-import {PricingService} from "../../service/pricing.service";
-import {Subscription} from "rxjs";
-import {EstablishmentTypes, features} from "../../const/pricing.const";
-import {LanguageService} from "../../../../shared/services/Language/Language.service";
+import { ButtonComponent } from "../../../../shared/components/button/button.component";
+import { SvgComponent } from "../../../../shared/components/svg/svg.component";
+import { TranslateModule } from "@ngx-translate/core";
+import { NgClass } from "@angular/common";
+import { Establishment, Languages, PricingEstablishment, PricingFeatureOption } from "../../type/pricing.type";
+import { PricingService } from "../../service/pricing.service";
+import { Subscription } from "rxjs";
+import { EstablishmentTypes, features } from "../../const/pricing.const";
+import { LanguageService } from "../../../../shared/services/Language/Language.service";
 
 @Component({
-  selector: 'std-pricing-card',
+  selector: 'od-pricing-card',
   standalone: true,
   imports: [
     ButtonComponent,
@@ -88,7 +88,7 @@ export class PricingCardComponent implements OnInit, OnDestroy {
   }
 
   handleCheck(): void {
-    const element = this.el.nativeElement.querySelector(".std-pricing-option-check");
+    const element = this.el.nativeElement.querySelector(".od-pricing-option-check");
 
     if (element !== undefined) {
       if (element.classList.length > 1) {
@@ -100,7 +100,7 @@ export class PricingCardComponent implements OnInit, OnDestroy {
   }
 
   toggleEstablishmentList(): void {
-    const element = this.el.nativeElement.querySelector(".std-pricing-establishment-list");
+    const element = this.el.nativeElement.querySelector(".od-pricing-establishment-list");
 
     console.log(element)
     if (element !== undefined) {

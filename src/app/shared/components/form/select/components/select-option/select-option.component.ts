@@ -1,8 +1,8 @@
-import {Component, input, InputSignal, OnInit, output} from "@angular/core";
-import {NgClass} from "@angular/common";
+import { Component, input, InputSignal, OnInit, output } from "@angular/core";
+import { NgClass } from "@angular/common";
 
 @Component({
-  selector: "std-select-option, [std-select-option], [stdSelectOption]",
+  selector: "od-select-option, [od-select-option], [stdSelectOption]",
   standalone: true,
   templateUrl: "./select-option.component.html",
   styleUrls: ["./select-option.component.scss"],
@@ -10,7 +10,7 @@ import {NgClass} from "@angular/common";
     NgClass,
   ],
   host: {
-    "class": "std-option",
+    "class": "od-option",
   }
 })
 export class SelectOptionComponent implements OnInit {
@@ -21,7 +21,7 @@ export class SelectOptionComponent implements OnInit {
 
   valueOutput = output<unknown>();
 
-  constructor() {}
+  constructor() { }
 
   ngOnInit(): void {
     this.valueOutput.emit(this.valueInput());

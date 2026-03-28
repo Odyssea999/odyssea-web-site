@@ -4,18 +4,17 @@
       "pricing": "Nos offres",
       "solution": "Notre solution",
       "faq": "FAQ",
-      "whyUs": "Pourquoi StudentCheck?",
-      "login": "Se connecter",
+      "whyUs": "Pourquoi Odyssea?",
       "trial": "Demander une démo"
     },
     "mainSection": {
       "title": "Transformez l'administration scolaire avec notre solution.",
       "offers": "Nos offres",
-      "subtitle": "Centralisez la gestion de votre établissement. Depuis StudentCheck, vous pouvez gérer vos différentes promotions, notes des élèves, planning. Tout cela avec  une messagerie instantanée intégrée, cours vidéo, suivi des activités de l’établissement, la possibilité de signaler sa présence par QR Code et bien plus encore."
+      "subtitle": "Centralisez la gestion de votre établissement. Depuis Odyssea, vous pouvez gérer vos différentes promotions, notes des élèves, planning. Tout cela avec  une messagerie instantanée intégrée, cours vidéo, suivi des activités de l’établissement, la possibilité de signaler sa présence par QR Code et bien plus encore."
     },
     "mainSection2": {
       "title": "Plus besoin d’utiliser plusieurs solutions de gestion",
-      "subtitle": "Plus qu’une simple solution. StudentCheck est le couteau suisse de la gestion de votre établissement.",
+      "subtitle": "Plus qu’une simple solution. Odyssea est le couteau suisse de la gestion de votre établissement.",
       "cards": {
         "item1": {
           "title": "Signaler sa présence",
@@ -72,14 +71,14 @@
   "FOOTER": {
     "company": {
       "title": "Société",
-      "link1": "Pourquoi StudentCheck"
+      "link1": "Pourquoi Odyssea"
     },
     "navigation": {
       "title": "Navigation",
       "pricing": "Nos offres",
       "solution": "Notre solution",
       "faq": "FAQ",
-      "whyUs": "Pourquoi StudentCheck?"
+      "whyUs": "Pourquoi Odyssea?"
     },
     "customer": {
       "title": "Client",
@@ -87,7 +86,7 @@
       "report": "Remonter un problème"
     },
     "legals": {
-      "copyright": "© 2024 StudentCheck. Tous droits réservés.",
+      "copyright": "© 2024 Odyssea. Tous droits réservés.",
       "politics": "Politique de confidentialité",
       "termOfUse": "Conditions d’utilisation"
     }

@@ -1,15 +1,13 @@
-@use '../../shared/styles/mixins';
-@use '../../shared/styles/variables';
-
+@use "../../shared/styles/mixins";
+@use "../../shared/styles/variables";
 
 @include mixins.container {
-
-  .std-pricing {
+  .od-pricing {
     width: 100%;
     display: flex;
     flex-direction: column;
 
-    .std-pricing-top {
+    .od-pricing-top {
       width: 100%;
       background-color: variables.$light_landing_main_section_bg;
       padding-left: variables.$container_padding_left;
@@ -17,20 +15,20 @@
       height: 50vh;
       //position: relative;
 
-      .std-pricing-top-content {
+      .od-pricing-top-content {
         width: 100%;
         display: flex;
         flex-direction: column;
         padding-top: 5rem;
         align-items: center;
 
-        .std-pricing-section-title {
+        .od-pricing-section-title {
           font-size: 1.8rem;
           text-align: center;
           margin-bottom: 2rem;
 
           span {
-            color: #10083C;
+            color: #10083c;
           }
 
           span:nth-child(2) {
@@ -46,7 +44,7 @@
           }
         }
 
-        .std-pricing-slider-card {
+        .od-pricing-slider-card {
           background: variables.$white;
           width: 50%;
           min-height: 10vw;
@@ -55,16 +53,15 @@
           display: flex;
           flex-direction: column;
 
-          .std-pricing-card-title {
+          .od-pricing-card-title {
             font-size: 1.3rem;
           }
 
-          .std-pricing-slider-bloc {
+          .od-pricing-slider-bloc {
             width: 100%;
             padding-top: 2rem;
 
-
-            .std-pricing-slider {
+            .od-pricing-slider {
               background: variables.$dark_icon_color;
               border-radius: 15px;
               height: 0.8rem;
@@ -75,13 +72,13 @@
               padding: 0.5rem 0.1rem;
               position: relative;
 
-              span.std-pricing-slider-range {
+              span.od-pricing-slider-range {
                 width: 12%;
                 height: 10px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                transition: background-color .3s ease-in-out;
+                transition: background-color 0.3s ease-in-out;
                 border-radius: 50px;
                 position: relative;
 
@@ -96,7 +93,7 @@
 
                 &::after {
                   display: block;
-                  content: '';
+                  content: "";
                   width: 0.5rem;
                   height: 0.5rem;
                   border-radius: 50px;
@@ -127,7 +124,7 @@
                     padding: 0.3rem 0.3rem;
                     height: 25px;
                     min-width: 25px;
-                    background-color: #10083C;
+                    background-color: #10083c;
                     top: -2.5rem;
                     border-radius: 7px;
                     color: variables.$white;
@@ -149,12 +146,11 @@
                     border-top-right-radius: 50px;
                     border-bottom-right-radius: 50px;
                   }
-
                 }
               }
             }
 
-            .std-pricing-number {
+            .od-pricing-number {
               display: flex;
               flex-direction: row;
               justify-content: space-between;
@@ -165,35 +161,31 @@
               }
             }
           }
-
         }
       }
-
     }
 
-    .std-pricing-cards {
+    .od-pricing-cards {
       width: 100%;
       padding-left: variables.$container_padding_left;
       padding-right: variables.$container_padding_right;
       padding-top: 1rem;
 
-      .std-pricing-cards-content {
+      .od-pricing-cards-content {
         width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
 
-        .std-card-item {
+        .od-card-item {
           width: 35%;
         }
       }
     }
-
   }
-
 }
 
-@import 'styles/responsive/x_small';
-@import 'styles/responsive/small';
-@import 'styles/responsive/medium';
-@import 'styles/responsive/large';
+@import "styles/responsive/x_small";
+@import "styles/responsive/small";
+@import "styles/responsive/medium";
+@import "styles/responsive/large";

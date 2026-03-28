@@ -5,13 +5,13 @@ import {
   InputSignal,
   ViewEncapsulation
 } from '@angular/core';
-import {TranslateModule} from "@ngx-translate/core";
-import {NgClass} from "@angular/common";
-import {LandingCardDirective} from "../directives/landing-card.directive";
-import {SvgComponent} from "../../../../shared/components/svg/svg.component";
+import { TranslateModule } from "@ngx-translate/core";
+import { NgClass } from "@angular/common";
+import { LandingCardDirective } from "../directives/landing-card.directive";
+import { SvgComponent } from "../../../../shared/components/svg/svg.component";
 
 @Component({
-  selector: 'std-landing-card',
+  selector: 'od-landing-card',
   standalone: true,
   imports: [
     TranslateModule,
@@ -29,5 +29,5 @@ export class LandingCardComponent {
   content: InputSignal<string | undefined> = input<string>();
   svg: InputSignal<string | undefined> = input<string>();
 
-  constructor(private readonly el: ElementRef) {}
+  constructor(private readonly el: ElementRef) { }
 }

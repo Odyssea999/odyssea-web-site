@@ -1,4 +1,4 @@
-import {Directive, ElementRef, HostListener, input, InputSignal, output, OutputEmitterRef} from "@angular/core";
+import { Directive, ElementRef, HostListener, input, InputSignal, output, OutputEmitterRef } from "@angular/core";
 
 @Directive({
   selector: '[selectOptionDirective]',
@@ -6,7 +6,7 @@ import {Directive, ElementRef, HostListener, input, InputSignal, output, OutputE
 })
 export class SelectOptionDirective {
 
-  private readonly optionClassName: string = "std-option";
+  private readonly optionClassName: string = "od-option";
 
   closeOptionGroup: OutputEmitterRef<boolean> = output<boolean>();
   isOptionGroupClose: InputSignal<boolean> = input<boolean>(false);

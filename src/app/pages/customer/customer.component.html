@@ -1,26 +1,26 @@
-<div class="std-container">
-  <div class="std-customer-container">
-    <section class="std-customer-top">
-      <div class="std-customer-top-content">
-        <div class="std-customer-top-logo-content">
-          <div class="std-customer-top-logo">
-            <std-svg routerLink="/" path="/images/logo.svg"></std-svg>
+<div class="od-container">
+  <div class="od-customer-container">
+    <section class="od-customer-top">
+      <div class="od-customer-top-content">
+        <div class="od-customer-top-logo-content">
+          <div class="od-customer-top-logo">
+            <od-svg routerLink="/" path="/images/logo.svg"></od-svg>
           </div>
         </div>
-        <div class="std-customer-information">
-          <p class="std-customer-step-title">
+        <div class="od-customer-information">
+          <p class="od-customer-step-title">
             Quelques informations
           </p>
-          <std-stepper-count-tracker [initialValue]="1" [totalSteps]="7"></std-stepper-count-tracker>
+          <od-stepper-count-tracker [initialValue]="1" [totalSteps]="7"></od-stepper-count-tracker>
         </div>
       </div>
-      <div class="std-customer-top-stepper">
-        <std-stepper [initialStep]="1" [totalSteps]="7"></std-stepper>
+      <div class="od-customer-top-stepper">
+        <od-stepper [initialStep]="1" [totalSteps]="7"></od-stepper>
       </div>
     </section>
-    <section class="std-customer-bottom">
-      <div class="std-customer-bottom-content">
-        <std-school-information></std-school-information>
+    <section class="od-customer-bottom">
+      <div class="od-customer-bottom-content">
+        <od-school-information></od-school-information>
       </div>
     </section>
   </div>

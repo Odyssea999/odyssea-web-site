@@ -4,18 +4,17 @@
       "pricing": "Become customer",
       "solution": "Our solution",
       "faq": "Q&A",
-      "whyUs": "Why StudentCheck?",
-      "login": "Log in",
+      "whyUs": "Why Odyssea?",
       "trial": "Request a demo"
     },
     "mainSection": {
       "title": "Transform school administration with our solution.",
       "offers": "See offers",
-      "subtitle": "Centralize your institution's management. With StudentCheck, you can manage your different cohorts, student grades, and schedules. All this with integrated instant messaging, video courses, activity tracking, QR code attendance, and much more."
+      "subtitle": "Centralize your institution's management. With Odyssea, you can manage your different cohorts, student grades, and schedules. All this with integrated instant messaging, video courses, activity tracking, QR code attendance, and much more."
     },
     "mainSection2": {
       "title": "No need to use multiple management solutions",
-      "subtitle": "More than just a solution. StudentCheck is the Swiss army knife for managing your institution.",
+      "subtitle": "More than just a solution. Odyssea is the Swiss army knife for managing your institution.",
       "cards": {
         "item1": {
           "title": "Report your presence",
@@ -50,14 +49,14 @@
   "FOOTER": {
     "company": {
       "title": "Société",
-      "link1": "Pourquoi StudentCheck"
+      "link1": "Pourquoi Odyssea"
     },
     "navigation": {
       "title": "Navigation",
       "pricing": "Nos offres",
       "solution": "Notre solution",
       "faq": "FAQ",
-      "whyUs": "Pourquoi StudentCheck?"
+      "whyUs": "Pourquoi Odyssea?"
     },
     "customer": {
       "title": "Client",
@@ -65,7 +64,7 @@
       "report": "Remonter un problème"
     },
     "legals": {
-      "copyright": "© 2024 StudentCheck. Tous droits réservés.",
+      "copyright": "© 2024 Odyssea. Tous droits réservés.",
       "politics": "Politique de confidentialité",
       "termOfUse": "Conditions d’utilisation"
     }
