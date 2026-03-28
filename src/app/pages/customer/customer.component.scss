@@ -229,6 +229,45 @@
     }
   }
 
+  .btn {
+    text-decoration: none;
+    font-family: "Outfit", sans-serif;
+    font-size: 1rem;
+    color: variables.$black;
+    width: 100%;
+    display: block;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+
+    &.btn-outlined {
+      border: 1px solid variables.$light_text_color;
+      padding: 0.8rem 1.5rem;
+      border-radius: 0.5rem;
+      color: variables.$light_text_color;
+      background: transparent;
+      transition: background-color .2s ease-in, color .2s ease-in, border-color .2s ease-in;
+
+      &:hover {
+        background-color: #3f2d87;
+        color: variables.$white;
+        border-color: #3f2d87;
+      }
+    }
+
+    &.btn-filled {
+      background-color: variables.$light_violet_color;
+      color: variables.$white;
+      padding: 0.8rem 1.5rem;
+      border-radius: 0.5rem;
+      transition: background-color .15s ease-in;
+
+      &:hover {
+        background-color: #3f2d87;
+      }
+    }
+  }
+
   .od-customer-actions {
     width: 100%;
     display: flex;
