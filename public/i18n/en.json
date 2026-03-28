@@ -178,10 +178,14 @@
   },
   "PAGES": {
     "features": {
+      "seo": {
+        "title": "Odyssea Features | Document management, tracking, organization, and communication",
+        "description": "Discover everything Odyssea helps centralize: document management, daily organization, activity tracking, communication, and coordination for your institution."
+      },
       "eyebrow": "Features",
       "hero": {
-        "title": "The central page to understand everything Odyssea999 can do.",
-        "subtitle": "Document management, daily organization, activity tracking, communication, and coordination: Odyssea999 brings together the essential building blocks to run your institution with more clarity.",
+        "title": "The central page to understand everything Odyssea can do.",
+        "subtitle": "Document management, daily organization, activity tracking, communication, and coordination: Odyssea brings together the essential building blocks to run your institution with more clarity.",
         "secondaryCta": "See the customer journey"
       },
       "panel": {
@@ -236,19 +240,23 @@
       },
       "cta": {
         "title": "Need a more concrete view?",
-        "subtitle": "The Odyssea999 support journey explains how we move from the initial assessment to a rollout tailored to your structure.",
+        "subtitle": "The Odyssea support journey explains how we move from the initial assessment to a rollout tailored to your structure.",
         "button": "Discover how it works"
       }
     },
     "about": {
+      "seo": {
+        "title": "About Odyssea | Vision, support, and values",
+        "description": "Learn who is behind Odyssea, the vision behind the project, and the values that shape our support approach."
+      },
       "eyebrow": "About",
       "hero": {
-        "title": "Odyssea999 has a simple vision: bring order where tools have become scattered.",
-        "subtitle": "Behind Odyssea999 is the desire to offer a more human, clearer, and more useful framework for institutions that want to run their daily operations better without being trapped in unnecessary complexity."
+        "title": "Odyssea has a simple vision: bring order where tools have become scattered.",
+        "subtitle": "Behind Odyssea is the desire to offer a more human, clearer, and more useful framework for institutions that want to run their daily operations better without being trapped in unnecessary complexity."
       },
       "story": {
-        "title": "Who is behind Odyssea999?",
-        "paragraph1": "Odyssea999 is driven by a close relationship with organizations that need both a central tool and a partner able to understand their real constraints.",
+        "title": "Who is behind Odyssea?",
+        "paragraph1": "Odyssea is driven by a close relationship with organizations that need both a central tool and a partner able to understand their real constraints.",
         "paragraph2": "The ambition is not only to digitize isolated actions. It is to create a calmer, more coherent management experience that is easier to sustain every day."
       },
       "vision": {
@@ -266,7 +274,7 @@
         },
         "proximity": {
           "title": "Proximity",
-          "content": "Odyssea999 grows through close contact with field needs and a practical support mindset."
+          "content": "Odyssea grows through close contact with field needs and a practical support mindset."
         },
         "sustainability": {
           "title": "Sustainability",
@@ -280,18 +288,22 @@
       }
     },
     "faq": {
+      "seo": {
+        "title": "Odyssea FAQ | Services, support, and how it works",
+        "description": "Find answers to common questions about Odyssea services, the customer journey, and how the solution works overall."
+      },
       "eyebrow": "FAQ",
       "hero": {
         "title": "Answers to the most common questions about our services and overall approach.",
-        "subtitle": "This page brings together the essential points for understanding who Odyssea999 is for, how support works, and what the solution improves day to day."
+        "subtitle": "This page brings together the essential points for understanding who Odyssea is for, how support works, and what the solution improves day to day."
       },
       "items": {
         "1": {
-          "question": "Who is Odyssea999 for?",
-          "answer": "Odyssea999 is designed for institutions that want to centralize their organization, documents, and operational tracking in a single environment."
+          "question": "Who is Odyssea for?",
+          "answer": "Odyssea is designed for institutions that want to centralize their organization, documents, and operational tracking in a single environment."
         },
         "2": {
-          "question": "Does Odyssea999 replace several tools?",
+          "question": "Does Odyssea replace several tools?",
           "answer": "Yes. The goal is precisely to reduce tool sprawl by bringing key uses together in a more coherent environment."
         },
         "3": {
@@ -300,7 +312,7 @@
         },
         "4": {
           "question": "Can the solution adapt to how we work?",
-          "answer": "The Odyssea999 approach aims to align with your real priorities so the rollout remains useful, understandable, and sustainable."
+          "answer": "The Odyssea approach aims to align with your real priorities so the rollout remains useful, understandable, and sustainable."
         },
         "5": {
           "question": "How can we discover the solution more concretely?",
@@ -314,9 +326,13 @@
       }
     },
     "howItWorks": {
+      "seo": {
+        "title": "How it works | The Odyssea customer journey",
+        "description": "Understand the Odyssea method: sign-up, assessment, rollout framing, and ongoing support."
+      },
       "eyebrow": "How it works",
       "hero": {
-        "title": "The Odyssea999 customer journey, from first contact to ongoing support.",
+        "title": "The Odyssea customer journey, from first contact to ongoing support.",
         "subtitle": "This is not about technical details. It is about method, relationship, and progression. The goal is to make your transition clear, reassuring, and adapted to your reality."
       },
       "steps": {
@@ -342,6 +358,18 @@
         "subtitle": "Each step is meant to clarify what comes next, avoid gray areas, and help you move forward with a trajectory that is understandable from the start.",
         "secondaryButton": "View features",
         "primaryButton": "Start the conversation"
+      }
+    },
+    "pricing": {
+      "seo": {
+        "title": "Odyssea Pricing | Clear plans tailored to your institution",
+        "description": "Explore Odyssea pricing and included features to centralize the management of your institution."
+      }
+    },
+    "customer": {
+      "seo": {
+        "title": "Request an Odyssea demo | Start your support journey",
+        "description": "Share a few details about your institution to start the conversation and discover the Odyssea support approach."
       }
     }
   }

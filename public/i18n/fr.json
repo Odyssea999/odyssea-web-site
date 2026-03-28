@@ -178,10 +178,14 @@
   },
   "PAGES": {
     "features": {
+      "seo": {
+        "title": "Fonctionnalités Odyssea | GED, suivi, organisation et communication",
+        "description": "Découvrez tout ce qu’Odyssea permet de centraliser: GED, organisation quotidienne, suivi d’activité, communication et coordination de votre établissement."
+      },
       "eyebrow": "Fonctionnalités",
       "hero": {
-        "title": "La page centrale pour comprendre tout ce qu’Odyssea999 sait faire.",
-        "subtitle": "GED, organisation quotidienne, suivi de l’activité, communication et coordination: Odyssea999 rassemble les briques essentielles pour piloter votre établissement avec plus de clarté.",
+        "title": "La page centrale pour comprendre tout ce qu’Odyssea sait faire.",
+        "subtitle": "GED, organisation quotidienne, suivi de l’activité, communication et coordination: Odyssea rassemble les briques essentielles pour piloter votre établissement avec plus de clarté.",
         "secondaryCta": "Voir le parcours client"
       },
       "panel": {
@@ -236,19 +240,23 @@
       },
       "cta": {
         "title": "Besoin d’une vision plus concrète?",
-        "subtitle": "Le parcours d’accompagnement Odyssea999 explique comment nous passons du diagnostic initial à une mise en place adaptée à votre structure.",
+        "subtitle": "Le parcours d’accompagnement Odyssea explique comment nous passons du diagnostic initial à une mise en place adaptée à votre structure.",
         "button": "Découvrir comment ça marche"
       }
     },
     "about": {
+      "seo": {
+        "title": "À propos d’Odyssea | Vision, accompagnement et valeurs",
+        "description": "Découvrez qui est derrière Odyssea, la vision portée par le projet et les valeurs qui structurent notre accompagnement."
+      },
       "eyebrow": "À propos",
       "hero": {
-        "title": "Odyssea999, une vision simple: remettre de l’ordre là où les outils se dispersent.",
-        "subtitle": "Derrière Odyssea999, il y a la volonté de proposer un cadre plus humain, plus lisible et plus utile pour les établissements qui veulent mieux piloter leur quotidien sans s’enfermer dans une complexité inutile."
+        "title": "Odyssea, une vision simple: remettre de l’ordre là où les outils se dispersent.",
+        "subtitle": "Derrière Odyssea, il y a la volonté de proposer un cadre plus humain, plus lisible et plus utile pour les établissements qui veulent mieux piloter leur quotidien sans s’enfermer dans une complexité inutile."
       },
       "story": {
-        "title": "Qui est derrière Odyssea999 ?",
-        "paragraph1": "Odyssea999 est porté par une démarche de proximité avec les structures qui ont besoin d’un outil central, mais aussi d’un partenaire capable de comprendre leurs contraintes réelles.",
+        "title": "Qui est derrière Odyssea ?",
+        "paragraph1": "Odyssea est porté par une démarche de proximité avec les structures qui ont besoin d’un outil central, mais aussi d’un partenaire capable de comprendre leurs contraintes réelles.",
         "paragraph2": "L’ambition n’est pas seulement de digitaliser des actions isolées. Elle est de créer une expérience de gestion plus sereine, plus cohérente et plus facile à faire vivre au quotidien."
       },
       "vision": {
@@ -266,7 +274,7 @@
         },
         "proximity": {
           "title": "Proximité",
-          "content": "Odyssea999 se construit au contact des besoins du terrain, avec une logique d’accompagnement concret."
+          "content": "Odyssea se construit au contact des besoins du terrain, avec une logique d’accompagnement concret."
         },
         "sustainability": {
           "title": "Durabilité",
@@ -280,18 +288,22 @@
       }
     },
     "faq": {
+      "seo": {
+        "title": "FAQ Odyssea | Services, accompagnement et fonctionnement",
+        "description": "Consultez les réponses aux questions fréquentes sur les services Odyssea, le parcours client et le fonctionnement global de la solution."
+      },
       "eyebrow": "FAQ",
       "hero": {
         "title": "Les réponses aux questions les plus fréquentes sur les services et le fonctionnement global.",
-        "subtitle": "Cette page rassemble les points essentiels pour comprendre à qui s’adresse Odyssea999, comment l’accompagnement se déroule et ce que la solution permet d’améliorer au quotidien."
+        "subtitle": "Cette page rassemble les points essentiels pour comprendre à qui s’adresse Odyssea, comment l’accompagnement se déroule et ce que la solution permet d’améliorer au quotidien."
       },
       "items": {
         "1": {
-          "question": "À qui s’adresse Odyssea999 ?",
-          "answer": "Odyssea999 s’adresse aux établissements qui veulent centraliser leur organisation, leurs documents et leur suivi opérationnel dans un seul environnement."
+          "question": "À qui s’adresse Odyssea ?",
+          "answer": "Odyssea s’adresse aux établissements qui veulent centraliser leur organisation, leurs documents et leur suivi opérationnel dans un seul environnement."
         },
         "2": {
-          "question": "Est-ce qu’Odyssea999 remplace plusieurs outils ?",
+          "question": "Est-ce qu’Odyssea remplace plusieurs outils ?",
           "answer": "Oui. L’objectif est justement de limiter la multiplication des solutions en regroupant les usages clés dans un cadre plus cohérent."
         },
         "3": {
@@ -300,7 +312,7 @@
         },
         "4": {
           "question": "Peut-on adapter la solution à notre fonctionnement ?",
-          "answer": "La méthode Odyssea999 cherche à s’aligner sur vos priorités réelles pour déployer une organisation utile, compréhensible et durable."
+          "answer": "La méthode Odyssea cherche à s’aligner sur vos priorités réelles pour déployer une organisation utile, compréhensible et durable."
         },
         "5": {
           "question": "Comment découvrir la solution plus concrètement ?",
@@ -314,9 +326,13 @@
       }
     },
     "howItWorks": {
+      "seo": {
+        "title": "Comment ça marche | Le parcours client Odyssea",
+        "description": "Comprenez la méthode Odyssea: inscription, diagnostic, cadrage du déploiement et accompagnement dans la durée."
+      },
       "eyebrow": "Comment ça marche",
       "hero": {
-        "title": "Le parcours client Odyssea999, du premier contact à l’accompagnement.",
+        "title": "Le parcours client Odyssea, du premier contact à l’accompagnement.",
         "subtitle": "Ici, on ne parle pas de technique. On parle de méthode, de relation et de progression. L’objectif est de rendre votre transition lisible, rassurante et adaptée à votre réalité."
       },
       "steps": {
@@ -342,6 +358,18 @@
         "subtitle": "Chaque étape vise à clarifier la suite, éviter les zones floues et vous faire avancer avec une trajectoire compréhensible dès le départ.",
         "secondaryButton": "Voir les fonctionnalités",
         "primaryButton": "Lancer l’échange"
+      }
+    },
+    "pricing": {
+      "seo": {
+        "title": "Tarifs Odyssea | Une offre claire adaptée à votre établissement",
+        "description": "Consultez les tarifs Odyssea et explorez les fonctionnalités incluses pour centraliser la gestion de votre établissement."
+      }
+    },
+    "customer": {
+      "seo": {
+        "title": "Demander une démo Odyssea | Démarrer votre accompagnement",
+        "description": "Partagez quelques informations sur votre établissement pour démarrer l’échange et découvrir l’accompagnement Odyssea."
       }
     }
   }

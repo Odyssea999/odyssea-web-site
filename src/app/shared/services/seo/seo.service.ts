@@ -37,48 +37,44 @@ export class SeoService implements ISeoInterface {
   }
 
   setTwitterMetaTags(tags: TwitterMetaTag): void {
-    this.meta.addTags([
-      {
-        name: MetaTagKeys.twitter.title,
-        content: tags.title,
-      },
-      {
-        name: MetaTagKeys.twitter.image,
-        content: tags.image
-      },
-      {
-        name: MetaTagKeys.twitter.card,
-        content: tags.card
-      },
-      {
-        name: MetaTagKeys.twitter.creator,
-        content: tags.creator
-      },
-      {
-        name: MetaTagKeys.twitter.description,
-        content: tags.description
-      }
-    ])
+    this.meta.updateTag({
+      name: MetaTagKeys.twitter.title,
+      content: tags.title,
+    });
+    this.meta.updateTag({
+      name: MetaTagKeys.twitter.image,
+      content: tags.image
+    });
+    this.meta.updateTag({
+      name: MetaTagKeys.twitter.card,
+      content: tags.card
+    });
+    this.meta.updateTag({
+      name: MetaTagKeys.twitter.creator,
+      content: tags.creator
+    });
+    this.meta.updateTag({
+      name: MetaTagKeys.twitter.description,
+      content: tags.description
+    });
   }
   setFacebookMetaTags(tags: FacebookMetaTag): void {
-    this.meta.addTags([
-      {
-        property: MetaTagKeys.facebook.image,
-        content: tags.image
-      },
-      {
-        property: MetaTagKeys.facebook.title,
-        content: tags.title
-      },
-      {
-        property: MetaTagKeys.facebook.url,
-        content: tags.url
-      },
-      {
-        property: MetaTagKeys.facebook.type,
-        content: tags.type
-      }
-    ])
+    this.meta.updateTag({
+      property: MetaTagKeys.facebook.image,
+      content: tags.image
+    });
+    this.meta.updateTag({
+      property: MetaTagKeys.facebook.title,
+      content: tags.title
+    });
+    this.meta.updateTag({
+      property: MetaTagKeys.facebook.url,
+      content: tags.url
+    });
+    this.meta.updateTag({
+      property: MetaTagKeys.facebook.type,
+      content: tags.type
+    });
   }
 
 }

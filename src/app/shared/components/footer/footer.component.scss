@@ -111,24 +111,75 @@
       .od-footer-languages {
         display: flex;
         justify-content: flex-end;
+        position: relative;
 
         .od-footer-languages-card {
           display: flex;
-          flex-direction: row;
-          align-items: center;
+          flex-direction: column;
           color: variables.$black;
           background: variables.$white;
           font-weight: 500;
           min-width: 20%;
           max-width: 20%;
           border-radius: 7px;
-          padding: 0 1rem;
-          cursor: pointer;
+          padding: 0.4rem 0.7rem;
+          box-shadow: 0 12px 30px rgba(16, 8, 60, 0.08);
+
+          &.is-open {
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+          }
+
+          .od-footer-languages-trigger {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            background: transparent;
+            border: 0;
+            cursor: pointer;
+            font: inherit;
+            color: inherit;
+            padding: 0;
+          }
 
           .od-footer-language-icon {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            transition: transform .2s ease-in-out;
+
+            &.is-open {
+              transform: rotate(180deg);
+            }
+          }
+
+          .od-footer-languages-options {
+            width: calc(100% + 1.4rem);
+            margin: 0.4rem -0.7rem -0.4rem;
+            background: variables.$white;
+            border-bottom-left-radius: 7px;
+            border-bottom-right-radius: 7px;
+            border-top: 1px solid rgba(84, 104, 125, 0.15);
+            overflow: hidden;
+          }
+
+          .od-footer-language-option {
             width: 100%;
-            // WHEN ANIMATE ROTATE 180
-            //transform: rotate(180deg);
+            border: 0;
+            background: transparent;
+            padding: 0.7rem 0.85rem;
+            text-align: left;
+            cursor: pointer;
+            color: variables.$light_text_color;
+            font: inherit;
+
+            &:hover,
+            &.is-active {
+              background: rgba(88, 70, 163, 0.08);
+              color: variables.$black;
+            }
           }
         }
       }

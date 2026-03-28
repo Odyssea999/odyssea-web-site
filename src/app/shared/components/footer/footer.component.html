@@ -62,13 +62,29 @@
         <a href="">{{ 'FOOTER.legals.termOfUse' | translate }}</a>
       </div>
       <div class="od-footer-languages">
-        <div class="od-footer-languages-card">
-          <p>FR</p>
-          <div class="od-footer-language-icon">
-            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M7.13388 12.1382C6.64572 12.6263 6.64572 13.4178 7.13388 13.906L13.2491 20.0152C14.2256 20.9907 15.8079 20.9904 16.7839 20.0145L22.8967 13.9015C23.385 13.4133 23.385 12.6218 22.8967 12.1337C22.4086 11.6455 21.6171 11.6455 21.129 12.1337L15.897 17.3657C15.4089 17.854 14.6174 17.8539 14.1292 17.3657L8.90165 12.1382C8.4135 11.65 7.62203 11.65 7.13388 12.1382Z" fill="#0F0F0F"/>
-            </svg>
-          </div>
+        <div class="od-footer-languages-card" [ngClass]="{'is-open': isLanguageMenuOpened}">
+          <button type="button" class="od-footer-languages-trigger" (click)="toggleLanguageMenu()">
+            <p>{{ languageService.language().toUpperCase() }}</p>
+            <div class="od-footer-language-icon" [ngClass]="{'is-open': isLanguageMenuOpened}">
+              <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.13388 12.1382C6.64572 12.6263 6.64572 13.4178 7.13388 13.906L13.2491 20.0152C14.2256 20.9907 15.8079 20.9904 16.7839 20.0145L22.8967 13.9015C23.385 13.4133 23.385 12.6218 22.8967 12.1337C22.4086 11.6455 21.6171 11.6455 21.129 12.1337L15.897 17.3657C15.4089 17.854 14.6174 17.8539 14.1292 17.3657L8.90165 12.1382C8.4135 11.65 7.62203 11.65 7.13388 12.1382Z" fill="#0F0F0F"/>
+              </svg>
+            </div>
+          </button>
+
+          @if (isLanguageMenuOpened) {
+            <div class="od-footer-languages-options">
+              @for (language of languages; track language.key) {
+                <button
+                  type="button"
+                  class="od-footer-language-option"
+                  [ngClass]="{'is-active': languageService.language() === language.key}"
+                  (click)="selectLanguage(language.key)">
+                  {{ language.label }}
+                </button>
+              }
+            </div>
+          }
         </div>
       </div>
     </div>
