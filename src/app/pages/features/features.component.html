@@ -1,0 +1,65 @@
+<div class="od-container">
+  <od-navbar></od-navbar>
+  <main class="od-page">
+    <section class="od-page-hero">
+      <div class="od-page-hero-copy">
+        <p class="od-page-eyebrow">Fonctionnalités</p>
+        <h1>La page centrale pour comprendre tout ce qu’Odyssea999 sait faire.</h1>
+        <p class="od-page-subtitle">
+          GED, organisation quotidienne, suivi de l’activité, communication et coordination:
+          Odyssea999 rassemble les briques essentielles pour piloter votre établissement avec plus de clarté.
+        </p>
+        <div class="od-page-actions">
+          <od-button [navigateTo]="'/become-customer'" [outlined]="false" content="Demander une démo"></od-button>
+          <od-button [navigateTo]="'/how-it-works'" [outlined]="true" content="Voir le parcours client"></od-button>
+        </div>
+      </div>
+      <div class="od-page-hero-panel">
+        <h2>Ce que vous gagnez</h2>
+        <ul>
+          @for (highlight of highlights; track highlight) {
+            <li>{{ highlight }}</li>
+          }
+        </ul>
+      </div>
+    </section>
+
+    <section class="od-page-section">
+      <div class="od-page-section-heading">
+        <h2>Un outil transverse, pensé pour le quotidien</h2>
+        <p>
+          Chaque bloc fonctionnel répond à un besoin concret: mieux classer, mieux organiser, mieux suivre,
+          et mieux communiquer.
+        </p>
+      </div>
+      <div class="od-feature-grid">
+        @for (group of featureGroups; track group.title) {
+          <article class="od-feature-card">
+            <h3>{{ group.title }}</h3>
+            <p>{{ group.description }}</p>
+            <ul>
+              @for (item of group.items; track item) {
+                <li>{{ item }}</li>
+              }
+            </ul>
+          </article>
+        }
+      </div>
+    </section>
+
+    <section class="od-page-section od-page-cta">
+      <div>
+        <h2>Besoin d’une vision plus concrète?</h2>
+        <p>
+          Le parcours d’accompagnement Odyssea999 explique comment nous passons du diagnostic initial
+          à une mise en place adaptée à votre structure.
+        </p>
+      </div>
+      <div class="od-page-cta-action">
+        <od-button [navigateTo]="'/how-it-works'" [outlined]="false" content="Découvrir comment ça marche"></od-button>
+      </div>
+    </section>
+  </main>
+  <od-banner></od-banner>
+  <od-footer></od-footer>
+</div>

@@ -1,0 +1,155 @@
+@use "../../shared/styles/variables";
+@use "../../shared/styles/mixins";
+
+@include mixins.container {
+  .od-page {
+    padding: 2rem variables.$container_padding_right 4rem variables.$container_padding_left;
+  }
+
+  .od-page-eyebrow {
+    color: variables.$light_violet_color;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  .od-page-hero-copy {
+    max-width: 58rem;
+
+    h1 {
+      font-size: 3.2rem;
+      line-height: 1.08;
+      color: variables.$light_text_primary_color;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .od-page-subtitle,
+  .od-step-body p,
+  .od-support-panel p {
+    color: variables.$light_text_secondary_color;
+    font-size: 1.08rem;
+    line-height: 1.75;
+  }
+
+  .od-steps {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.4rem;
+    padding-top: 2rem;
+  }
+
+  .od-step-card,
+  .od-support-panel {
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(88, 70, 163, 0.1);
+    border-radius: 24px;
+    box-shadow: 0 18px 40px rgba(16, 8, 60, 0.04);
+  }
+
+  .od-step-card {
+    padding: 1.8rem;
+    display: flex;
+    gap: 1.25rem;
+  }
+
+  .od-step-index {
+    min-width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 999px;
+    background: rgba(88, 70, 163, 0.12);
+    color: variables.$light_violet_color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+  }
+
+  .od-step-body h2,
+  .od-support-panel h2 {
+    color: variables.$light_text_primary_color;
+    font-size: 1.55rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .od-support-panel {
+    margin-top: 2rem;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .od-support-actions {
+    display: flex;
+    gap: 1rem;
+    width: 27rem;
+    flex-shrink: 0;
+  }
+
+  @include mixins.medium {
+    .od-page {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+
+    .od-steps {
+      grid-template-columns: 1fr;
+    }
+
+    .od-support-panel {
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    .od-support-actions {
+      width: 100%;
+    }
+  }
+
+  @include mixins.small {
+    .od-page {
+      padding-left: 1.25rem;
+      padding-right: 1.25rem;
+    }
+
+    .od-page-hero-copy h1 {
+      font-size: 2.65rem;
+    }
+
+    .od-steps {
+      grid-template-columns: 1fr;
+    }
+
+    .od-support-panel,
+    .od-support-actions {
+      flex-direction: column;
+      width: 100%;
+    }
+  }
+
+  @include mixins.x-small {
+    .od-page {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+
+    .od-page-hero-copy h1 {
+      font-size: 2.2rem;
+    }
+
+    .od-step-card,
+    .od-support-panel {
+      padding: 1.35rem;
+    }
+
+    .od-step-card,
+    .od-support-panel,
+    .od-support-actions {
+      flex-direction: column;
+      width: 100%;
+    }
+  }
+}

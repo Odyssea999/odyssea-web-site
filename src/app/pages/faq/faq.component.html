@@ -1,0 +1,37 @@
+<div class="od-container">
+  <od-navbar></od-navbar>
+  <main class="od-page">
+    <section class="od-page-hero">
+      <p class="od-page-eyebrow">FAQ</p>
+      <h1>Les réponses aux questions les plus fréquentes sur les services et le fonctionnement global.</h1>
+      <p class="od-page-subtitle">
+        Cette page rassemble les points essentiels pour comprendre à qui s’adresse Odyssea999,
+        comment l’accompagnement se déroule et ce que la solution permet d’améliorer au quotidien.
+      </p>
+    </section>
+
+    <section class="od-faq-list">
+      @for (item of faqItems; track item.question) {
+        <article class="od-faq-item">
+          <h2>{{ item.question }}</h2>
+          <p>{{ item.answer }}</p>
+        </article>
+      }
+    </section>
+
+    <section class="od-page-cta">
+      <div>
+        <h2>Une question plus spécifique ?</h2>
+        <p>
+          Nous pouvons partir de votre contexte et vous montrer le parcours d’accompagnement le plus adapté.
+        </p>
+      </div>
+      <div class="od-page-cta-actions">
+        <od-button [navigateTo]="'/how-it-works'" [outlined]="true" content="Voir le parcours"></od-button>
+        <od-button [navigateTo]="'/become-customer'" [outlined]="false" content="Demander une démo"></od-button>
+      </div>
+    </section>
+  </main>
+  <od-banner></od-banner>
+  <od-footer></od-footer>
+</div>
