@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TranslateModule } from "@ngx-translate/core";
 import { NavbarComponent } from "../../shared/components/navbar/navbar.component";
 import { FooterComponent } from "../../shared/components/footer/footer.component";
 import { BannerComponent } from "../../shared/components/banner/banner.component";
@@ -8,6 +9,7 @@ import { ButtonComponent } from "../../shared/components/button/button.component
   selector: 'od-features',
   standalone: true,
   imports: [
+    TranslateModule,
     NavbarComponent,
     FooterComponent,
     BannerComponent,
@@ -19,46 +21,46 @@ import { ButtonComponent } from "../../shared/components/button/button.component
 export class FeaturesComponent {
   readonly featureGroups = [
     {
-      title: 'Gestion documentaire (GED)',
-      description: "Centralisez vos documents administratifs et pédagogiques dans un seul espace accessible aux bonnes personnes au bon moment.",
+      title: 'PAGES.features.groups.ged.title',
+      description: 'PAGES.features.groups.ged.description',
       items: [
-        'Classement des documents par promotion, classe ou service',
-        'Partage encadré des supports de cours et pièces administratives',
-        'Historique des mises à jour pour garder une trace des changements'
+        'PAGES.features.groups.ged.items.1',
+        'PAGES.features.groups.ged.items.2',
+        'PAGES.features.groups.ged.items.3'
       ]
     },
     {
-      title: 'Organisation quotidienne',
-      description: "Évitez les allers-retours entre plusieurs outils et gardez une vision claire des opérations de l'établissement.",
+      title: 'PAGES.features.groups.organization.title',
+      description: 'PAGES.features.groups.organization.description',
       items: [
-        "Gestion des emplois du temps et des modifications de planning",
-        'Suivi des présences, retards et absences',
-        "Pilotage des tâches internes pour l'équipe pédagogique et administrative"
+        'PAGES.features.groups.organization.items.1',
+        'PAGES.features.groups.organization.items.2',
+        'PAGES.features.groups.organization.items.3'
       ]
     },
     {
-      title: 'Outils de suivi',
-      description: "Suivez l'activité de l'établissement en temps réel pour prendre les bonnes décisions plus vite.",
+      title: 'PAGES.features.groups.tracking.title',
+      description: 'PAGES.features.groups.tracking.description',
       items: [
-        'Vue d’ensemble sur les événements clés de la journée',
-        'Suivi des élèves, des promotions et des interactions importantes',
-        'Indicateurs utiles pour repérer les points de blocage rapidement'
+        'PAGES.features.groups.tracking.items.1',
+        'PAGES.features.groups.tracking.items.2',
+        'PAGES.features.groups.tracking.items.3'
       ]
     },
     {
-      title: 'Communication intégrée',
-      description: "Fluidifiez les échanges sans multiplier les canaux ni perdre d'informations en route.",
+      title: 'PAGES.features.groups.communication.title',
+      description: 'PAGES.features.groups.communication.description',
       items: [
-        'Messagerie instantanée pour les communications du quotidien',
-        'Diffusion d’actualités importantes à toute la communauté',
-        'Coordination plus simple entre direction, équipes et apprenants'
+        'PAGES.features.groups.communication.items.1',
+        'PAGES.features.groups.communication.items.2',
+        'PAGES.features.groups.communication.items.3'
       ]
     }
   ];
 
   readonly highlights = [
-    'Une solution pensée pour centraliser les usages essentiels d’un établissement',
-    'Un accompagnement orienté terrain, pas une simple livraison logicielle',
-    'Une structure flexible qui s’adapte à vos méthodes plutôt que l’inverse'
+    'PAGES.features.highlights.1',
+    'PAGES.features.highlights.2',
+    'PAGES.features.highlights.3'
   ];
 }

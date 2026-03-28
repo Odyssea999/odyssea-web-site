@@ -2,45 +2,33 @@
   <od-navbar></od-navbar>
   <main class="od-page">
     <section class="od-page-hero">
-      <p class="od-page-eyebrow">À propos</p>
-      <h1>Odyssea999, une vision simple: remettre de l’ordre là où les outils se dispersent.</h1>
-      <p class="od-page-subtitle">
-        Derrière Odyssea999, il y a la volonté de proposer un cadre plus humain, plus lisible et plus utile
-        pour les établissements qui veulent mieux piloter leur quotidien sans s’enfermer dans une complexité inutile.
-      </p>
+      <p class="od-page-eyebrow">{{ 'PAGES.about.eyebrow' | translate }}</p>
+      <h1>{{ 'PAGES.about.hero.title' | translate }}</h1>
+      <p class="od-page-subtitle">{{ 'PAGES.about.hero.subtitle' | translate }}</p>
     </section>
 
     <section class="od-page-section od-split">
       <article class="od-panel">
-        <h2>Qui est derrière Odyssea999 ?</h2>
-        <p>
-          Odyssea999 est porté par une démarche de proximité avec les structures qui ont besoin d’un outil central,
-          mais aussi d’un partenaire capable de comprendre leurs contraintes réelles.
-        </p>
-        <p>
-          L’ambition n’est pas seulement de digitaliser des actions isolées. Elle est de créer une expérience
-          de gestion plus sereine, plus cohérente et plus facile à faire vivre au quotidien.
-        </p>
+        <h2>{{ 'PAGES.about.story.title' | translate }}</h2>
+        <p>{{ 'PAGES.about.story.paragraph1' | translate }}</p>
+        <p>{{ 'PAGES.about.story.paragraph2' | translate }}</p>
       </article>
       <article class="od-panel od-panel-accent">
-        <h2>Notre vision</h2>
-        <p>
-          Construire une solution qui accompagne la réalité du terrain: les documents à retrouver,
-          les informations à suivre, les équipes à coordonner et les décisions à prendre sans perte de temps.
-        </p>
+        <h2>{{ 'PAGES.about.vision.title' | translate }}</h2>
+        <p>{{ 'PAGES.about.vision.content' | translate }}</p>
       </article>
     </section>
 
     <section class="od-page-section">
       <div class="od-page-section-heading">
-        <h2>Nos valeurs</h2>
-        <p>Ce que nous voulons défendre dans chaque relation client et dans chaque évolution du produit.</p>
+        <h2>{{ 'PAGES.about.valuesSection.title' | translate }}</h2>
+        <p>{{ 'PAGES.about.valuesSection.subtitle' | translate }}</p>
       </div>
       <div class="od-value-grid">
         @for (value of values; track value.title) {
           <article class="od-panel">
-            <h3>{{ value.title }}</h3>
-            <p>{{ value.content }}</p>
+            <h3>{{ value.title | translate }}</h3>
+            <p>{{ value.content | translate }}</p>
           </article>
         }
       </div>
@@ -48,14 +36,11 @@
 
     <section class="od-page-section od-page-cta">
       <div>
-        <h2>La méthode compte autant que l’outil.</h2>
-        <p>
-          Si vous voulez comprendre comment l’accompagnement se déroule concrètement,
-          la page dédiée présente le parcours client étape par étape.
-        </p>
+        <h2>{{ 'PAGES.about.cta.title' | translate }}</h2>
+        <p>{{ 'PAGES.about.cta.subtitle' | translate }}</p>
       </div>
       <div class="od-page-cta-action">
-        <od-button [navigateTo]="'/how-it-works'" [outlined]="false" content="Voir notre méthode"></od-button>
+        <od-button [navigateTo]="'/how-it-works'" [outlined]="false" content="{{ 'PAGES.about.cta.button' | translate }}"></od-button>
       </div>
     </section>
   </main>

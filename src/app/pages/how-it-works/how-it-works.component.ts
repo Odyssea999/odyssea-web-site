@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TranslateModule } from "@ngx-translate/core";
 import { NavbarComponent } from "../../shared/components/navbar/navbar.component";
 import { FooterComponent } from "../../shared/components/footer/footer.component";
 import { BannerComponent } from "../../shared/components/banner/banner.component";
@@ -8,6 +9,7 @@ import { ButtonComponent } from "../../shared/components/button/button.component
   selector: 'od-how-it-works',
   standalone: true,
   imports: [
+    TranslateModule,
     NavbarComponent,
     FooterComponent,
     BannerComponent,
@@ -19,20 +21,20 @@ import { ButtonComponent } from "../../shared/components/button/button.component
 export class HowItWorksComponent {
   readonly steps = [
     {
-      title: '1. Inscription et premier échange',
-      content: 'Nous partons de votre contexte, de vos priorités et de vos points de friction pour cadrer le bon niveau d’accompagnement.'
+      title: 'PAGES.howItWorks.steps.1.title',
+      content: 'PAGES.howItWorks.steps.1.content'
     },
     {
-      title: '2. Diagnostic',
-      content: 'Nous analysons votre organisation actuelle, les outils déjà utilisés et les besoins à centraliser en priorité.'
+      title: 'PAGES.howItWorks.steps.2.title',
+      content: 'PAGES.howItWorks.steps.2.content'
     },
     {
-      title: '3. Cadrage du déploiement',
-      content: 'Nous définissons un plan de mise en place simple, progressif et réaliste, aligné sur vos contraintes opérationnelles.'
+      title: 'PAGES.howItWorks.steps.3.title',
+      content: 'PAGES.howItWorks.steps.3.content'
     },
     {
-      title: '4. Accompagnement',
-      content: 'Nous avançons avec vous dans la prise en main, les ajustements et l’installation de nouveaux repères durables.'
+      title: 'PAGES.howItWorks.steps.4.title',
+      content: 'PAGES.howItWorks.steps.4.content'
     }
   ];
 }

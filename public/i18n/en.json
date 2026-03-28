@@ -1,72 +1,348 @@
 {
   "HOME": {
     "navbar": {
-      "pricing": "Become customer",
+      "pricing": "Pricing",
       "solution": "Our solution",
-      "faq": "Q&A",
+      "faq": "FAQ",
       "whyUs": "Why Odyssea?",
       "trial": "Request a demo"
     },
     "mainSection": {
       "title": "Transform school administration with our solution.",
       "offers": "See offers",
-      "subtitle": "Centralize your institution's management. With Odyssea, you can manage your different cohorts, student grades, and schedules. All this with integrated instant messaging, video courses, activity tracking, QR code attendance, and much more."
+      "subtitle": "Centralize your institution's management. With Odyssea, you can manage cohorts, student grades, and schedules. All this comes with integrated instant messaging, video courses, activity tracking, QR code attendance, and much more."
     },
     "mainSection2": {
       "title": "No need to use multiple management solutions",
       "subtitle": "More than just a solution. Odyssea is the Swiss army knife for managing your institution.",
       "cards": {
         "item1": {
-          "title": "Report your presence",
-          "content": "Students can report their presence in seconds by scanning a QR code, significantly reducing the time required for manual attendance tracking."
+          "title": "Report attendance",
+          "content": "Students can report their attendance in seconds by scanning a QR code, significantly reducing the time needed for manual roll calls."
         },
         "item2": {
           "title": "Simplify schedule management",
-          "content": "Significantly reduce the time spent on creating and modifying schedules. Fewer human errors thanks to automation and data validation."
+          "content": "Significantly reduce the time spent creating and updating schedules. Fewer human errors thanks to automation and data validation."
         },
         "item3": {
-          "title": "Real-Time activity tracking",
-          "content": "Track every activity in real-time. From attendance management and scheduling to instant communication, everything is centralized."
+          "title": "Real-time activity tracking",
+          "content": "Track every activity in real time. From attendance and scheduling to instant communication, everything is centralized."
         }
       }
     },
     "mainSection3": {
-      "title": "Centralisez la gestion de votre établissement",
+      "title": "Centralize your institution's management",
       "cards": {
         "item1": {
-          "title": "Une migration simplifiée et rapide",
-          "content": "Gagnez du temps en important vos listes d'élèves exportées d'une autre solution pour créer des classes rapidement."
+          "title": "Simple and fast migration",
+          "content": "Save time by importing student lists exported from another solution to create classes quickly."
         },
         "item2": {
-          "title": "Une migration simplifiée et rapide"
+          "title": "Real-time activity tracking",
+          "content": "Monitor key activity across your institution and keep a clear view of what is happening every day."
+        },
+        "item3": {
+          "title": "Manage schedules efficiently",
+          "content": "Adjust timetables faster and reduce friction when last-minute changes happen."
+        }
+      }
+    },
+    "mainSection4": {
+      "title": "Our commitments by your side",
+      "cards": {
+        "item1": {
+          "title": "Transparency",
+          "content": "No unpleasant surprises. Pricing, terms, and the support framework are clearly defined from the start."
+        },
+        "item2": {
+          "title": "Availability",
+          "content": "We handle your requests responsively so you can keep moving without leaving important topics blocked."
+        },
+        "item3": {
+          "title": "Maintainability",
+          "content": "You automatically benefit from product improvements to keep your solution sustainable and up to date."
         }
       }
     },
     "mainSection5": {
-      "title": "Rejoignez la révolution de la gestion scolaire."
+      "title": "Join the school management revolution."
     }
   },
   "FOOTER": {
     "company": {
-      "title": "Société",
-      "link1": "Pourquoi Odyssea"
+      "title": "Company",
+      "link1": "Why Odyssea"
     },
     "navigation": {
       "title": "Navigation",
-      "pricing": "Nos offres",
-      "solution": "Notre solution",
+      "pricing": "Pricing",
+      "solution": "Our solution",
       "faq": "FAQ",
-      "whyUs": "Pourquoi Odyssea?"
+      "whyUs": "Why Odyssea?",
+      "howItWorks": "How it works"
     },
     "customer": {
-      "title": "Client",
-      "login": "Connexion",
-      "report": "Remonter un problème"
+      "title": "Customer",
+      "login": "Sign in",
+      "report": "Report an issue"
     },
     "legals": {
-      "copyright": "© 2026 Odyssea. Tous droits réservés.",
-      "politics": "Politique de confidentialité",
-      "termOfUse": "Conditions d’utilisation"
+      "copyright": "© 2026 Odyssea. All rights reserved.",
+      "politics": "Privacy policy",
+      "termOfUse": "Terms of use"
+    }
+  },
+  "PRICING": {
+    "title1": "Transparent pricing",
+    "title2": "tailored to your needs",
+    "subtitle": "No hidden fees. No commitment.",
+    "question": "How many students / learners do you have?",
+    "cards": {
+      "title": "Based on your needs",
+      "popular": "Most popular",
+      "price": "€15.99",
+      "priceRight": "/ per student",
+      "monthlyPrice": "+€99 monthly subscription *",
+      "total": "Total of ",
+      "totalEnd": " per month *",
+      "engagement": "No commitment and no setup fees",
+      "establishment": "Institution type",
+      "customPrice": "Custom pricing",
+      "features": {
+        "1": {
+          "title": "QR code attendance scanning",
+          "description": "Let students or learners report attendance quickly using a QR code."
+        },
+        "2": {
+          "title": "Timetable management",
+          "description": "Create, update, and share timetables more easily."
+        },
+        "3": {
+          "title": "Planning management",
+          "description": "Keep a clear view of your institution's daily organization."
+        },
+        "4": {
+          "title": "Import and export student / class lists",
+          "description": "Speed up data onboarding and updates to your student population."
+        },
+        "5": {
+          "title": "Activity tracking",
+          "description": "Follow important actions and events across the institution."
+        },
+        "6": {
+          "title": "Attendance / lateness / absence management",
+          "description": "Centralize attendance tracking in a single space."
+        },
+        "7": {
+          "title": "Course document storage",
+          "description": "Keep teaching materials and useful documents in one place."
+        },
+        "8": {
+          "title": "News management",
+          "description": "Share important information with your community."
+        },
+        "9": {
+          "title": "Instant messaging",
+          "description": "Make everyday communication easier between all stakeholders."
+        },
+        "10": {
+          "title": "Student follow-up",
+          "description": "Get better visibility on student journeys and situations."
+        },
+        "11": {
+          "title": "Task management",
+          "description": "Organize actions for administrative and teaching teams."
+        },
+        "12": {
+          "title": "Detention management",
+          "description": "Manage and track detention hours more simply."
+        },
+        "13": {
+          "title": "Video course storage",
+          "description": "Provide video content in a dedicated space."
+        },
+        "14": {
+          "title": "Billing management",
+          "description": "Structure tracking for billing-related items."
+        },
+        "15": {
+          "title": "Application management",
+          "description": "Track applications and candidate files more easily."
+        },
+        "16": {
+          "title": "Leave and absences (staff)",
+          "description": "Keep better visibility over staff unavailability."
+        }
+      }
+    }
+  },
+  "PAGES": {
+    "features": {
+      "eyebrow": "Features",
+      "hero": {
+        "title": "The central page to understand everything Odyssea999 can do.",
+        "subtitle": "Document management, daily organization, activity tracking, communication, and coordination: Odyssea999 brings together the essential building blocks to run your institution with more clarity.",
+        "secondaryCta": "See the customer journey"
+      },
+      "panel": {
+        "title": "What you gain"
+      },
+      "highlights": {
+        "1": "A solution designed to centralize an institution's essential uses",
+        "2": "Hands-on support, not just software delivery",
+        "3": "A flexible structure that adapts to your methods rather than the other way around"
+      },
+      "section": {
+        "title": "A cross-functional tool built for everyday work",
+        "subtitle": "Each functional block addresses a concrete need: organize better, structure better, track better, and communicate better."
+      },
+      "groups": {
+        "ged": {
+          "title": "Document management",
+          "description": "Centralize your administrative and educational documents in one space accessible to the right people at the right time.",
+          "items": {
+            "1": "Organize documents by cohort, class, or department",
+            "2": "Controlled sharing of course materials and administrative files",
+            "3": "Update history to keep track of changes"
+          }
+        },
+        "organization": {
+          "title": "Daily organization",
+          "description": "Avoid switching between multiple tools and keep a clear view of your institution's operations.",
+          "items": {
+            "1": "Timetable management and planning updates",
+            "2": "Attendance, lateness, and absence tracking",
+            "3": "Internal task management for teaching and administrative teams"
+          }
+        },
+        "tracking": {
+          "title": "Tracking tools",
+          "description": "Track institution activity in real time so you can make the right decisions faster.",
+          "items": {
+            "1": "Overview of the day's key events",
+            "2": "Tracking for students, cohorts, and important interactions",
+            "3": "Useful indicators to quickly spot bottlenecks"
+          }
+        },
+        "communication": {
+          "title": "Integrated communication",
+          "description": "Make exchanges smoother without multiplying channels or losing information along the way.",
+          "items": {
+            "1": "Instant messaging for day-to-day communication",
+            "2": "Sharing important updates with the whole community",
+            "3": "Simpler coordination between leadership, teams, and learners"
+          }
+        }
+      },
+      "cta": {
+        "title": "Need a more concrete view?",
+        "subtitle": "The Odyssea999 support journey explains how we move from the initial assessment to a rollout tailored to your structure.",
+        "button": "Discover how it works"
+      }
+    },
+    "about": {
+      "eyebrow": "About",
+      "hero": {
+        "title": "Odyssea999 has a simple vision: bring order where tools have become scattered.",
+        "subtitle": "Behind Odyssea999 is the desire to offer a more human, clearer, and more useful framework for institutions that want to run their daily operations better without being trapped in unnecessary complexity."
+      },
+      "story": {
+        "title": "Who is behind Odyssea999?",
+        "paragraph1": "Odyssea999 is driven by a close relationship with organizations that need both a central tool and a partner able to understand their real constraints.",
+        "paragraph2": "The ambition is not only to digitize isolated actions. It is to create a calmer, more coherent management experience that is easier to sustain every day."
+      },
+      "vision": {
+        "title": "Our vision",
+        "content": "Build a solution that follows real-world operations: documents to find, information to track, teams to coordinate, and decisions to make without wasting time."
+      },
+      "valuesSection": {
+        "title": "Our values",
+        "subtitle": "What we aim to uphold in every client relationship and every product improvement."
+      },
+      "values": {
+        "clarity": {
+          "title": "Clarity",
+          "content": "We want to make daily operations easier to read, smoother to run, and less fragmented."
+        },
+        "proximity": {
+          "title": "Proximity",
+          "content": "Odyssea999 grows through close contact with field needs and a practical support mindset."
+        },
+        "sustainability": {
+          "title": "Sustainability",
+          "content": "Our vision is to provide a robust framework that stays useful over time, even as the organization evolves."
+        }
+      },
+      "cta": {
+        "title": "The method matters as much as the tool.",
+        "subtitle": "If you want to understand how support unfolds in practice, the dedicated page presents the customer journey step by step.",
+        "button": "See our method"
+      }
+    },
+    "faq": {
+      "eyebrow": "FAQ",
+      "hero": {
+        "title": "Answers to the most common questions about our services and overall approach.",
+        "subtitle": "This page brings together the essential points for understanding who Odyssea999 is for, how support works, and what the solution improves day to day."
+      },
+      "items": {
+        "1": {
+          "question": "Who is Odyssea999 for?",
+          "answer": "Odyssea999 is designed for institutions that want to centralize their organization, documents, and operational tracking in a single environment."
+        },
+        "2": {
+          "question": "Does Odyssea999 replace several tools?",
+          "answer": "Yes. The goal is precisely to reduce tool sprawl by bringing key uses together in a more coherent environment."
+        },
+        "3": {
+          "question": "Do you provide onboarding support?",
+          "answer": "Yes. The approach includes an initial assessment, needs framing, and progressive support to make adoption easier."
+        },
+        "4": {
+          "question": "Can the solution adapt to how we work?",
+          "answer": "The Odyssea999 approach aims to align with your real priorities so the rollout remains useful, understandable, and sustainable."
+        },
+        "5": {
+          "question": "How can we discover the solution more concretely?",
+          "answer": "You can request a demo or visit the \"How it works\" page to see the customer journey from the first conversation to ongoing support."
+        }
+      },
+      "cta": {
+        "title": "Do you have a more specific question?",
+        "subtitle": "We can start from your context and show you the support journey that best fits your situation.",
+        "secondaryButton": "See the journey"
+      }
+    },
+    "howItWorks": {
+      "eyebrow": "How it works",
+      "hero": {
+        "title": "The Odyssea999 customer journey, from first contact to ongoing support.",
+        "subtitle": "This is not about technical details. It is about method, relationship, and progression. The goal is to make your transition clear, reassuring, and adapted to your reality."
+      },
+      "steps": {
+        "1": {
+          "title": "1. Sign-up and first conversation",
+          "content": "We start from your context, priorities, and pain points to frame the right level of support."
+        },
+        "2": {
+          "title": "2. Assessment",
+          "content": "We review your current organization, the tools already in place, and the needs to centralize first."
+        },
+        "3": {
+          "title": "3. Rollout framing",
+          "content": "We define a simple, progressive, and realistic rollout plan aligned with your operational constraints."
+        },
+        "4": {
+          "title": "4. Support",
+          "content": "We move forward with you through onboarding, adjustments, and the installation of lasting working habits."
+        }
+      },
+      "support": {
+        "title": "An approach designed to reduce friction",
+        "subtitle": "Each step is meant to clarify what comes next, avoid gray areas, and help you move forward with a trajectory that is understandable from the start.",
+        "secondaryButton": "View features",
+        "primaryButton": "Start the conversation"
+      }
     }
   }
 }

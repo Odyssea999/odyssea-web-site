@@ -3,12 +3,9 @@
   <main class="od-page">
     <section class="od-page-hero">
       <div class="od-page-hero-copy">
-        <p class="od-page-eyebrow">Comment ça marche</p>
-        <h1>Le parcours client Odyssea999, du premier contact à l’accompagnement.</h1>
-        <p class="od-page-subtitle">
-          Ici, on ne parle pas de technique. On parle de méthode, de relation et de progression.
-          L’objectif est de rendre votre transition lisible, rassurante et adaptée à votre réalité.
-        </p>
+        <p class="od-page-eyebrow">{{ 'PAGES.howItWorks.eyebrow' | translate }}</p>
+        <h1>{{ 'PAGES.howItWorks.hero.title' | translate }}</h1>
+        <p class="od-page-subtitle">{{ 'PAGES.howItWorks.hero.subtitle' | translate }}</p>
       </div>
     </section>
 
@@ -17,8 +14,8 @@
         <article class="od-step-card">
           <div class="od-step-index">0{{ index + 1 }}</div>
           <div class="od-step-body">
-            <h2>{{ step.title }}</h2>
-            <p>{{ step.content }}</p>
+            <h2>{{ step.title | translate }}</h2>
+            <p>{{ step.content | translate }}</p>
           </div>
         </article>
       }
@@ -26,15 +23,12 @@
 
     <section class="od-support-panel">
       <div>
-        <h2>Une démarche pensée pour réduire les frictions</h2>
-        <p>
-          Chaque étape vise à clarifier la suite, éviter les zones floues et vous faire avancer
-          avec une trajectoire compréhensible dès le départ.
-        </p>
+        <h2>{{ 'PAGES.howItWorks.support.title' | translate }}</h2>
+        <p>{{ 'PAGES.howItWorks.support.subtitle' | translate }}</p>
       </div>
       <div class="od-support-actions">
-        <od-button [navigateTo]="'/features'" [outlined]="true" content="Voir les fonctionnalités"></od-button>
-        <od-button [navigateTo]="'/become-customer'" [outlined]="false" content="Lancer l’échange"></od-button>
+        <od-button [navigateTo]="'/features'" [outlined]="true" content="{{ 'PAGES.howItWorks.support.secondaryButton' | translate }}"></od-button>
+        <od-button [navigateTo]="'/become-customer'" [outlined]="false" content="{{ 'PAGES.howItWorks.support.primaryButton' | translate }}"></od-button>
       </div>
     </section>
   </main>
