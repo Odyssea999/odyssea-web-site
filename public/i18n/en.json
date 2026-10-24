@@ -1,443 +1,208 @@
 {
-  "HOME": {
-    "navbar": {
-      "pricing": "Pricing",
-      "solution": "Our solution",
-      "faq": "FAQ",
-      "whyUs": "Why Odyssea?",
-      "trial": "Request a demo"
-    },
-    "mainSection": {
-      "title": "Transform school administration with our solution.",
-      "offers": "See offers",
-      "subtitle": "Centralize your institution's management. With Odyssea, you can manage cohorts, student grades, and schedules. All this comes with integrated instant messaging, video courses, activity tracking, QR code attendance, and much more."
-    },
-    "mainSection2": {
-      "title": "No need to use multiple management solutions",
-      "subtitle": "More than just a solution. Odyssea is the Swiss army knife for managing your institution.",
-      "cards": {
-        "item1": {
-          "title": "Report attendance",
-          "content": "Students can report their attendance in seconds by scanning a QR code, significantly reducing the time needed for manual roll calls."
-        },
-        "item2": {
-          "title": "Simplify schedule management",
-          "content": "Significantly reduce the time spent creating and updating schedules. Fewer human errors thanks to automation and data validation."
-        },
-        "item3": {
-          "title": "Real-time activity tracking",
-          "content": "Track every activity in real time. From attendance and scheduling to instant communication, everything is centralized."
-        }
-      }
-    },
-    "mainSection3": {
-      "title": "Centralize your institution's management",
-      "cards": {
-        "item1": {
-          "title": "Simple and fast migration",
-          "content": "Save time by importing student lists exported from another solution to create classes quickly."
-        },
-        "item2": {
-          "title": "Real-time activity tracking",
-          "content": "Monitor key activity across your institution and keep a clear view of what is happening every day."
-        },
-        "item3": {
-          "title": "Manage schedules efficiently",
-          "content": "Adjust timetables faster and reduce friction when last-minute changes happen."
-        }
-      }
-    },
-    "mainSection4": {
-      "title": "Our commitments by your side",
-      "cards": {
-        "item1": {
-          "title": "Transparency",
-          "content": "No unpleasant surprises. Pricing, terms, and the support framework are clearly defined from the start."
-        },
-        "item2": {
-          "title": "Availability",
-          "content": "We handle your requests responsively so you can keep moving without leaving important topics blocked."
-        },
-        "item3": {
-          "title": "Maintainability",
-          "content": "You automatically benefit from product improvements to keep your solution sustainable and up to date."
-        }
-      }
-    },
-    "mainSection5": {
-      "title": "Join the school management revolution."
-    }
-  },
   "FOOTER": {
     "company": {
-      "title": "Company",
-      "link1": "Why Odyssea"
-    },
-    "navigation": {
-      "title": "Navigation",
-      "pricing": "Pricing",
-      "solution": "Our solution",
-      "faq": "FAQ",
-      "whyUs": "Why Odyssea?",
-      "howItWorks": "How it works"
+      "link1": "Why Odyssea",
+      "title": "Company"
     },
     "customer": {
-      "title": "Customer",
       "login": "Sign in",
-      "report": "Report an issue"
+      "report": "Report an issue",
+      "title": "Customer"
     },
     "legals": {
       "copyright": "© 2026 Odyssea. All rights reserved.",
       "politics": "Privacy policy",
       "termOfUse": "Terms of use"
+    },
+    "navigation": {
+      "faq": "FAQ",
+      "howItWorks": "How it works",
+      "pricing": "Pricing",
+      "solution": "Our solution",
+      "title": "Navigation",
+      "whyUs": "Why Odyssea?"
     }
   },
-  "PRICING": {
-    "title1": "Transparent pricing",
-    "title2": "tailored to your needs",
-    "subtitle": "No hidden fees. No commitment.",
-    "question": "How many students / learners do you have?",
-    "cards": {
-      "title": "Based on your needs",
-      "popular": "Most popular",
-      "price": "€15.99",
-      "priceRight": "/ per student",
-      "monthlyPrice": "+€99 monthly subscription *",
-      "total": "Total of ",
-      "totalEnd": " per month *",
-      "engagement": "No commitment and no setup fees",
-      "establishment": "Institution type",
-      "customPrice": "Custom pricing",
-      "features": {
-        "1": {
-          "title": "QR code attendance scanning",
-          "description": "Let students or learners report attendance quickly using a QR code."
+  "HOME": {
+    "mainSection": {
+      "offers": "See offers",
+      "subtitle": "Centralize your institution's management. With Odyssea, you can manage cohorts, student grades, and schedules. All this comes with integrated instant messaging, video courses, activity tracking, QR code attendance, and much more.",
+      "title": "Transform school administration with our solution."
+    },
+    "mainSection2": {
+      "cards": {
+        "item1": {
+          "content": "Students can report their attendance in seconds by scanning a QR code, significantly reducing the time needed for manual roll calls.",
+          "title": "Report attendance"
         },
-        "2": {
-          "title": "Timetable management",
-          "description": "Create, update, and share timetables more easily."
+        "item2": {
+          "content": "Significantly reduce the time spent creating and updating schedules. Fewer human errors thanks to automation and data validation.",
+          "title": "Simplify schedule management"
         },
-        "3": {
-          "title": "Planning management",
-          "description": "Keep a clear view of your institution's daily organization."
-        },
-        "4": {
-          "title": "Import and export student / class lists",
-          "description": "Speed up data onboarding and updates to your student population."
-        },
-        "5": {
-          "title": "Activity tracking",
-          "description": "Follow important actions and events across the institution."
-        },
-        "6": {
-          "title": "Attendance / lateness / absence management",
-          "description": "Centralize attendance tracking in a single space."
-        },
-        "7": {
-          "title": "Course document storage",
-          "description": "Keep teaching materials and useful documents in one place."
-        },
-        "8": {
-          "title": "News management",
-          "description": "Share important information with your community."
-        },
-        "9": {
-          "title": "Instant messaging",
-          "description": "Make everyday communication easier between all stakeholders."
-        },
-        "10": {
-          "title": "Student follow-up",
-          "description": "Get better visibility on student journeys and situations."
-        },
-        "11": {
-          "title": "Task management",
-          "description": "Organize actions for administrative and teaching teams."
-        },
-        "12": {
-          "title": "Detention management",
-          "description": "Manage and track detention hours more simply."
-        },
-        "13": {
-          "title": "Video course storage",
-          "description": "Provide video content in a dedicated space."
-        },
-        "14": {
-          "title": "Billing management",
-          "description": "Structure tracking for billing-related items."
-        },
-        "15": {
-          "title": "Application management",
-          "description": "Track applications and candidate files more easily."
-        },
-        "16": {
-          "title": "Leave and absences (staff)",
-          "description": "Keep better visibility over staff unavailability."
+        "item3": {
+          "content": "Track every activity in real time. From attendance and scheduling to instant communication, everything is centralized.",
+          "title": "Real-time activity tracking"
         }
-      }
+      },
+      "subtitle": "More than just a solution. Odyssea is the Swiss army knife for managing your institution.",
+      "title": "No need to use multiple management solutions"
+    },
+    "mainSection3": {
+      "cards": {
+        "item1": {
+          "content": "Save time by importing student lists exported from another solution to create classes quickly.",
+          "title": "Simple and fast migration"
+        },
+        "item2": {
+          "content": "Monitor key activity across your institution and keep a clear view of what is happening every day.",
+          "title": "Real-time activity tracking"
+        },
+        "item3": {
+          "content": "Adjust timetables faster and reduce friction when last-minute changes happen.",
+          "title": "Manage schedules efficiently"
+        }
+      },
+      "title": "Centralize your institution's management"
+    },
+    "mainSection4": {
+      "cards": {
+        "item1": {
+          "content": "No unpleasant surprises. Pricing, terms, and the support framework are clearly defined from the start.",
+          "title": "Transparency"
+        },
+        "item2": {
+          "content": "We handle your requests responsively so you can keep moving without leaving important topics blocked.",
+          "title": "Availability"
+        },
+        "item3": {
+          "content": "You automatically benefit from product improvements to keep your solution sustainable and up to date.",
+          "title": "Maintainability"
+        }
+      },
+      "title": "Our commitments by your side"
+    },
+    "mainSection5": {
+      "title": "Join the school management revolution."
+    },
+    "navbar": {
+      "faq": "FAQ",
+      "pricing": "Pricing",
+      "solution": "Our solution",
+      "trial": "Request a demo",
+      "whyUs": "Why Odyssea?"
     }
   },
   "PAGES": {
-    "features": {
-      "seo": {
-        "title": "Odyssea Features | Document management, tracking, organization, and communication",
-        "description": "Discover everything Odyssea helps centralize: document management, daily organization, activity tracking, communication, and coordination for your institution."
-      },
-      "eyebrow": "Features",
-      "hero": {
-        "title": "The central page to understand everything Odyssea can do.",
-        "subtitle": "Document management, daily organization, activity tracking, communication, and coordination: Odyssea brings together the essential building blocks to run your institution with more clarity.",
-        "secondaryCta": "See the customer journey"
-      },
-      "panel": {
-        "title": "What you gain"
-      },
-      "highlights": {
-        "1": "A solution designed to centralize an institution's essential uses",
-        "2": "Hands-on support, not just software delivery",
-        "3": "A flexible structure that adapts to your methods rather than the other way around"
-      },
-      "section": {
-        "title": "A cross-functional tool built for everyday work",
-        "subtitle": "Each functional block addresses a concrete need: organize better, structure better, track better, and communicate better."
-      },
-      "groups": {
-        "ged": {
-          "title": "Document management",
-          "description": "Centralize your administrative and educational documents in one space accessible to the right people at the right time.",
-          "items": {
-            "1": "Organize documents by cohort, class, or department",
-            "2": "Controlled sharing of course materials and administrative files",
-            "3": "Update history to keep track of changes"
-          }
-        },
-        "organization": {
-          "title": "Daily organization",
-          "description": "Avoid switching between multiple tools and keep a clear view of your institution's operations.",
-          "items": {
-            "1": "Timetable management and planning updates",
-            "2": "Attendance, lateness, and absence tracking",
-            "3": "Internal task management for teaching and administrative teams"
-          }
-        },
-        "tracking": {
-          "title": "Tracking tools",
-          "description": "Track institution activity in real time so you can make the right decisions faster.",
-          "items": {
-            "1": "Overview of the day's key events",
-            "2": "Tracking for students, cohorts, and important interactions",
-            "3": "Useful indicators to quickly spot bottlenecks"
-          }
-        },
-        "communication": {
-          "title": "Integrated communication",
-          "description": "Make exchanges smoother without multiplying channels or losing information along the way.",
-          "items": {
-            "1": "Instant messaging for day-to-day communication",
-            "2": "Sharing important updates with the whole community",
-            "3": "Simpler coordination between leadership, teams, and learners"
-          }
-        }
-      },
-      "cta": {
-        "title": "Need a more concrete view?",
-        "subtitle": "The Odyssea support journey explains how we move from the initial assessment to a rollout tailored to your structure.",
-        "button": "Discover how it works"
-      }
-    },
     "about": {
-      "seo": {
-        "title": "About Odyssea | Vision, support, and values",
-        "description": "Learn who is behind Odyssea, the vision behind the project, and the values that shape our support approach."
+      "cta": {
+        "button": "See our method",
+        "subtitle": "If you want to understand how support unfolds in practice, the dedicated page presents the customer journey step by step.",
+        "title": "The method matters as much as the tool."
       },
       "eyebrow": "About",
       "hero": {
-        "title": "Odyssea has a simple vision: bring order where tools have become scattered.",
-        "subtitle": "Behind Odyssea is the desire to offer a more human, clearer, and more useful framework for institutions that want to run their daily operations better without being trapped in unnecessary complexity."
+        "subtitle": "Behind Odyssea is the desire to offer a more human, clearer, and more useful framework for institutions that want to run their daily operations better without being trapped in unnecessary complexity.",
+        "title": "Odyssea has a simple vision: bring order where tools have become scattered."
+      },
+      "seo": {
+        "description": "Learn who is behind Odyssea, the vision behind the project, and the values that shape our support approach.",
+        "title": "About Odyssea | Vision, support, and values"
       },
       "story": {
-        "title": "Who is behind Odyssea?",
         "paragraph1": "Odyssea is driven by a close relationship with organizations that need both a central tool and a partner able to understand their real constraints.",
-        "paragraph2": "The ambition is not only to digitize isolated actions. It is to create a calmer, more coherent management experience that is easier to sustain every day."
-      },
-      "vision": {
-        "title": "Our vision",
-        "content": "Build a solution that follows real-world operations: documents to find, information to track, teams to coordinate, and decisions to make without wasting time."
-      },
-      "valuesSection": {
-        "title": "Our values",
-        "subtitle": "What we aim to uphold in every client relationship and every product improvement."
+        "paragraph2": "The ambition is not only to digitize isolated actions. It is to create a calmer, more coherent management experience that is easier to sustain every day.",
+        "title": "Who is behind Odyssea?"
       },
       "values": {
         "clarity": {
-          "title": "Clarity",
-          "content": "We want to make daily operations easier to read, smoother to run, and less fragmented."
+          "content": "We want to make daily operations easier to read, smoother to run, and less fragmented.",
+          "title": "Clarity"
         },
         "proximity": {
-          "title": "Proximity",
-          "content": "Odyssea grows through close contact with field needs and a practical support mindset."
+          "content": "Odyssea grows through close contact with field needs and a practical support mindset.",
+          "title": "Proximity"
         },
         "sustainability": {
-          "title": "Sustainability",
-          "content": "Our vision is to provide a robust framework that stays useful over time, even as the organization evolves."
+          "content": "Our vision is to provide a robust framework that stays useful over time, even as the organization evolves.",
+          "title": "Sustainability"
         }
       },
-      "cta": {
-        "title": "The method matters as much as the tool.",
-        "subtitle": "If you want to understand how support unfolds in practice, the dedicated page presents the customer journey step by step.",
-        "button": "See our method"
-      }
-    },
-    "faq": {
-      "seo": {
-        "title": "Odyssea FAQ | Services, support, and how it works",
-        "description": "Find answers to common questions about Odyssea services, the customer journey, and how the solution works overall."
+      "valuesSection": {
+        "subtitle": "What we aim to uphold in every client relationship and every product improvement.",
+        "title": "Our values"
       },
-      "eyebrow": "FAQ",
-      "hero": {
-        "title": "Answers to the most common questions about our services and overall approach.",
-        "subtitle": "This page brings together the essential points for understanding who Odyssea is for, how support works, and what the solution improves day to day."
-      },
-      "items": {
-        "1": {
-          "question": "Who is Odyssea for?",
-          "answer": "Odyssea is designed for institutions that want to centralize their organization, documents, and operational tracking in a single environment."
-        },
-        "2": {
-          "question": "Does Odyssea replace several tools?",
-          "answer": "Yes. The goal is precisely to reduce tool sprawl by bringing key uses together in a more coherent environment."
-        },
-        "3": {
-          "question": "Do you provide onboarding support?",
-          "answer": "Yes. The approach includes an initial assessment, needs framing, and progressive support to make adoption easier."
-        },
-        "4": {
-          "question": "Can the solution adapt to how we work?",
-          "answer": "The Odyssea approach aims to align with your real priorities so the rollout remains useful, understandable, and sustainable."
-        },
-        "5": {
-          "question": "How can we discover the solution more concretely?",
-          "answer": "You can request a demo or visit the \"How it works\" page to see the customer journey from the first conversation to ongoing support."
-        }
-      },
-      "cta": {
-        "title": "Do you have a more specific question?",
-        "subtitle": "We can start from your context and show you the support journey that best fits your situation.",
-        "secondaryButton": "See the journey"
-      }
-    },
-    "howItWorks": {
-      "seo": {
-        "title": "How it works | The Odyssea customer journey",
-        "description": "Understand the Odyssea method: sign-up, assessment, rollout framing, and ongoing support."
-      },
-      "eyebrow": "How it works",
-      "hero": {
-        "title": "The Odyssea customer journey, from first contact to ongoing support.",
-        "subtitle": "This is not about technical details. It is about method, relationship, and progression. The goal is to make your transition clear, reassuring, and adapted to your reality."
-      },
-      "steps": {
-        "1": {
-          "title": "1. Sign-up and first conversation",
-          "content": "We start from your context, priorities, and pain points to frame the right level of support."
-        },
-        "2": {
-          "title": "2. Assessment",
-          "content": "We review your current organization, the tools already in place, and the needs to centralize first."
-        },
-        "3": {
-          "title": "3. Rollout framing",
-          "content": "We define a simple, progressive, and realistic rollout plan aligned with your operational constraints."
-        },
-        "4": {
-          "title": "4. Support",
-          "content": "We move forward with you through onboarding, adjustments, and the installation of lasting working habits."
-        }
-      },
-      "support": {
-        "title": "An approach designed to reduce friction",
-        "subtitle": "Each step is meant to clarify what comes next, avoid gray areas, and help you move forward with a trajectory that is understandable from the start.",
-        "secondaryButton": "View features",
-        "primaryButton": "Start the conversation"
-      }
-    },
-    "pricing": {
-      "seo": {
-        "title": "Odyssea Pricing | Clear plans tailored to your institution",
-        "description": "Explore Odyssea pricing and included features to centralize the management of your institution."
+      "vision": {
+        "content": "Build a solution that follows real-world operations: documents to find, information to track, teams to coordinate, and decisions to make without wasting time.",
+        "title": "Our vision"
       }
     },
     "customer": {
-      "seo": {
-        "title": "Request an Odyssea demo | Start your support journey",
-        "description": "Share a few details about your institution to start the conversation and discover the Odyssea support approach."
+      "actions": {
+        "next": "Continue",
+        "previous": "Back",
+        "sending": "Sending...",
+        "submit": "Send my request"
       },
-      "steps": {
-        "1": {
-          "title": "Your contact details",
-          "subtitle": "Let’s start with the main contact person who will lead the conversation with Odyssea."
-        },
-        "2": {
-          "title": "Your institution",
-          "subtitle": "We need a few key details about your organization to frame the support properly."
-        },
-        "3": {
-          "title": "Your scale",
-          "subtitle": "This helps us project a realistic setup that fits your organization."
-        },
-        "4": {
-          "title": "Your priority needs",
-          "subtitle": "Select the topics you want to tackle first."
-        },
-        "5": {
-          "title": "Your timeline",
-          "subtitle": "Tell us when you want to move forward and what matters most to you."
-        },
-        "6": {
-          "title": "Conversation format",
-          "subtitle": "Choose the most convenient way to organize the demo or first conversation."
-        },
-        "7": {
-          "title": "Final review",
-          "subtitle": "Add any final context, then confirm your request."
-        }
+      "errors": {
+        "acceptTerms": "You must confirm your request to continue.",
+        "chooseNeed": "Select at least one need.",
+        "email": "Please enter a valid email address.",
+        "required": "This field is required.",
+        "submit": "Sending failed. Check the server email configuration and try again."
       },
       "fields": {
+        "acceptTerms": "I confirm that I would like to be contacted by the Odyssea team to organize the next steps.",
+        "city": "City",
+        "comments": "Additional context",
+        "country": "Country",
+        "demoFormat": "Preferred demo format",
         "firstName": "First name",
-        "lastName": "Last name",
-        "workEmail": "Work email",
-        "phone": "Phone number",
         "institutionName": "Institution name",
         "institutionType": "Institution type",
-        "country": "Country",
-        "city": "City",
-        "studentsRange": "Number of students / learners",
-        "staffRange": "Number of staff members",
+        "lastName": "Last name",
         "needs": "Which topics would you like to centralize?",
-        "timeline": "When would you like to get started?",
-        "priority": "What is your main priority?",
-        "demoFormat": "Preferred demo format",
+        "phone": "Phone number",
         "preferredContact": "Preferred contact channel",
-        "comments": "Additional context",
-        "acceptTerms": "I confirm that I would like to be contacted by the Odyssea team to organize the next steps."
+        "priority": "What is your main priority?",
+        "staffRange": "Number of staff members",
+        "studentsRange": "Number of students / learners",
+        "timeline": "When would you like to get started?",
+        "workEmail": "Work email"
       },
-      "placeholders": {
-        "firstName": "Your first name",
-        "lastName": "Your last name",
-        "workEmail": "you@institution.com",
-        "phone": "+44 7 00 00 00 00",
-        "institutionName": "Name of your institution",
-        "country": "United Kingdom",
-        "city": "London",
-        "comments": "Describe your context, current tools, or what you want to improve.",
-        "chooseOption": "Choose an option"
+      "help": {
+        "needs": "You can select more than one need if necessary.",
+        "support": "Any issue or question? We will get back to you and guide you through it."
       },
       "options": {
+        "contact": {
+          "either": "Either works for me",
+          "email": "By email",
+          "phone": "By phone"
+        },
+        "demoFormat": {
+          "onsite": "To be discussed on site",
+          "phone": "Phone call",
+          "video": "Video call"
+        },
         "institutionTypes": {
-          "middleSchool": "Middle school",
-          "highSchool": "High school",
           "cfa": "Apprenticeship center",
-          "university": "University",
-          "trainingCenter": "Training center"
+          "highSchool": "High school",
+          "middleSchool": "Middle school",
+          "trainingCenter": "Training center",
+          "university": "University"
+        },
+        "needs": {
+          "billing": "Billing or related management",
+          "communication": "Internal communication",
+          "ged": "Document management",
+          "planning": "Planning and organization",
+          "tracking": "Activity tracking"
+        },
+        "priority": {
+          "centralize": "Centralize our tools",
+          "improveCommunication": "Improve communication flow",
+          "improveTracking": "Improve activity tracking",
+          "saveTime": "Save time every day"
         },
         "sizeRanges": {
           "1": "1 to 49",
@@ -446,63 +211,298 @@
           "4": "300 to 549",
           "5": "550 and above"
         },
-        "needs": {
-          "ged": "Document management",
-          "planning": "Planning and organization",
-          "tracking": "Activity tracking",
-          "communication": "Internal communication",
-          "billing": "Billing or related management"
-        },
         "timeline": {
+          "exploratory": "I am still exploring",
           "immediate": "As soon as possible",
           "oneMonth": "Within the month",
-          "quarter": "Within the quarter",
-          "exploratory": "I am still exploring"
-        },
-        "priority": {
-          "centralize": "Centralize our tools",
-          "saveTime": "Save time every day",
-          "improveTracking": "Improve activity tracking",
-          "improveCommunication": "Improve communication flow"
-        },
-        "demoFormat": {
-          "video": "Video call",
-          "phone": "Phone call",
-          "onsite": "To be discussed on site"
-        },
-        "contact": {
-          "email": "By email",
-          "phone": "By phone",
-          "either": "Either works for me"
+          "quarter": "Within the quarter"
         }
       },
-      "help": {
-        "needs": "You can select more than one need if necessary.",
-        "support": "Any issue or question? We will get back to you and guide you through it."
+      "placeholders": {
+        "chooseOption": "Choose an option",
+        "city": "London",
+        "comments": "Describe your context, current tools, or what you want to improve.",
+        "country": "United Kingdom",
+        "firstName": "Your first name",
+        "institutionName": "Name of your institution",
+        "lastName": "Your last name",
+        "phone": "+44 7 00 00 00 00",
+        "workEmail": "you@institution.com"
       },
-      "errors": {
-        "required": "This field is required.",
-        "email": "Please enter a valid email address.",
-        "chooseNeed": "Select at least one need.",
-        "acceptTerms": "You must confirm your request to continue.",
-        "submit": "Sending failed. Check the server email configuration and try again."
+      "seo": {
+        "description": "Share a few details about your institution to start the conversation and discover the Odyssea support approach.",
+        "title": "Request an Odyssea demo | Start your support journey"
       },
-      "actions": {
-        "previous": "Back",
-        "next": "Continue",
-        "submit": "Send my request",
-        "sending": "Sending..."
+      "steps": {
+        "1": {
+          "subtitle": "Let’s start with the main contact person who will lead the conversation with Odyssea.",
+          "title": "Your contact details"
+        },
+        "2": {
+          "subtitle": "We need a few key details about your organization to frame the support properly.",
+          "title": "Your institution"
+        },
+        "3": {
+          "subtitle": "This helps us project a realistic setup that fits your organization.",
+          "title": "Your scale"
+        },
+        "4": {
+          "subtitle": "Select the topics you want to tackle first.",
+          "title": "Your priority needs"
+        },
+        "5": {
+          "subtitle": "Tell us when you want to move forward and what matters most to you.",
+          "title": "Your timeline"
+        },
+        "6": {
+          "subtitle": "Choose the most convenient way to organize the demo or first conversation.",
+          "title": "Conversation format"
+        },
+        "7": {
+          "subtitle": "Add any final context, then confirm your request.",
+          "title": "Final review"
+        }
+      },
+      "success": {
+        "backHome": "Back to home",
+        "badge": "Request sent",
+        "subtitle": "We have received your information. The Odyssea team can now prepare a more relevant conversation and get back to you quickly.",
+        "summaryTitle": "Information shared",
+        "title": "Your onboarding journey is ready."
       },
       "summary": {
         "title": "Quick summary"
+      }
+    },
+    "faq": {
+      "cta": {
+        "secondaryButton": "See the journey",
+        "subtitle": "We can start from your context and show you the support journey that best fits your situation.",
+        "title": "Do you have a more specific question?"
       },
-      "success": {
-        "badge": "Request sent",
-        "title": "Your onboarding journey is ready.",
-        "subtitle": "We have received your information. The Odyssea team can now prepare a more relevant conversation and get back to you quickly.",
-        "summaryTitle": "Information shared",
-        "backHome": "Back to home"
+      "eyebrow": "FAQ",
+      "hero": {
+        "subtitle": "This page brings together the essential points for understanding who Odyssea is for, how support works, and what the solution improves day to day.",
+        "title": "Answers to the most common questions about our services and overall approach."
+      },
+      "items": {
+        "1": {
+          "answer": "Odyssea is designed for institutions that want to centralize their organization, documents, and operational tracking in a single environment.",
+          "question": "Who is Odyssea for?"
+        },
+        "2": {
+          "answer": "Yes. The goal is precisely to reduce tool sprawl by bringing key uses together in a more coherent environment.",
+          "question": "Does Odyssea replace several tools?"
+        },
+        "3": {
+          "answer": "Yes. The approach includes an initial assessment, needs framing, and progressive support to make adoption easier.",
+          "question": "Do you provide onboarding support?"
+        },
+        "4": {
+          "answer": "The Odyssea approach aims to align with your real priorities so the rollout remains useful, understandable, and sustainable.",
+          "question": "Can the solution adapt to how we work?"
+        },
+        "5": {
+          "answer": "You can request a demo or visit the \"How it works\" page to see the customer journey from the first conversation to ongoing support.",
+          "question": "How can we discover the solution more concretely?"
+        }
+      },
+      "seo": {
+        "description": "Find answers to common questions about Odyssea services, the customer journey, and how the solution works overall.",
+        "title": "Odyssea FAQ | Services, support, and how it works"
+      }
+    },
+    "features": {
+      "cta": {
+        "button": "Discover how it works",
+        "subtitle": "The Odyssea support journey explains how we move from the initial assessment to a rollout tailored to your structure.",
+        "title": "Need a more concrete view?"
+      },
+      "eyebrow": "Features",
+      "groups": {
+        "communication": {
+          "description": "Make exchanges smoother without multiplying channels or losing information along the way.",
+          "items": {
+            "1": "Instant messaging for day-to-day communication",
+            "2": "Sharing important updates with the whole community",
+            "3": "Simpler coordination between leadership, teams, and learners"
+          },
+          "title": "Integrated communication"
+        },
+        "ged": {
+          "description": "Centralize your administrative and educational documents in one space accessible to the right people at the right time.",
+          "items": {
+            "1": "Organize documents by cohort, class, or department",
+            "2": "Controlled sharing of course materials and administrative files",
+            "3": "Update history to keep track of changes"
+          },
+          "title": "Document management"
+        },
+        "organization": {
+          "description": "Avoid switching between multiple tools and keep a clear view of your institution's operations.",
+          "items": {
+            "1": "Timetable management and planning updates",
+            "2": "Attendance, lateness, and absence tracking",
+            "3": "Internal task management for teaching and administrative teams"
+          },
+          "title": "Daily organization"
+        },
+        "tracking": {
+          "description": "Track institution activity in real time so you can make the right decisions faster.",
+          "items": {
+            "1": "Overview of the day's key events",
+            "2": "Tracking for students, cohorts, and important interactions",
+            "3": "Useful indicators to quickly spot bottlenecks"
+          },
+          "title": "Tracking tools"
+        }
+      },
+      "hero": {
+        "secondaryCta": "See the customer journey",
+        "subtitle": "Document management, daily organization, activity tracking, communication, and coordination: Odyssea brings together the essential building blocks to run your institution with more clarity.",
+        "title": "The central page to understand everything Odyssea can do."
+      },
+      "highlights": {
+        "1": "A solution designed to centralize an institution's essential uses",
+        "2": "Hands-on support, not just software delivery",
+        "3": "A flexible structure that adapts to your methods rather than the other way around"
+      },
+      "panel": {
+        "title": "What you gain"
+      },
+      "section": {
+        "subtitle": "Each functional block addresses a concrete need: organize better, structure better, track better, and communicate better.",
+        "title": "A cross-functional tool built for everyday work"
+      },
+      "seo": {
+        "description": "Discover everything Odyssea helps centralize: document management, daily organization, activity tracking, communication, and coordination for your institution.",
+        "title": "Odyssea Features | Document management, tracking, organization, and communication"
+      }
+    },
+    "howItWorks": {
+      "eyebrow": "How it works",
+      "hero": {
+        "subtitle": "This is not about technical details. It is about method, relationship, and progression. The goal is to make your transition clear, reassuring, and adapted to your reality.",
+        "title": "The Odyssea customer journey, from first contact to ongoing support."
+      },
+      "seo": {
+        "description": "Understand the Odyssea method: sign-up, assessment, rollout framing, and ongoing support.",
+        "title": "How it works | The Odyssea customer journey"
+      },
+      "steps": {
+        "1": {
+          "content": "We start from your context, priorities, and pain points to frame the right level of support.",
+          "title": "1. Sign-up and first conversation"
+        },
+        "2": {
+          "content": "We review your current organization, the tools already in place, and the needs to centralize first.",
+          "title": "2. Assessment"
+        },
+        "3": {
+          "content": "We define a simple, progressive, and realistic rollout plan aligned with your operational constraints.",
+          "title": "3. Rollout framing"
+        },
+        "4": {
+          "content": "We move forward with you through onboarding, adjustments, and the installation of lasting working habits.",
+          "title": "4. Support"
+        }
+      },
+      "support": {
+        "primaryButton": "Start the conversation",
+        "secondaryButton": "View features",
+        "subtitle": "Each step is meant to clarify what comes next, avoid gray areas, and help you move forward with a trajectory that is understandable from the start.",
+        "title": "An approach designed to reduce friction"
+      }
+    },
+    "pricing": {
+      "seo": {
+        "description": "Explore Odyssea pricing and included features to centralize the management of your institution.",
+        "title": "Odyssea Pricing | Clear plans tailored to your institution"
       }
     }
+  },
+  "PRICING": {
+    "cards": {
+      "customPrice": "Custom pricing",
+      "engagement": "No commitment and no setup fees",
+      "establishment": "Institution type",
+      "features": {
+        "1": {
+          "description": "Let students or learners report attendance quickly using a QR code.",
+          "title": "QR code attendance scanning"
+        },
+        "10": {
+          "description": "Get better visibility on student journeys and situations.",
+          "title": "Student follow-up"
+        },
+        "11": {
+          "description": "Organize actions for administrative and teaching teams.",
+          "title": "Task management"
+        },
+        "12": {
+          "description": "Manage and track detention hours more simply.",
+          "title": "Detention management"
+        },
+        "13": {
+          "description": "Provide video content in a dedicated space.",
+          "title": "Video course storage"
+        },
+        "14": {
+          "description": "Structure tracking for billing-related items.",
+          "title": "Billing management"
+        },
+        "15": {
+          "description": "Track applications and candidate files more easily.",
+          "title": "Application management"
+        },
+        "16": {
+          "description": "Keep better visibility over staff unavailability.",
+          "title": "Leave and absences (staff)"
+        },
+        "2": {
+          "description": "Create, update, and share timetables more easily.",
+          "title": "Timetable management"
+        },
+        "3": {
+          "description": "Keep a clear view of your institution's daily organization.",
+          "title": "Planning management"
+        },
+        "4": {
+          "description": "Speed up data onboarding and updates to your student population.",
+          "title": "Import and export student / class lists"
+        },
+        "5": {
+          "description": "Follow important actions and events across the institution.",
+          "title": "Activity tracking"
+        },
+        "6": {
+          "description": "Centralize attendance tracking in a single space.",
+          "title": "Attendance / lateness / absence management"
+        },
+        "7": {
+          "description": "Keep teaching materials and useful documents in one place.",
+          "title": "Course document storage"
+        },
+        "8": {
+          "description": "Share important information with your community.",
+          "title": "News management"
+        },
+        "9": {
+          "description": "Make everyday communication easier between all stakeholders.",
+          "title": "Instant messaging"
+        }
+      },
+      "monthlyPrice": "+€99 monthly subscription *",
+      "popular": "Most popular",
+      "price": "€15.99",
+      "priceRight": "/ per student",
+      "title": "Based on your needs",
+      "total": "Total of ",
+      "totalEnd": " per month *"
+    },
+    "question": "How many students / learners do you have?",
+    "subtitle": "No hidden fees. No commitment.",
+    "title1": "Transparent pricing",
+    "title2": "tailored to your needs"
   }
 }
